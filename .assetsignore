@@ -1,8 +1,0 @@
-README.md
-.gitignore
-.gitattributes
-wrangler.toml
-.assetsignore
-.git/
-.github/
-node_modules/
