@@ -54,7 +54,7 @@ summary { list-style:none; cursor:pointer; }
 [data-resolved="1"] [data-strip] > :nth-child(4), [data-resolved="1"] [data-inputgrid] > div:nth-child(4) > :nth-child(1) { animation-delay:360ms; }
 [data-resolved="1"] [data-strip] > :nth-child(5), [data-resolved="1"] [data-inputgrid] > div:nth-child(4) > :nth-child(2) { animation-delay:480ms; }
 [data-resolved="1"] [data-strip] > :nth-child(6), [data-resolved="1"] [data-inputgrid] > div:nth-child(4) > :nth-child(3) { animation-delay:600ms; }
-@media (prefers-reduced-motion: reduce) { [data-crit], [data-resolved="1"] [data-crit] { animation:none !important; } }
+@media (prefers-reduced-motion: reduce) { [data-crit], [data-resolved="1"] [data-crit], [data-deco] { animation:none !important; } }
 @media (max-width:900px) {
   [data-inputgrid] { grid-template-columns:1fr !important; }
   [data-rail] { display:none !important; }
@@ -65,15 +65,44 @@ summary { list-style:none; cursor:pointer; }
 /* the language select built by ui-controls.js carries .lc-select and nothing else (CONTROLS_CONTRACT.md section 4) */
 .lc-select { font-family:'IBM Plex Mono',monospace; font-size:12px; padding:7px 12px; border-radius:999px; border:1px solid var(--line); background:var(--panel); color:var(--ink); cursor:pointer; }
 [hidden] { display:none !important; }
-/* brand lockup: the mark is monochrome black and inverts to the light ink on the dark theme (never a black mark on a dark ground) */
-.lockup { display:flex; flex-direction:column; align-items:flex-start; gap:8px; border:0; }
-.lockup .mark { display:block; width:56px; height:56px; }
-.lockup .wordmark { font-size:44px; }
+html[lang="en"] [data-not-en] { display:none; }   /* the line that says the profile has to be in English shows on the translated pages only */
+/* brand lockup: mark and wordmark on one line, the mark larger than the word and centred on it; the capital L is set larger
+   than the rest of the word; the tagline sits under the row, small. The mark is monochrome black and inverts on the dark theme. */
+.lockup { display:flex; flex-direction:column; align-items:flex-start; gap:2px; border:0; }
+.lockup-row { display:flex; align-items:center; gap:14px; }
+.lockup .mark { display:block; width:64px; height:64px; }
+.lockup .wordmark { font-size:44px; font-weight:600; letter-spacing:-0.03em; line-height:1; }
+.lockup .wordmark::first-letter { font-size:1.32em; }
+.lockup .tagline { font-size:13px; color:var(--ink-3); margin:4px 0 0 78px; }
 .lockup-small { flex-direction:row; align-items:center; gap:10px; margin:0 0 1.2rem; text-decoration:none; }
-.lockup-small .mark { width:32px; height:32px; }
-.lockup-small .wordmark { font-size:22px; }
+.lockup-small .mark { width:40px; height:40px; }
+.lockup-small .wordmark { display:inline-block; font-size:26px; }
 .lockup .mark { mix-blend-mode:multiply; }   /* the png ground is white: multiply drops it onto the paper */
 :root[data-theme="dark"] .lockup .mark { filter:invert(1); mix-blend-mode:screen; }   /* inverted to the light ink, its ground drops onto the dark shell */
-@media (max-width:900px) { .lockup .mark { width:40px; height:40px; } .lockup .wordmark { font-size:34px; } }
+@media (max-width:900px) { .lockup .mark { width:48px; height:48px; } .lockup .wordmark { font-size:34px; } .lockup .tagline { margin-left:62px; } }
+/* header: a row of links (the tool, the method, two announced sections) next to the theme and language controls */
+.toolbar { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.nav { display:flex; align-items:center; gap:16px; margin-right:10px; font-family:'IBM Plex Mono',monospace; font-size:12px; }
+.nav a { color:var(--ink-2); border-bottom:1px solid transparent; padding-bottom:1px; }
+.nav a:hover { color:var(--ink); border-bottom-color:var(--ink-2); }
+.nav a[aria-current="page"] { color:var(--ink); border-bottom-color:var(--ink); }
+.nav .soon { color:var(--ink-3); opacity:0.75; cursor:default; white-space:nowrap; }
+.nav .soon small { font-size:10px; border:1px solid var(--line); border-radius:999px; padding:1px 6px; margin-left:4px; vertical-align:1px; }
+/* theme button: names the theme that is active, with a sun on light and a moon on dark (inline svg, currentColor) */
+[data-theme-toggle] { display:inline-flex; align-items:center; gap:7px; }
+:root[data-theme="dark"] [data-theme-toggle] .icon-sun { display:none; }
+:root[data-theme="light"] [data-theme-toggle] .icon-moon { display:none; }
+/* footer contact: two hand-drawn glyphs and the role link, quiet until hovered */
+footer .contact { display:inline-flex; align-items:center; gap:14px; margin-left:auto; }
+footer .contact a { color:var(--ink-3); border-bottom:0; display:inline-flex; align-items:center; }
+footer .contact a:hover { color:var(--ink); }
+footer .contact svg { display:block; }
+/* margin creatures: placed by app.js on a vertical rhythm in the gutters beside the content column, behind everything, never over text */
+#page { position:relative; z-index:0; }
+#deco { position:absolute; inset:0; overflow:hidden; pointer-events:none; z-index:-1; }
+body[data-page="method"] { position:relative; z-index:0; }
+[data-deco] { position:absolute; line-height:0; opacity:0.55; animation:breathe 6.4s ease-in-out infinite; }
+[data-deco]:nth-child(3n+2) { animation-duration:7.3s; animation-delay:-2s; }
+[data-deco]:nth-child(3n) { animation-duration:5.6s; animation-delay:-4s; }
 /* resting state: nothing has been checked yet, so the margin figures sit in the neutral ink until a read resolves them */
 [data-inputgrid][data-resolved="0"] [data-crit] [data-ink] { fill:var(--ink-3); }

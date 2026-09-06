@@ -1,0 +1,40 @@
+name: Submit a role
+description: Offer a bot profile for the lintcha role library.
+title: "Role: "
+labels: ["role"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks. The library collects profiles people run for real. Paste the text as it goes into the bot profile; nothing is edited before review.
+  - type: input
+    id: role-name
+    attributes:
+      label: Role name
+      description: What the bot is, in a few words.
+      placeholder: the reporter
+    validations:
+      required: true
+  - type: textarea
+    id: what-it-does
+    attributes:
+      label: What the bot does
+      description: The work in one or two sentences, and when it runs.
+      placeholder: Every weekday before nine it reads the tracker and posts a summary of what moved to the team channel.
+    validations:
+      required: true
+  - type: textarea
+    id: profile-text
+    attributes:
+      label: The profile text
+      description: The full text that goes into the bot profile, in English. Replace anything private with a bracketed slot such as [CHANNEL].
+      render: text
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights
+      options:
+        - label: I wrote this profile or have the right to share it, and it may be published in the library.
+          required: true

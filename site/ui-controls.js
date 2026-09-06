@@ -32,7 +32,7 @@
       var on = btn.getAttribute("data-label-dark") || "Dark";
       var off = btn.getAttribute("data-label-light") || "Light";
       var face = btn.querySelector("[data-theme-label]");
-      if (face) face.textContent = t === "dark" ? off : on;
+      if (face) face.textContent = t === "dark" ? on : off;   /* the face names the theme that is active */
     }
     document.dispatchEvent(new CustomEvent("lintcha:theme", { detail: { theme: t } }));
     return t;
