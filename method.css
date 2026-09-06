@@ -1,0 +1,35 @@
+/* method page: structural styles carried over from the first shell, palette and fonts come from style.css (the design shell). */
+:root {
+  --head: "Archivo", "Hanken Grotesk", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --mono: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+}
+html { background: var(--bg); color: var(--ink); }
+body { font-family: var(--head); font-size: 17px; line-height: 1.55; }
+main, header, footer { max-width: 44rem; margin: 0 auto; padding: 0 1.25rem; }
+header { padding-top: 3rem; }
+h1, h2, h3 { font-family: var(--head); font-weight: 600; letter-spacing: -0.01em; margin: 0 0 0.6rem; }
+h1 { font-size: 2.1rem; line-height: 1.1; }
+h2 { font-size: 1.3rem; margin-top: 3rem; }
+h3 { font-size: 1.05rem; margin-top: 1.8rem; }
+p { margin: 0 0 1rem; max-width: 40rem; }
+a { color: var(--ink); text-decoration: underline; text-underline-offset: 0.15em; border-bottom: 0; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.privacy { font-family: var(--mono); font-size: 0.85rem; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 0.7rem 0; margin: 1.5rem 0 2rem; color: var(--ink-2); }
+.meta { font-family: var(--mono); font-size: 0.8rem; margin-top: 0.6rem; color: var(--ink-2); }
+ul.lines { list-style: none; padding: 0; margin: 0; }
+ul.lines li { padding: 0.55rem 0; border-bottom: 1px solid var(--line-soft); }
+ul.lines li::before { font-family: var(--mono); margin-right: 0.6rem; }
+ul.lines li.note::before { content: "~"; }
+table.method { border-collapse: collapse; width: 100%; font-family: var(--mono); font-size: 0.78rem; }
+table.method th, table.method td { text-align: left; padding: 0.35rem 0.5rem 0.35rem 0; border-bottom: 1px solid var(--line-soft); vertical-align: top; word-break: break-all; }
+.num { font-family: var(--mono); }
+.scroll { overflow-x: auto; }
+.sr { position: absolute; left: -9999px; }
+footer { font-family: var(--mono); font-size: 0.8rem; padding: 2.5rem 1.25rem 3rem; border-top: 1px solid var(--line); margin-top: 3rem; color: var(--ink-3); }
+footer span { margin-right: 1.4rem; display: inline-block; }
+.toolbar { display: flex; justify-content: flex-end; align-items: center; gap: 10px; margin-bottom: 1.2rem; }
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  h1 { font-size: 1.7rem; }
+  header { padding-top: 2rem; }
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://lintcha.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lintcha.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lintcha.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lintcha.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lintcha.com/"/>
+  </url>
+  <url>
+    <loc>https://lintcha.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lintcha.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lintcha.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lintcha.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lintcha.com/"/>
+  </url>
+  <url>
+    <loc>https://lintcha.com/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lintcha.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lintcha.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lintcha.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lintcha.com/"/>
+  </url>
+  <url>
+    <loc>https://lintcha.com/method.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lintcha.com/method.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lintcha.com/es/method.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lintcha.com/pt/method.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lintcha.com/method.html"/>
+  </url>
+  <url>
+    <loc>https://lintcha.com/es/method.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lintcha.com/method.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lintcha.com/es/method.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lintcha.com/pt/method.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lintcha.com/method.html"/>
+  </url>
+  <url>
+    <loc>https://lintcha.com/pt/method.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lintcha.com/method.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://lintcha.com/es/method.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://lintcha.com/pt/method.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lintcha.com/method.html"/>
+  </url>
+</urlset>

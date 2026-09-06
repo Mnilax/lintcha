@@ -1,0 +1,65 @@
+/* Self-hosted fonts (SIL Open Font License), latin subsets fetched from Google Fonts on 2026-09-06, no network needed at runtime. */
+@font-face { font-family: "Archivo"; font-style: normal; font-weight: 400 600; font-display: swap; src: url("fonts/archivo.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 400; font-display: swap; src: url("fonts/ibm-plex-mono-400.woff2") format("woff2"); }
+@font-face { font-family: "IBM Plex Mono"; font-style: normal; font-weight: 600; font-display: swap; src: url("fonts/ibm-plex-mono-600.woff2") format("woff2"); }
+:root, [data-theme="dark"] {
+  --bg:#0d0e0f; --panel:#141618; --panel-2:#1b1e21; --field:#101214;
+  --line:#26292c; --line-soft:#1d2023;
+  --ink:#f4f5f6; --ink-2:#99a1a7; --ink-3:#6b7277;
+  --btn:#f4f5f6; --btn-ink:#0d0e0f; --btn-quiet-line:#33373a;
+  --pos:#3fa07a; --neg:#d9584f; --eye:#111213;
+  --c1:#d96a92; --c2:#d1823f; --c3:#8b78dc; --c4:#3f9fa8; --c5:#6ba148; --c6:#4f88d4;
+  --bar-track:#22262a; --shell:#0d0e0f; --card-line:#24272a; --card-bg:#141618;
+}
+[data-theme="light"] {
+  --bg:#f3efe8; --panel:#fffdf9; --panel-2:#ebe5db; --field:#fffdf9;
+  --line:#ded7ca; --line-soft:#e7e1d6;
+  --ink:#1a1917; --ink-2:#5e5a53; --ink-3:#8d867c;
+  --btn:#1a1917; --btn-ink:#f7f4ee; --btn-quiet-line:#cfc7b8;
+  --pos:#237a5c; --neg:#b23a33; --eye:#1a1917;
+  --c1:#c4557f; --c2:#b56c2a; --c3:#7461c8; --c4:#2f8790; --c5:#588c36; --c6:#3a71bd;
+  --bar-track:#e3ddd1; --shell:#f3efe8; --card-line:#e2dbcf; --card-bg:#fffdf9;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:Archivo,"Hanken Grotesk","Helvetica Neue",sans-serif; -webkit-font-smoothing:antialiased; }
+a { color:var(--ink); text-decoration:none; border-bottom:1px solid var(--btn-quiet-line); }
+a:hover { color:var(--ink-2); border-bottom-color:var(--ink-2); }
+summary::-webkit-details-marker { display:none; }
+summary { list-style:none; cursor:pointer; }
+@keyframes breathe { 0%,100% { transform:translateY(0) scale(1); } 50% { transform:translateY(-3px) scale(1.03); } }
+@keyframes resolve { 0% { transform:translateY(0) scale(1); } 35% { transform:translateY(-9px) scale(1.1); } 100% { transform:translateY(0) scale(1); } }
+[data-crit] { animation:breathe 5.2s ease-in-out infinite; }
+@keyframes floatA { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-9px); } }
+@keyframes floatB { 0%,100% { transform:translate(0,0) rotate(0deg); } 33% { transform:translate(5px,-6px) rotate(4deg); } 66% { transform:translate(-4px,4px) rotate(-3deg); } }
+@keyframes floatC { 0%,100% { transform:translateY(0) scale(1); } 50% { transform:translateY(6px) scale(1.06); } }
+[data-strip] > :nth-child(1) { animation:floatA 5.2s ease-in-out infinite; }
+[data-strip] > :nth-child(2) { animation:floatB 6.6s ease-in-out infinite; }
+[data-strip] > :nth-child(3) { animation:floatC 4.8s ease-in-out infinite; }
+[data-strip] > :nth-child(4) { animation:floatB 5.9s ease-in-out infinite reverse; }
+[data-strip] > :nth-child(5) { animation:floatA 6.9s ease-in-out infinite; }
+[data-strip] > :nth-child(6) { animation:floatC 5.5s ease-in-out infinite reverse; }
+[data-rail] > :nth-child(1) { animation:floatB 6.2s ease-in-out infinite; }
+[data-rail] > :nth-child(2) { animation:floatA 5.0s ease-in-out infinite; }
+[data-rail] > :nth-child(3) { animation:floatC 7.1s ease-in-out infinite; }
+[data-inputgrid] > div:nth-child(4) > :nth-child(1) { animation:floatA 6.7s ease-in-out infinite reverse; }
+[data-inputgrid] > div:nth-child(4) > :nth-child(2) { animation:floatC 5.3s ease-in-out infinite; }
+[data-inputgrid] > div:nth-child(4) > :nth-child(3) { animation:floatB 7.4s ease-in-out infinite reverse; }
+[data-resolved="1"] [data-crit] { animation:resolve 720ms cubic-bezier(.3,1.5,.5,1) both; }
+[data-resolved="1"] [data-strip] > [data-crit], [data-resolved="1"] [data-rail] > [data-crit], [data-resolved="1"] [data-inputgrid] > div:nth-child(4) > [data-crit] { animation:resolve 720ms cubic-bezier(.3,1.5,.5,1) both; }
+[data-resolved="1"] [data-crit][data-v="pos"] [data-ink] { fill:var(--pos); transition:fill 400ms ease 120ms; }
+[data-resolved="1"] [data-crit][data-v="neg"] [data-ink] { fill:var(--neg); transition:fill 400ms ease 120ms; }
+[data-resolved="1"] [data-strip] > :nth-child(1), [data-resolved="1"] [data-inputgrid] > div:nth-child(2) > :nth-child(1) { animation-delay:0ms; }
+[data-resolved="1"] [data-strip] > :nth-child(2), [data-resolved="1"] [data-inputgrid] > div:nth-child(2) > :nth-child(2) { animation-delay:120ms; }
+[data-resolved="1"] [data-strip] > :nth-child(3), [data-resolved="1"] [data-inputgrid] > div:nth-child(2) > :nth-child(3) { animation-delay:240ms; }
+[data-resolved="1"] [data-strip] > :nth-child(4), [data-resolved="1"] [data-inputgrid] > div:nth-child(4) > :nth-child(1) { animation-delay:360ms; }
+[data-resolved="1"] [data-strip] > :nth-child(5), [data-resolved="1"] [data-inputgrid] > div:nth-child(4) > :nth-child(2) { animation-delay:480ms; }
+[data-resolved="1"] [data-strip] > :nth-child(6), [data-resolved="1"] [data-inputgrid] > div:nth-child(4) > :nth-child(3) { animation-delay:600ms; }
+@media (prefers-reduced-motion: reduce) { [data-crit], [data-resolved="1"] [data-crit] { animation:none !important; } }
+@media (max-width:900px) {
+  [data-inputgrid] { grid-template-columns:1fr !important; }
+  [data-rail] { display:none !important; }
+  [data-strip] { display:block !important; }
+}
+/* the language select built by ui-controls.js carries .lc-select and nothing else (CONTROLS_CONTRACT.md section 4) */
+.lc-select { font-family:'IBM Plex Mono',monospace; font-size:12px; padding:7px 12px; border-radius:999px; border:1px solid var(--line); background:var(--panel); color:var(--ink); cursor:pointer; }
+[hidden] { display:none !important; }

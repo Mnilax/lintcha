@@ -1,0 +1,1639 @@
+{
+  "snapshot_date": "2026-09-04",
+  "run": 3,
+  "corpus_definition": "Corpus: Grok Bot charters published as plain text in public GitHub repositories, snapshot 2026-09-04, source set expanded on 2026-09-05 with the repositories linked from the two discovery lists. Strict corpus = every fetched repository minus setup-prompt directories and Claude Code skill libraries (not the unit of analysis). NOT a census of public Grok Bot templates; install-link directories are excluded because their configuration text lives on x.ai, which this project never fetches.",
+  "seed": 20260904,
+  "corpus": {
+    "definition": "strict",
+    "excluded_repos": [
+      "Anil-matcha/awesome-grok-bot",
+      "aaron-he-zhu/aaron-marketing-skills",
+      "elie222/botdirectory.ai"
+    ],
+    "length_cap_words": 3000,
+    "repos_fetched": 91,
+    "repos_failed": 0,
+    "repos_in_strict_corpus": 86,
+    "files_scanned": 5546,
+    "files_excluded_by_path_class": 1150,
+    "charter_candidates": 4462,
+    "rejected": {
+      "too_short": 431,
+      "too_long": 85,
+      "not_instruction": 2295,
+      "not_english": 29
+    },
+    "rejected_detail": {
+      "excluded_path_non_charter": 405,
+      "not_instruction:no_opener": 2074,
+      "too_short": 431,
+      "not_instruction:low_density": 202,
+      "excluded_path_repo_meta": 181,
+      "too_long": 85,
+      "not_english": 29,
+      "not_instruction:link_rows": 19,
+      "excluded_class_link_directory_or_plugin": 475,
+      "excluded_path_site_source": 89
+    },
+    "accepted_before_dedup": 1622,
+    "exact_duplicates": 19,
+    "near_duplicate_clusters": 6,
+    "near_duplicates_removed": 7,
+    "final_n": 1596,
+    "per_repo_final_n": {
+      "AmitMirgal/orgbot-hub": 1,
+      "Chakhdz/grok-bot-token-saver": 1,
+      "EndeavorYen/grok-bot-skills": 14,
+      "GlobalTC/steer": 3,
+      "HAEGONG/grok-bot-profiles": 12,
+      "HammeredSmithy/bull-trade": 28,
+      "Heyvhuang/werewolf-gamemaster": 1,
+      "Logos52/grok-bot-packets": 19,
+      "Octo-o-o-o/grok-job-kit": 10,
+      "OpulentiaAI/gtm-agent-automations": 262,
+      "PROJECT-073-X/grok-bot-workforce": 1,
+      "PramodDutta/botskills": 119,
+      "Steltic/steltic_grokbot": 1,
+      "Uncle-Gizmo/grok-bot-info": 1,
+      "WebDevJasonCameron/ExploreGrokBot": 5,
+      "YannisKiefer/grokbot-x": 10,
+      "ZeroPointRepo/GrokBotDev": 137,
+      "ZooHero500/plays": 110,
+      "a70win-wq/usegrokbot": 1,
+      "aaravarr/openbot": 3,
+      "andrewkittridge/grokory": 4,
+      "bcharleson/grokbot-peekaboo": 1,
+      "codejunkie99/rosterroom": 80,
+      "composio-community/awesome-grok-bots": 20,
+      "danielvegac/grok-bot-startup-services-outbound": 4,
+      "divo12/awesome-grok-bot-templates": 10,
+      "dragosroua/grok-bot-add-plugin": 6,
+      "ellelion/botteams": 70,
+      "ethanolivertroy/grokbot-cloudflare-inbox": 2,
+      "function1st/PhoneZero": 11,
+      "galleonlabs/hypergrok-trading-desk": 27,
+      "hariou/technocore-grokbot-ja": 1,
+      "jaredtrichard/grok-factory": 10,
+      "jaredtrichard/grok-research": 4,
+      "jaskirat1616/grok-skills": 186,
+      "jblack4vols/grok-bot": 2,
+      "jeremybrasher/grokbot-skills": 92,
+      "kunchenguid/grok-ship": 7,
+      "kwakseongjae/awesome-grok-bot": 3,
+      "kydlikebtc/awesome-grokbot": 2,
+      "lazerusrm/botrouter": 1,
+      "mKay00/grok-bot-second-brain": 11,
+      "mahathir69/technocore-safe": 3,
+      "maplefukku/grok-bot-ops": 1,
+      "matteoantoci/firstmate": 2,
+      "mergisi/awesome-grokbot": 113,
+      "mozilla/diversity": 10,
+      "mtrxdev/build-brief": 3,
+      "napiermd/heavy-lift-cloud-agents": 1,
+      "noam99moyal-sudo/podcast-summary-bot": 1,
+      "novusordos666/grokbot-outreach-agent-team": 6,
+      "p10ns11y/botify": 2,
+      "pacifico-1106/grokbot-control-plane": 1,
+      "palehonk0-o/grokbot-market-memory": 6,
+      "richard7463/askgrokwallet": 1,
+      "shrdgn/grokbot-skills": 74,
+      "steve228uk/grok-bot-shopping": 4,
+      "swcstudiospace/PumpGrok": 32,
+      "tal-giladi/grokbot-field-guide": 1,
+      "thomasbek3/hermes-bot-kit": 1,
+      "vercel/vercel-plugin": 41
+    },
+    "run_one_final_n": 1448,
+    "run_one_final_n_minus_excluded_repos": 763,
+    "strict_n_at_cap_2500": null,
+    "added_by_cap_3000": [],
+    "excluded_repo_reasons": {
+      "Anil-matcha/awesome-grok-bot": "setup_prompt_directory",
+      "aaron-he-zhu/aaron-marketing-skills": "claude_code_skill_library",
+      "elie222/botdirectory.ai": "setup_prompt_directory"
+    }
+  },
+  "corpus_full_robustness": {
+    "definition": "full (robustness only)",
+    "length_cap_words": 3000,
+    "final_n": 2282,
+    "per_repo_final_n": {
+      "AmitMirgal/orgbot-hub": 1,
+      "Anil-matcha/awesome-grok-bot": 183,
+      "Chakhdz/grok-bot-token-saver": 1,
+      "EndeavorYen/grok-bot-skills": 14,
+      "GlobalTC/steer": 3,
+      "HAEGONG/grok-bot-profiles": 12,
+      "HammeredSmithy/bull-trade": 28,
+      "Heyvhuang/werewolf-gamemaster": 1,
+      "Logos52/grok-bot-packets": 19,
+      "Octo-o-o-o/grok-job-kit": 10,
+      "OpulentiaAI/gtm-agent-automations": 262,
+      "PROJECT-073-X/grok-bot-workforce": 1,
+      "PramodDutta/botskills": 119,
+      "Steltic/steltic_grokbot": 1,
+      "Uncle-Gizmo/grok-bot-info": 1,
+      "WebDevJasonCameron/ExploreGrokBot": 5,
+      "YannisKiefer/grokbot-x": 10,
+      "ZeroPointRepo/GrokBotDev": 137,
+      "ZooHero500/plays": 110,
+      "a70win-wq/usegrokbot": 1,
+      "aaravarr/openbot": 3,
+      "aaron-he-zhu/aaron-marketing-skills": 113,
+      "andrewkittridge/grokory": 4,
+      "bcharleson/grokbot-peekaboo": 1,
+      "codejunkie99/rosterroom": 80,
+      "composio-community/awesome-grok-bots": 20,
+      "danielvegac/grok-bot-startup-services-outbound": 4,
+      "divo12/awesome-grok-bot-templates": 10,
+      "dragosroua/grok-bot-add-plugin": 6,
+      "elie222/botdirectory.ai": 390,
+      "ellelion/botteams": 70,
+      "ethanolivertroy/grokbot-cloudflare-inbox": 2,
+      "function1st/PhoneZero": 11,
+      "galleonlabs/hypergrok-trading-desk": 27,
+      "hariou/technocore-grokbot-ja": 1,
+      "jaredtrichard/grok-factory": 10,
+      "jaredtrichard/grok-research": 4,
+      "jaskirat1616/grok-skills": 186,
+      "jblack4vols/grok-bot": 2,
+      "jeremybrasher/grokbot-skills": 92,
+      "kunchenguid/grok-ship": 7,
+      "kwakseongjae/awesome-grok-bot": 3,
+      "kydlikebtc/awesome-grokbot": 2,
+      "lazerusrm/botrouter": 1,
+      "mKay00/grok-bot-second-brain": 11,
+      "mahathir69/technocore-safe": 3,
+      "maplefukku/grok-bot-ops": 1,
+      "matteoantoci/firstmate": 2,
+      "mergisi/awesome-grokbot": 113,
+      "mozilla/diversity": 10,
+      "mtrxdev/build-brief": 3,
+      "napiermd/heavy-lift-cloud-agents": 1,
+      "noam99moyal-sudo/podcast-summary-bot": 1,
+      "novusordos666/grokbot-outreach-agent-team": 6,
+      "p10ns11y/botify": 2,
+      "pacifico-1106/grokbot-control-plane": 1,
+      "palehonk0-o/grokbot-market-memory": 6,
+      "richard7463/askgrokwallet": 1,
+      "shrdgn/grokbot-skills": 74,
+      "steve228uk/grok-bot-shopping": 4,
+      "swcstudiospace/PumpGrok": 32,
+      "tal-giladi/grokbot-field-guide": 1,
+      "thomasbek3/hermes-bot-kit": 1,
+      "vercel/vercel-plugin": 41
+    }
+  },
+  "rules": {
+    "R1_approval_gate": {
+      "publication_row": 4,
+      "publication_row_meaning": "row 4: fails everything: sample only, n = 60, with interval",
+      "gate_a_three_way": 0.5666666666666667,
+      "gate_b_binary_true": 0.8166666666666667,
+      "agreement": 0.5666666666666667,
+      "precision_on_true": 0.88,
+      "recall_on_true": 0.7333333333333333,
+      "stage_a_strict_counts": {
+        "true": 724,
+        "false": 658,
+        "unclear": 214,
+        "denominator": 1596
+      },
+      "stage_a_full_counts_robustness": {
+        "true": 1003,
+        "false": 847,
+        "unclear": 432,
+        "denominator": 2282
+      },
+      "hand_label_sample_counts": {
+        "true": 30,
+        "false": 3,
+        "unclear": 27,
+        "n": 60
+      },
+      "true": 30,
+      "false": 3,
+      "unclear": 27,
+      "denominator": 60,
+      "basis": "sample",
+      "rate_reported": 0.5,
+      "ci95": [
+        0.37734812427246284,
+        0.6226518757275372
+      ],
+      "rate_definition": "share of denominator labelled true",
+      "site_label": "require a human yes before an irreversible action"
+    },
+    "R2_state_file": {
+      "publication_row": 4,
+      "publication_row_meaning": "row 4: fails everything: sample only, n = 60, with interval",
+      "gate_a_three_way": 0.6333333333333333,
+      "gate_b_binary_true": 0.7333333333333333,
+      "agreement": 0.6333333333333333,
+      "precision_on_true": 0.7857142857142857,
+      "recall_on_true": 0.4583333333333333,
+      "stage_a_strict_counts": {
+        "true": 433,
+        "false": 413,
+        "unclear": 750,
+        "denominator": 1596
+      },
+      "stage_a_full_counts_robustness": {
+        "true": 554,
+        "false": 607,
+        "unclear": 1121,
+        "denominator": 2282
+      },
+      "hand_label_sample_counts": {
+        "true": 24,
+        "false": 2,
+        "unclear": 34,
+        "n": 60
+      },
+      "true": 24,
+      "false": 2,
+      "unclear": 34,
+      "denominator": 60,
+      "basis": "sample",
+      "rate_reported": 0.4,
+      "ci95": [
+        0.28569303003765506,
+        0.5263417560579315
+      ],
+      "rate_definition": "share of denominator labelled true",
+      "site_label": "keep a state file across runs"
+    },
+    "R3_silence_rule": {
+      "publication_row": 2,
+      "publication_row_meaning": "row 2: fails gate A, clears gate B (binary true vs not-true >= 0.85): corpus-wide TRUE count publishable as a plain count with denominator; the false/unclear split is not",
+      "gate_a_three_way": 0.8333333333333334,
+      "gate_b_binary_true": 0.95,
+      "agreement": 0.8333333333333334,
+      "precision_on_true": 0.9230769230769231,
+      "recall_on_true": 0.8571428571428571,
+      "stage_a_strict_counts": {
+        "true": 378,
+        "false": 449,
+        "unclear": 769,
+        "denominator": 1596
+      },
+      "stage_a_full_counts_robustness": {
+        "true": 398,
+        "false": 682,
+        "unclear": 1202,
+        "denominator": 2282
+      },
+      "hand_label_sample_counts": {
+        "true": 14,
+        "false": 8,
+        "unclear": 38,
+        "n": 60
+      },
+      "true": 378,
+      "false": null,
+      "unclear": null,
+      "denominator": 1596,
+      "basis": "corpus true count only",
+      "rate_reported": 0.23684210526315788,
+      "ci95": [
+        0.21663131256960477,
+        0.2583167072843607
+      ],
+      "rate_definition": "share of denominator labelled true",
+      "site_label": "allow an empty run to send nothing"
+    },
+    "R4_ownership_boundary": {
+      "publication_row": 4,
+      "publication_row_meaning": "row 4: fails everything: sample only, n = 60, with interval",
+      "gate_a_three_way": 0.7666666666666667,
+      "gate_b_binary_true": 0.7666666666666667,
+      "agreement": 0.7666666666666667,
+      "precision_on_true": 0.7959183673469388,
+      "recall_on_true": 0.9069767441860465,
+      "stage_a_strict_counts": {
+        "true": 1305,
+        "false": 291,
+        "unclear": 0,
+        "denominator": 1596
+      },
+      "stage_a_full_counts_robustness": {
+        "true": 1526,
+        "false": 756,
+        "unclear": 0,
+        "denominator": 2282
+      },
+      "hand_label_sample_counts": {
+        "true": 43,
+        "false": 17,
+        "unclear": 0,
+        "n": 60
+      },
+      "true": 43,
+      "false": 17,
+      "unclear": 0,
+      "denominator": 60,
+      "basis": "sample",
+      "rate_reported": 0.7166666666666667,
+      "ci95": [
+        0.5923247495026482,
+        0.8149332139569141
+      ],
+      "rate_definition": "share of denominator labelled true",
+      "site_label": "state what the bot does not touch"
+    },
+    "R5_stop_condition": {
+      "publication_row": 4,
+      "publication_row_meaning": "row 4: fails everything: sample only, n = 60, with interval",
+      "gate_a_three_way": 0.8166666666666667,
+      "gate_b_binary_true": 0.8166666666666667,
+      "agreement": 0.8166666666666667,
+      "precision_on_true": 0.9318181818181818,
+      "recall_on_true": 0.8367346938775511,
+      "stage_a_strict_counts": {
+        "true": 1147,
+        "false": 449,
+        "unclear": 0,
+        "denominator": 1596
+      },
+      "stage_a_full_counts_robustness": {
+        "true": 1819,
+        "false": 463,
+        "unclear": 0,
+        "denominator": 2282
+      },
+      "hand_label_sample_counts": {
+        "true": 49,
+        "false": 11,
+        "unclear": 0,
+        "n": 60
+      },
+      "true": 49,
+      "false": 11,
+      "unclear": 0,
+      "denominator": 60,
+      "basis": "sample",
+      "rate_reported": 0.8166666666666667,
+      "ci95": [
+        0.7008000677353371,
+        0.8944231096286387
+      ],
+      "rate_definition": "share of denominator labelled true",
+      "site_label": "define when the run is finished"
+    },
+    "R6_undisclosed_capability": {
+      "publication_row": 4,
+      "publication_row_meaning": "row 4: fails everything: sample only, n = 60, with interval",
+      "gate_a_three_way": 0.5166666666666667,
+      "gate_b_binary_true": 0.5166666666666667,
+      "agreement": 0.5166666666666667,
+      "precision_on_true": 0.32558139534883723,
+      "recall_on_true": 1.0,
+      "stage_a_strict_counts": {
+        "true": 1018,
+        "false": 578,
+        "unclear": 0,
+        "denominator": 1596
+      },
+      "stage_a_full_counts_robustness": {
+        "true": 1234,
+        "false": 1048,
+        "unclear": 0,
+        "denominator": 2282
+      },
+      "hand_label_sample_counts": {
+        "true": 14,
+        "false": 46,
+        "unclear": 0,
+        "n": 60
+      },
+      "true": 14,
+      "false": 46,
+      "unclear": 0,
+      "denominator": 60,
+      "basis": "sample",
+      "rate_reported": 0.23333333333333334,
+      "ci95": [
+        0.1443943161843107,
+        0.3543651134039202
+      ],
+      "rate_definition": "share of denominator labelled true",
+      "site_label": "name every tool the bot uses in its role statement"
+    },
+    "R7_visible_secret": {
+      "publication_row": 1,
+      "publication_row_meaning": "row 1: clears gate A (three-way agreement >= 0.85): corpus-wide true/false/unclear counts publishable as stated",
+      "gate_a_three_way": 1.0,
+      "gate_b_binary_true": 1.0,
+      "agreement": 1.0,
+      "precision_on_true": null,
+      "recall_on_true": null,
+      "stage_a_strict_counts": {
+        "true": 0,
+        "false": 1596,
+        "unclear": 0,
+        "denominator": 1596
+      },
+      "stage_a_full_counts_robustness": {
+        "true": 0,
+        "false": 2282,
+        "unclear": 0,
+        "denominator": 2282
+      },
+      "hand_label_sample_counts": {
+        "true": 0,
+        "false": 60,
+        "unclear": 0,
+        "n": 60
+      },
+      "true": 0,
+      "false": 1596,
+      "unclear": 0,
+      "denominator": 1596,
+      "basis": "corpus",
+      "rate_reported": 0.0,
+      "ci95": [
+        0.0,
+        0.00240123772253453
+      ],
+      "rate_definition": "share of denominator labelled true",
+      "site_label": "carry no secret shape in the text"
+    },
+    "R8_injection_resistance": {
+      "publication_row": 1,
+      "publication_row_meaning": "row 1: clears gate A (three-way agreement >= 0.85): corpus-wide true/false/unclear counts publishable as stated",
+      "gate_a_three_way": 0.9166666666666666,
+      "gate_b_binary_true": 0.9166666666666666,
+      "agreement": 0.9166666666666666,
+      "precision_on_true": 0.7857142857142857,
+      "recall_on_true": 0.8461538461538461,
+      "stage_a_strict_counts": {
+        "true": 294,
+        "false": 0,
+        "unclear": 1302,
+        "denominator": 1596
+      },
+      "stage_a_full_counts_robustness": {
+        "true": 381,
+        "false": 0,
+        "unclear": 1901,
+        "denominator": 2282
+      },
+      "hand_label_sample_counts": {
+        "true": 13,
+        "false": 0,
+        "unclear": 47,
+        "n": 60
+      },
+      "true": 294,
+      "false": 0,
+      "unclear": 1302,
+      "denominator": 1596,
+      "basis": "corpus",
+      "rate_reported": 0.8157894736842105,
+      "ci95": [
+        0.796019985647212,
+        0.8340423905280293
+      ],
+      "rate_definition": "share of denominator silent on injection (unclear)",
+      "site_label": "say nothing about whether content the bot reads can give it orders"
+    }
+  },
+  "derived": {
+    "consequential_capability_present": 33,
+    "consequential_ungated": 3,
+    "consequential_ungated_share": 0.09090909090909091,
+    "basis": "sample",
+    "publication_row": 4,
+    "ci95_share": [
+      0.03140337104926305,
+      0.23572943534351032
+    ],
+    "denominator_definition": "sampled charters (n=60) hand-labelled as containing at least one live consequential action",
+    "stage_a_strict_variant": {
+      "consequential_capability_present": 1382,
+      "consequential_ungated": 658,
+      "share": 0.4761215629522431,
+      "publishable": false
+    },
+    "hand_label_sample_variant": {
+      "consequential_capability_present": 33,
+      "consequential_ungated": 3,
+      "share": 0.09090909090909091,
+      "n": 60,
+      "ci95_share": [
+        0.03140337104926305,
+        0.23572943534351032
+      ]
+    },
+    "family_mentions_strict_stage_a": {
+      "SEND": 950,
+      "PUBLISH": 987,
+      "PAY": 639,
+      "DELETE": 431,
+      "SIGN": 104,
+      "TRADE": 636
+    }
+  },
+  "cross_tabs": {
+    "core_rules": [
+      "R1_approval_gate",
+      "R2_state_file",
+      "R4_ownership_boundary",
+      "R5_stop_condition"
+    ],
+    "core_rule_publication_rows": {
+      "R1_approval_gate": 4,
+      "R2_state_file": 4,
+      "R4_ownership_boundary": 4,
+      "R5_stop_condition": 4
+    },
+    "core_histogram_publishable_corpus_wide": false,
+    "scheduled_without_state_file": 413,
+    "scheduled_without_silence_rule": 449,
+    "denominator_scheduled": 762,
+    "zero_of_four_core_rules": 123,
+    "four_of_four_core_rules": 294,
+    "denominator_all": 1596,
+    "basis": "corpus (Stage A); publishable only where the contributing rules sit in row 1",
+    "sample_variant": {
+      "scheduled_without_state_file": 2,
+      "denominator_scheduled_for_state_file": 26,
+      "scheduled_without_silence_rule": 8,
+      "denominator_scheduled_for_silence_rule": 22,
+      "zero_of_four_core_rules": 4,
+      "four_of_four_core_rules": 15,
+      "n": 60
+    }
+  },
+  "distribution": {
+    "core_rules_met_histogram": {
+      "0": 123,
+      "1": 334,
+      "2": 436,
+      "3": 409,
+      "4": 294
+    },
+    "basis": "strict corpus (Stage A)",
+    "denominator": 1596,
+    "sample_variant_histogram": {
+      "0": 4,
+      "1": 11,
+      "2": 15,
+      "3": 15,
+      "4": 15
+    },
+    "sample_n": 60,
+    "full_corpus_histogram_robustness": {
+      "0": 126,
+      "1": 620,
+      "2": 664,
+      "3": 534,
+      "4": 338
+    },
+    "full_denominator": 2282
+  },
+  "cohort": {
+    "core_rules": [
+      "R1_approval_gate",
+      "R2_state_file",
+      "R4_ownership_boundary",
+      "R5_stop_condition"
+    ],
+    "basis": "Stage A over the strict corpus",
+    "cohort_size": 294,
+    "denominator": 1596,
+    "cohort_share": 0.18421052631578946,
+    "repo_distribution": {
+      "OpulentiaAI/gtm-agent-automations": 234,
+      "composio-community/awesome-grok-bots": 9,
+      "ZeroPointRepo/GrokBotDev": 8,
+      "HammeredSmithy/bull-trade": 4,
+      "PramodDutta/botskills": 4,
+      "codejunkie99/rosterroom": 4,
+      "jaskirat1616/grok-skills": 4,
+      "jeremybrasher/grokbot-skills": 4,
+      "shrdgn/grokbot-skills": 4,
+      "EndeavorYen/grok-bot-skills": 3,
+      "divo12/awesome-grok-bot-templates": 2,
+      "mahathir69/technocore-safe": 2,
+      "vercel/vercel-plugin": 2,
+      "andrewkittridge/grokory": 1,
+      "ellelion/botteams": 1,
+      "galleonlabs/hypergrok-trading-desk": 1,
+      "hariou/technocore-grokbot-ja": 1,
+      "jaredtrichard/grok-factory": 1,
+      "mKay00/grok-bot-second-brain": 1,
+      "matteoantoci/firstmate": 1,
+      "mergisi/awesome-grokbot": 1,
+      "novusordos666/grokbot-outreach-agent-team": 1,
+      "steve228uk/grok-bot-shopping": 1
+    },
+    "largest_repo": "OpulentiaAI/gtm-agent-automations",
+    "largest_repo_count": 234,
+    "largest_repo_share_of_cohort": 0.7959183673469388,
+    "largest_repo_share_of_corpus": 0.16416040100250626,
+    "per_rule_true_rate": {
+      "R1_approval_gate": {
+        "cohort": 1.0,
+        "rest": 0.3302611367127496,
+        "cohort_n": 294,
+        "rest_n": 1302
+      },
+      "R2_state_file": {
+        "cohort": 1.0,
+        "rest": 0.10675883256528418,
+        "cohort_n": 294,
+        "rest_n": 1302
+      },
+      "R3_silence_rule": {
+        "cohort": 0.8163265306122449,
+        "rest": 0.10599078341013825,
+        "cohort_n": 294,
+        "rest_n": 1302
+      },
+      "R4_ownership_boundary": {
+        "cohort": 1.0,
+        "rest": 0.7764976958525346,
+        "cohort_n": 294,
+        "rest_n": 1302
+      },
+      "R5_stop_condition": {
+        "cohort": 1.0,
+        "rest": 0.6551459293394777,
+        "cohort_n": 294,
+        "rest_n": 1302
+      },
+      "R6_undisclosed_capability": {
+        "cohort": 0.9285714285714286,
+        "rest": 0.5721966205837173,
+        "cohort_n": 294,
+        "rest_n": 1302
+      },
+      "R7_visible_secret": {
+        "cohort": 0.0,
+        "rest": 0.0,
+        "cohort_n": 294,
+        "rest_n": 1302
+      },
+      "R8_injection_resistance": {
+        "cohort": 0.7891156462585034,
+        "rest": 0.047619047619047616,
+        "cohort_n": 294,
+        "rest_n": 1302
+      }
+    },
+    "median_words_cohort": 350.5,
+    "median_words_rest": 273.5,
+    "core_rule_true_rate_overall": {
+      "R1_approval_gate": 0.45363408521303256,
+      "R2_state_file": 0.27130325814536344,
+      "R4_ownership_boundary": 0.8176691729323309,
+      "R5_stop_condition": 0.718671679197995
+    },
+    "binding_constraint": "R2_state_file",
+    "surface_forms": {
+      "R1_approval_gate": [
+        {
+          "form": "never execute it unless i type \"send\" (or the documented confirm word) in that moment",
+          "charters": 223
+        },
+        {
+          "form": "global approval gate human approval is required before sending, publishing, spending, deleting, contacting people, changing",
+          "charters": 4
+        },
+        {
+          "form": "never send messages or contact people without explicit approval",
+          "charters": 4
+        }
+      ],
+      "R2_state_file": [
+        {
+          "form": "if you already posted this run's output for the same trigger id, stop",
+          "charters": 223
+        },
+        {
+          "form": "do not post a second copy",
+          "charters": 223
+        },
+        {
+          "form": "do not reuse cached state from a prior run",
+          "charters": 223
+        }
+      ],
+      "R4_ownership_boundary": [
+        {
+          "form": "do not become inbox manager, calendar ea, or a general researcher unless this prompt says",
+          "charters": 223
+        },
+        {
+          "form": "never invent a record, quote, count, or urgency",
+          "charters": 223
+        },
+        {
+          "form": "stay inside this job",
+          "charters": 223
+        }
+      ],
+      "R5_stop_condition": [
+        {
+          "form": "draft any send, reply, calendar write, ticket, publish, charge, or merge",
+          "charters": 223
+        },
+        {
+          "form": "what good looks like",
+          "charters": 4
+        },
+        {
+          "form": "when the roster is real, reply only with",
+          "charters": 4
+        }
+      ]
+    },
+    "surface_forms_one_vote_per_repo": {
+      "R1_approval_gate": [
+        {
+          "form": "the closest supported thing is a routine that generates proposals for the user to approve",
+          "repos": 2,
+          "charters": 2
+        },
+        {
+          "form": "never execute it unless i type \"send\" (or the documented confirm word) in that moment",
+          "repos": 1,
+          "charters": 223
+        },
+        {
+          "form": "global approval gate human approval is required before sending, publishing, spending, deleting, contacting people, changing",
+          "repos": 1,
+          "charters": 4
+        },
+        {
+          "form": "never send messages or contact people without explicit approval",
+          "repos": 1,
+          "charters": 4
+        },
+        {
+          "form": "do not post until approve send",
+          "repos": 1,
+          "charters": 2
+        },
+        {
+          "form": "i approve the batch",
+          "repos": 1,
+          "charters": 2
+        },
+        {
+          "form": "0), no security label approve and merge when patch-and-minor policy major semver major bump (x",
+          "repos": 1,
+          "charters": 1
+        },
+        {
+          "form": "15-minute daily check read only, unless the user already typed approve send for a specific",
+          "repos": 1,
+          "charters": 1
+        },
+        {
+          "form": "9 (cve-2024-39338) flagged for human review",
+          "repos": 1,
+          "charters": 1
+        },
+        {
+          "form": "@desk lead to obtain user approval, then @execution trader a reject looks the same, with",
+          "repos": 1,
+          "charters": 1
+        }
+      ],
+      "R2_state_file": [
+        {
+          "form": "keep a log of runs under strategies/ /runs/",
+          "repos": 2,
+          "charters": 2
+        },
+        {
+          "form": "do not post a second copy",
+          "repos": 1,
+          "charters": 223
+        },
+        {
+          "form": "do not reuse cached state from a prior run",
+          "repos": 1,
+          "charters": 223
+        },
+        {
+          "form": "if you already posted this run's output for the same trigger id, stop",
+          "repos": 1,
+          "charters": 223
+        },
+        {
+          "form": "if you already posted this clock's board, stop",
+          "repos": 1,
+          "charters": 2
+        },
+        {
+          "form": "a file that grows every day stops being reread, and an unread memory file is",
+          "repos": 1,
+          "charters": 1
+        },
+        {
+          "form": "a project- or task-specific follow-up that belongs in the report or backlog, not the shared",
+          "repos": 1,
+          "charters": 1
+        },
+        {
+          "form": "a retrospective remains read-only unless the user or the surrounding workflow explicitly requests promotion to",
+          "repos": 1,
+          "charters": 1
+        },
+        {
+          "form": "a thin ledger is more useful than a repetitive one",
+          "repos": 1,
+          "charters": 1
+        },
+        {
+          "form": "account state comes from the shared state cache (webull-account",
+          "repos": 1,
+          "charters": 1
+        }
+      ],
+      "R4_ownership_boundary": [
+        {
+          "form": "be direct when an idea has no edge on the data available",
+          "repos": 2,
+          "charters": 2
+        },
+        {
+          "form": "the desk ships no strategies, makes no return claims, and you never place orders",
+          "repos": 2,
+          "charters": 2
+        },
+        {
+          "form": "do not become inbox manager, calendar ea, or a general researcher unless this prompt says",
+          "repos": 1,
+          "charters": 223
+        },
+        {
+          "form": "do not post a second copy",
+          "repos": 1,
+          "charters": 223
+        },
+        {
+          "form": "never invent a record, quote, count, or urgency",
+          "repos": 1,
+          "charters": 223
+        },
+        {
+          "form": "stay inside this job",
+          "repos": 1,
+          "charters": 223
+        },
+        {
+          "form": "this is not an official grok import file",
+          "repos": 1,
+          "charters": 9
+        },
+        {
+          "form": "do not email the customer",
+          "repos": 1,
+          "charters": 5
+        },
+        {
+          "form": "creation check if you cannot create teammates, say exactly",
+          "repos": 1,
+          "charters": 4
+        },
+        {
+          "form": "never change, delete, publish, file, deploy, or overwrite live records",
+          "repos": 1,
+          "charters": 4
+        }
+      ],
+      "R5_stop_condition": [
+        {
+          "form": "give me a good strategy",
+          "repos": 2,
+          "charters": 2
+        },
+        {
+          "form": "you produce the signal, the desk does the rest",
+          "repos": 2,
+          "charters": 2
+        },
+        {
+          "form": "you will not recommend a strategy unprompted",
+          "repos": 2,
+          "charters": 2
+        },
+        {
+          "form": "draft any send, reply, calendar write, ticket, publish, charge, or merge",
+          "repos": 1,
+          "charters": 223
+        },
+        {
+          "form": "operating contract the lead owns prioritization, delegation, quality control, and the final packet",
+          "repos": 1,
+          "charters": 4
+        },
+        {
+          "form": "specialists work only inside their stated ownership and return drafts to the lead",
+          "repos": 1,
+          "charters": 4
+        },
+        {
+          "form": "stop after that sentence",
+          "repos": 1,
+          "charters": 4
+        },
+        {
+          "form": "what good looks like",
+          "repos": 1,
+          "charters": 4
+        },
+        {
+          "form": "when the roster is real, reply only with",
+          "repos": 1,
+          "charters": 4
+        },
+        {
+          "form": "write the notion memo",
+          "repos": 1,
+          "charters": 2
+        }
+      ]
+    },
+    "surface_forms_excluding_largest_repo": {
+      "R1_approval_gate": [
+        {
+          "form": "global approval gate human approval is required before sending, publishing, spending, deleting, contacting people, changing",
+          "charters": 4
+        },
+        {
+          "form": "never send messages or contact people without explicit approval",
+          "charters": 4
+        },
+        {
+          "form": "the closest supported thing is a routine that generates proposals for the user to approve",
+          "charters": 2
+        },
+        {
+          "form": "do not post until approve send",
+          "charters": 2
+        },
+        {
+          "form": "complete when the skill file exists and matches the approved draft",
+          "charters": 1
+        },
+        {
+          "form": "generation, social scout, posting, skill write without approval, empty polling",
+          "charters": 1
+        },
+        {
+          "form": "archive keeper packages into github repo [owner/name] via cloudagent, and draft skills only after explicit",
+          "charters": 1
+        },
+        {
+          "form": "after explicit approval (yes / write it / equivalent in the operator's language), write the",
+          "charters": 1
+        },
+        {
+          "form": "source gate — inputs are real, fresh, deduped, on disk evidence gate — artifact exists",
+          "charters": 1
+        },
+        {
+          "form": "md (role titles, environment-local names) instantiate bots from templates (or @design-grok-bot) wire one proven task",
+          "charters": 1
+        }
+      ],
+      "R2_state_file": [
+        {
+          "form": "keep a log of runs under strategies/ /runs/",
+          "charters": 2
+        },
+        {
+          "form": "deduplicate by prompt hash/slug",
+          "charters": 1
+        },
+        {
+          "form": "check “already done” before retry so posts/prs stay unique",
+          "charters": 1
+        },
+        {
+          "form": "gate owns stops before source collect / dedupe inputs to disk producing final artifacts evidence",
+          "charters": 1
+        },
+        {
+          "form": "if the user is unsure, do not repeat the same question",
+          "charters": 1
+        },
+        {
+          "form": "md - how the team fits together, and why account reads go through a shared",
+          "charters": 1
+        },
+        {
+          "form": "you read equity, buying power, positions and open orders through the desk's shared state cache",
+          "charters": 1
+        },
+        {
+          "form": "account state comes from the shared state cache (webull-account",
+          "charters": 1
+        },
+        {
+          "form": "if there were no external calls since the last run, say \"no calls to follow",
+          "charters": 1
+        },
+        {
+          "form": "scan the inbox for messages received since your last run",
+          "charters": 1
+        }
+      ],
+      "R4_ownership_boundary": [
+        {
+          "form": "this is not an official grok import file",
+          "charters": 9
+        },
+        {
+          "form": "creation check if you cannot create teammates, say exactly",
+          "charters": 4
+        },
+        {
+          "form": "never change, delete, publish, file, deploy, or overwrite live records",
+          "charters": 4
+        },
+        {
+          "form": "never send messages or contact people without explicit approval",
+          "charters": 4
+        },
+        {
+          "form": "never claim an action, connection, file, teammate, or result exists unless it was verified",
+          "charters": 4
+        },
+        {
+          "form": "specialists work only inside their stated ownership and return drafts to the lead",
+          "charters": 4
+        },
+        {
+          "form": "never spend money, make purchases, or accept terms",
+          "charters": 4
+        },
+        {
+          "form": "be direct when an idea has no edge on the data available",
+          "charters": 2
+        },
+        {
+          "form": "the desk ships no strategies, makes no return claims, and you never place orders",
+          "charters": 2
+        },
+        {
+          "form": "never move money, transfer funds, or change custody instructions",
+          "charters": 2
+        }
+      ],
+      "R5_stop_condition": [
+        {
+          "form": "what good looks like",
+          "charters": 4
+        },
+        {
+          "form": "when the roster is real, reply only with",
+          "charters": 4
+        },
+        {
+          "form": "stop after that sentence",
+          "charters": 4
+        },
+        {
+          "form": "operating contract the lead owns prioritization, delegation, quality control, and the final packet",
+          "charters": 4
+        },
+        {
+          "form": "specialists work only inside their stated ownership and return drafts to the lead",
+          "charters": 4
+        },
+        {
+          "form": "you will not recommend a strategy unprompted",
+          "charters": 2
+        },
+        {
+          "form": "you produce the signal, the desk does the rest",
+          "charters": 2
+        },
+        {
+          "form": "give me a good strategy",
+          "charters": 2
+        },
+        {
+          "form": "complete when both the report and the card update exist",
+          "charters": 1
+        },
+        {
+          "form": "complete when the pr url exists",
+          "charters": 1
+        }
+      ]
+    },
+    "surface_forms_excluding_largest_repo_n": 60,
+    "surface_forms_note": "surface_forms counts charters (plan 1.8, top 3); surface_forms_one_vote_per_repo ranks by distinct repositories using the form (top 10), added because the charter count is dominated by one template family",
+    "hand_label_sample": {
+      "four_of_four": 15,
+      "n": 60,
+      "share": 0.25
+    }
+  },
+  "density": {
+    "denominator": 1596,
+    "thresholds": {
+      "0.8": {
+        "clusters": 0,
+        "charters_covered": 0,
+        "largest_cluster_size": 0
+      },
+      "0.65": {
+        "clusters": 18,
+        "charters_covered": 56,
+        "largest_cluster_size": 7,
+        "largest_family_shared_block_words": 185,
+        "largest_family_repos": 1
+      },
+      "0.5": {
+        "clusters": 12,
+        "charters_covered": 363,
+        "largest_cluster_size": 205,
+        "largest_family_shared_block_words": 146,
+        "largest_family_repos": 1
+      }
+    },
+    "share_in_any_cluster_at_0_50": 0.2274436090225564
+  },
+  "extras": {
+    "dual_gate_table": {
+      "R1_approval_gate": {
+        "gate_a": 0.5666666666666667,
+        "gate_b": 0.8166666666666667,
+        "precision_on_true": 0.88,
+        "recall_on_true": 0.7333333333333333,
+        "row": 4
+      },
+      "R2_state_file": {
+        "gate_a": 0.6333333333333333,
+        "gate_b": 0.7333333333333333,
+        "precision_on_true": 0.7857142857142857,
+        "recall_on_true": 0.4583333333333333,
+        "row": 4
+      },
+      "R3_silence_rule": {
+        "gate_a": 0.8333333333333334,
+        "gate_b": 0.95,
+        "precision_on_true": 0.9230769230769231,
+        "recall_on_true": 0.8571428571428571,
+        "row": 2
+      },
+      "R4_ownership_boundary": {
+        "gate_a": 0.7666666666666667,
+        "gate_b": 0.7666666666666667,
+        "precision_on_true": 0.7959183673469388,
+        "recall_on_true": 0.9069767441860465,
+        "row": 4
+      },
+      "R5_stop_condition": {
+        "gate_a": 0.8166666666666667,
+        "gate_b": 0.8166666666666667,
+        "precision_on_true": 0.9318181818181818,
+        "recall_on_true": 0.8367346938775511,
+        "row": 4
+      },
+      "R6_undisclosed_capability": {
+        "gate_a": 0.5166666666666667,
+        "gate_b": 0.5166666666666667,
+        "precision_on_true": 0.32558139534883723,
+        "recall_on_true": 1.0,
+        "row": 4
+      },
+      "R7_visible_secret": {
+        "gate_a": 1.0,
+        "gate_b": 1.0,
+        "precision_on_true": null,
+        "recall_on_true": null,
+        "row": 1
+      },
+      "R8_injection_resistance": {
+        "gate_a": 0.9166666666666666,
+        "gate_b": 0.9166666666666666,
+        "precision_on_true": 0.7857142857142857,
+        "recall_on_true": 0.8461538461538461,
+        "row": 1
+      }
+    },
+    "run_one_agreement": {
+      "R1_approval_gate": 0.7,
+      "R2_state_file": 0.6833333333333333,
+      "R3_silence_rule": 0.7833333333333333,
+      "R4_ownership_boundary": 0.9,
+      "R5_stop_condition": 0.5,
+      "R6_undisclosed_capability": 0.7333333333333333,
+      "R7_visible_secret": 1.0,
+      "R8_injection_resistance": 0.9833333333333333
+    },
+    "sample_design": {
+      "sample_size": 60,
+      "seed": 20260904,
+      "cap_per_repo": 12,
+      "stratification": "by repo, max 20 percent from any single repo",
+      "allocation": {
+        "EndeavorYen/grok-bot-skills": 1,
+        "HAEGONG/grok-bot-profiles": 1,
+        "HammeredSmithy/bull-trade": 1,
+        "Logos52/grok-bot-packets": 1,
+        "Octo-o-o-o/grok-job-kit": 1,
+        "OpulentiaAI/gtm-agent-automations": 10,
+        "PramodDutta/botskills": 5,
+        "ZeroPointRepo/GrokBotDev": 5,
+        "ZooHero500/plays": 4,
+        "codejunkie99/rosterroom": 3,
+        "composio-community/awesome-grok-bots": 1,
+        "ellelion/botteams": 3,
+        "function1st/PhoneZero": 1,
+        "galleonlabs/hypergrok-trading-desk": 1,
+        "jaskirat1616/grok-skills": 7,
+        "jeremybrasher/grokbot-skills": 4,
+        "mKay00/grok-bot-second-brain": 1,
+        "mergisi/awesome-grokbot": 4,
+        "shrdgn/grokbot-skills": 3,
+        "swcstudiospace/PumpGrok": 1,
+        "vercel/vercel-plugin": 2
+      }
+    },
+    "carryovers_from_run_one_sample": 0,
+    "fresh_labels": 60,
+    "r5_agreement_fresh_only": {
+      "agreement": 0.8166666666666667,
+      "n": 60
+    },
+    "r5_extension_pattern": "\\b(show me (every|the|all|a|an|each|which|what|who|my|its|your|proposed|before)|give me (a|an|the|one|two|three|every|each)|prepare (the|a|an|one|targeted|every|each)|prepares (the|a|an|one)|drafts? (a|an|the|one|every|each|any|replies|reply|follow-ups|follow ups|notes|posts|copy|slots|stacked|outreach|channel-native|platform-specific|the welcome|it|them|for)|hold (it|them|everything|all|each|every|the|any|the purchase|the order|drafts?|calendar drafts)[a-z ,'-]{0,40}(for|until) (my|your|human|explicit|i |the owner)|one-pagers?|report back|what good looks like|build (a|an|the|one) [a-z -]{0,20}(deck|digest|brief|report|summary|list|plan|packet|note|page|matrix|runbook)|post (the|a|an|one) [a-z ]{0,20}(result|results|memo|scoreboard|digest|summary|list|report|link|brief|readout)|(write|writes) (a|an|the|one) [a-z -]{0,20}(digest|brief|note|report|summary|memo|list|plan|changelog|scorecard|readout|packet|one-pager)|update (only )?the [a-z '\\\"-]{0,30}(slide|sheet|row|record|note|doc|page|tab|entry)|summari[sz]e (the|what|each|every|it|them|themes)|recommend (one|a|an|the|which)|send me (a|an|one|the|every|each)|turn (it|this|that|them|each) into (a|an|one|the)|rank (them|each|by)|prep (for|one-pagers|a|an|the)|then save (it|this|the bot|it for)|dry run|supervised (first )?(pass|run|trial|plan|session)|with me watching|(compare|cluster|list|score|extract|classify|match) [a-z ,'-]{0,40}(and|then) (give|show|write|draft|produce|return|report|deliver|post|send) (me |it |them )?(a|an|the|one|back)|stop if|stop as|stop when|stop once|stop after)\\b",
+    "r7": {
+      "strict_true": 0,
+      "denominator": 1596,
+      "raw_shape_hits_before_placeholder_filter": {},
+      "placeholder_filtered": {}
+    },
+    "r8": {
+      "silent_strict": 1302,
+      "resistant_strict": 294,
+      "exposed_strict_detector_floor": 0,
+      "exposed_hand_sample": 0,
+      "denominator": 1596,
+      "n": 60
+    },
+    "unclear_share_stage_a_strict": {
+      "R1": 0.13408521303258145,
+      "R2": 0.4699248120300752,
+      "R3": 0.4818295739348371,
+      "R4": 0.0,
+      "R5": 0.0,
+      "R6": 0.0,
+      "R7": 0.0,
+      "R8": 0.8157894736842105
+    },
+    "schedule": {
+      "time": 640,
+      "event": 122,
+      "none": 834,
+      "denominator": 1596
+    },
+    "split_rule_distribution": {
+      "1": 505,
+      "2": 107,
+      "3": 560,
+      "5": 8,
+      "6": 442
+    },
+    "expansion": {
+      "discovery_root_unique_repo_links": 269,
+      "harvested": 253,
+      "harvest_fetched": 74,
+      "harvest_excluded": 171,
+      "harvest_failed": 8,
+      "harvest_decisions": {
+        "fetch": 74,
+        "excluded:mcp_connector_plugin": 88,
+        "excluded:code_tool": 58,
+        "excluded:archived": 3,
+        "excluded:installer_router_account": 8,
+        "excluded:bridge": 8,
+        "failed:not_found": 8,
+        "excluded:link_directory": 4,
+        "excluded:docs_coverage": 2
+      },
+      "stage2_harvest_decisions": {
+        "fetch": 257,
+        "excluded:mcp_connector_plugin": 42,
+        "excluded:code_tool": 21,
+        "excluded:docs_coverage": 8,
+        "failed:fetch": 7,
+        "excluded:installer_router_account": 3,
+        "excluded:bridge": 2,
+        "failed:resolve": 1,
+        "excluded:not_grok_bot": 180
+      },
+      "repos_read": 89,
+      "api_calls": 774,
+      "api_rate_limit_remaining_at_end": 4224,
+      "strict_exclusion_rule": "repositories where at least half of the accepted charters are setup prompts, or Claude Code SKILL.md files, are dropped; run-two exclusions kept",
+      "stage2_repos_fetched": 0
+    },
+    "sampling_frame": "curated lists",
+    "stage2_queries": {
+      "frame": "code search",
+      "pages_per_query": 3,
+      "per_page": 100,
+      "queries": [
+        {
+          "q": "\"grok bot\" \"you are\" extension:md",
+          "pages": 3,
+          "total_count": 798,
+          "items": 300,
+          "errors": [],
+          "repos_seen": 117,
+          "repos_added": 98
+        },
+        {
+          "q": "\"grok bot\" \"your job\" extension:md",
+          "pages": 2,
+          "total_count": 101,
+          "items": 103,
+          "errors": [],
+          "repos_seen": 58,
+          "repos_added": 31
+        },
+        {
+          "q": "\"grok bot\" \"rename yourself\" extension:md",
+          "pages": 1,
+          "total_count": 1,
+          "items": 1,
+          "errors": [],
+          "repos_seen": 1,
+          "repos_added": 0
+        },
+        {
+          "q": "\"grok bot\" \"every weekday\" extension:md",
+          "pages": 1,
+          "total_count": 20,
+          "items": 20,
+          "errors": [],
+          "repos_seen": 19,
+          "repos_added": 10
+        },
+        {
+          "q": "\"grok bot\" \"every morning\" extension:md",
+          "pages": 1,
+          "total_count": 52,
+          "items": 52,
+          "errors": [],
+          "repos_seen": 31,
+          "repos_added": 13
+        },
+        {
+          "q": "\"grok bot\" \"never send\" extension:md",
+          "pages": 2,
+          "total_count": 131,
+          "items": 131,
+          "errors": [],
+          "repos_seen": 81,
+          "repos_added": 39
+        },
+        {
+          "q": "\"grok bot\" \"without my approval\" extension:md",
+          "pages": 1,
+          "total_count": 5,
+          "items": 0,
+          "errors": [
+            "page 1: HTTP 403"
+          ],
+          "repos_seen": 0,
+          "repos_added": 0
+        },
+        {
+          "q": "\"grok bot\" \"stay silent\" extension:md",
+          "pages": 1,
+          "total_count": 30,
+          "items": 30,
+          "errors": [],
+          "repos_seen": 20,
+          "repos_added": 9
+        },
+        {
+          "q": "\"grok bot\" \"state file\" extension:md",
+          "pages": 1,
+          "total_count": 43,
+          "items": 43,
+          "errors": [],
+          "repos_seen": 35,
+          "repos_added": 20
+        },
+        {
+          "q": "\"grok bot\" \"definition of done\" extension:md",
+          "pages": 1,
+          "total_count": 54,
+          "items": 54,
+          "errors": [],
+          "repos_seen": 40,
+          "repos_added": 25
+        },
+        {
+          "q": "\"grok bot\" roster \"you own\" extension:md",
+          "pages": 1,
+          "total_count": 19,
+          "items": 19,
+          "errors": [],
+          "repos_seen": 18,
+          "repos_added": 7
+        },
+        {
+          "q": "\"grok bot\" filename:SKILL.md",
+          "pages": 3,
+          "total_count": 521,
+          "items": 300,
+          "errors": [],
+          "repos_seen": 137,
+          "repos_added": 76
+        },
+        {
+          "q": "\"grokbot\" \"you are\" \"approval\" extension:md",
+          "pages": 1,
+          "total_count": 50,
+          "items": 50,
+          "errors": [],
+          "repos_seen": 34,
+          "repos_added": 13
+        },
+        {
+          "q": "\"agent roster\" \"you are\" \"never\" extension:md",
+          "pages": 2,
+          "total_count": 4192,
+          "items": 200,
+          "errors": [
+            "page 2: HTTP 403"
+          ],
+          "repos_seen": 181,
+          "repos_added": 180
+        }
+      ],
+      "api_calls": 23,
+      "started": "2026-09-05T00:43:33Z",
+      "repos_found": 567,
+      "repos_added_to_harvest": 521,
+      "finished": "2026-09-05T00:47:28Z"
+    },
+    "side_by_side_with_run_two": {
+      "final_n": {
+        "run_two": 765,
+        "run_three": 1596
+      },
+      "repos_in_strict_corpus": {
+        "run_two": 12,
+        "run_three": 86
+      },
+      "rules": {
+        "R1_approval_gate": {
+          "run_two": {
+            "row": 4,
+            "true": 541,
+            "denominator": 765,
+            "gate_a": 0.7666666666666667
+          },
+          "run_three": {
+            "row": 4,
+            "true": 724,
+            "denominator": 1596,
+            "gate_a": 0.5666666666666667
+          }
+        },
+        "R2_state_file": {
+          "run_two": {
+            "row": 4,
+            "true": 291,
+            "denominator": 765,
+            "gate_a": 0.65
+          },
+          "run_three": {
+            "row": 4,
+            "true": 433,
+            "denominator": 1596,
+            "gate_a": 0.6333333333333333
+          }
+        },
+        "R3_silence_rule": {
+          "run_two": {
+            "row": 1,
+            "true": 267,
+            "denominator": 765,
+            "gate_a": 0.8833333333333333
+          },
+          "run_three": {
+            "row": 2,
+            "true": 378,
+            "denominator": 1596,
+            "gate_a": 0.8333333333333334
+          }
+        },
+        "R4_ownership_boundary": {
+          "run_two": {
+            "row": 1,
+            "true": 645,
+            "denominator": 765,
+            "gate_a": 0.9
+          },
+          "run_three": {
+            "row": 4,
+            "true": 1305,
+            "denominator": 1596,
+            "gate_a": 0.7666666666666667
+          }
+        },
+        "R5_stop_condition": {
+          "run_two": {
+            "row": 1,
+            "true": 673,
+            "denominator": 765,
+            "gate_a": 0.9166666666666666
+          },
+          "run_three": {
+            "row": 4,
+            "true": 1147,
+            "denominator": 1596,
+            "gate_a": 0.8166666666666667
+          }
+        },
+        "R6_undisclosed_capability": {
+          "run_two": {
+            "row": 4,
+            "true": 549,
+            "denominator": 765,
+            "gate_a": 0.65
+          },
+          "run_three": {
+            "row": 4,
+            "true": 1018,
+            "denominator": 1596,
+            "gate_a": 0.5166666666666667
+          }
+        },
+        "R7_visible_secret": {
+          "run_two": {
+            "row": 1,
+            "true": 0,
+            "denominator": 765,
+            "gate_a": 1.0
+          },
+          "run_three": {
+            "row": 1,
+            "true": 0,
+            "denominator": 1596,
+            "gate_a": 1.0
+          }
+        },
+        "R8_injection_resistance": {
+          "run_two": {
+            "row": 1,
+            "true": 228,
+            "denominator": 765,
+            "gate_a": 1.0
+          },
+          "run_three": {
+            "row": 1,
+            "true": 294,
+            "denominator": 1596,
+            "gate_a": 0.9166666666666666
+          }
+        }
+      },
+      "cohort_four_of_four": {
+        "run_two": 262,
+        "run_three": 294
+      },
+      "consequential_ungated_sample": {
+        "run_two": {
+          "consequential_capability_present": 51,
+          "consequential_ungated": 1,
+          "share": 0.0196078431372549,
+          "n": 60,
+          "ci95_share": [
+            0.003469603253442241,
+            0.10304807675589372
+          ]
+        },
+        "run_three": {
+          "consequential_capability_present": 33,
+          "consequential_ungated": 3,
+          "share": 0.09090909090909091,
+          "n": 60,
+          "ci95_share": [
+            0.03140337104926305,
+            0.23572943534351032
+          ]
+        }
+      },
+      "density_share_in_cluster_at_0_50": {
+        "run_two": 0.3869281045751634,
+        "run_three": 0.2274436090225564
+      }
+    }
+  }
+}

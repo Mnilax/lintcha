@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+node_modules/
+*.log
+work/
+work_v2/
+work_v3/
+out/
+out_v2/
+out_v3/
+audit/
+run3_harvest/
+*.jsonl
