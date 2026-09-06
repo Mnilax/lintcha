@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lintcha.com/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lintcha.com/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://lintcha.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://lintcha.com/pt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lintcha.com/"/>
+    <loc>/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/"/>
   </url>
   <url>
-    <loc>https://lintcha.com/es/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lintcha.com/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://lintcha.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://lintcha.com/pt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lintcha.com/"/>
+    <loc>/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/"/>
   </url>
   <url>
-    <loc>https://lintcha.com/pt/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lintcha.com/"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://lintcha.com/es/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://lintcha.com/pt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lintcha.com/"/>
+    <loc>/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/"/>
   </url>
   <url>
-    <loc>https://lintcha.com/method.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lintcha.com/method.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://lintcha.com/es/method.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://lintcha.com/pt/method.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lintcha.com/method.html"/>
+    <loc>/method</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/method"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/method"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/method"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/method"/>
   </url>
   <url>
-    <loc>https://lintcha.com/es/method.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lintcha.com/method.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://lintcha.com/es/method.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://lintcha.com/pt/method.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lintcha.com/method.html"/>
+    <loc>/es/method</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/method"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/method"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/method"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/method"/>
   </url>
   <url>
-    <loc>https://lintcha.com/pt/method.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://lintcha.com/method.html"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://lintcha.com/es/method.html"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://lintcha.com/pt/method.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://lintcha.com/method.html"/>
+    <loc>/pt/method</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/method"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/method"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/method"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/method"/>
   </url>
 </urlset>

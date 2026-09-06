@@ -6,111 +6,175 @@
   "corpus": {
     "definition": "strict",
     "excluded_repos": [
+      "AmitMirgal/orgbot-hub",
       "Anil-matcha/awesome-grok-bot",
+      "EndeavorYen/grok-bot-skills",
+      "KinGao294/grok-bot-orange-book",
+      "Logos52/grok-bot-packets",
+      "Steltic/steltic_grokbot",
+      "Uncle-Gizmo/grok-bot-info",
+      "a70win-wq/usegrokbot",
+      "aaravarr/openbot",
       "aaron-he-zhu/aaron-marketing-skills",
-      "elie222/botdirectory.ai"
+      "andrewkittridge/grokory",
+      "banana2556/cursor-grokbot-helper",
+      "bcharleson/grokbot-peekaboo",
+      "cs68614-hash/awesome-grokbot-templates",
+      "dadamingmax/Grok-Bot-Setup-and-Usage-Guide",
+      "ddhjy/grok-bot-hub",
+      "dragosroua/grok-bot-add-plugin",
+      "elie222/botdirectory.ai",
+      "enderzcx/grok-bot-switch",
+      "function1st/PhoneZero",
+      "hariou/technocore-grokbot-ja",
+      "hesreallyhim/awesome-claude-code",
+      "jaskirat1616/grok-skills",
+      "jblack4vols/grok-bot",
+      "jeremybrasher/grokbot-skills",
+      "jinank/great-grokbots",
+      "kwakseongjae/awesome-grok-bot",
+      "kydlikebtc/awesome-grokbot",
+      "lazerusrm/botrouter",
+      "lureilly1/botjobs",
+      "mKay00/grok-bot-second-brain",
+      "maplefukku/grok-bot-ops",
+      "matsutouya/note-kojo",
+      "mostdesign01-sudo/grokbot-use-cases",
+      "mozilla/diversity",
+      "napiermd/heavy-lift-cloud-agents",
+      "nescafe2009/dsh-grokbot",
+      "njpatel/omabot",
+      "owenisas/grokbot-openai",
+      "pacifico-1106/grokbot-control-plane",
+      "quolu/plaude",
+      "richard7463/askgrokwallet",
+      "rockyzhuo/grok-bot-blue-book",
+      "shrdgn/grokbot-skills",
+      "steve228uk/grok-bot-shopping",
+      "thomasbek3/hermes-bot-kit",
+      "tiankonglan/awesome-grok-bot-template",
+      "vercel/vercel-plugin",
+      "zhulin025/LaoA-GrokBot"
     ],
     "length_cap_words": 3000,
     "repos_fetched": 91,
     "repos_failed": 0,
-    "repos_in_strict_corpus": 86,
-    "files_scanned": 5546,
-    "files_excluded_by_path_class": 1150,
-    "charter_candidates": 4462,
+    "repos_in_strict_corpus": 40,
+    "files_scanned": 2228,
+    "files_excluded_by_path_class": 653,
+    "charter_candidates": 1634,
     "rejected": {
-      "too_short": 431,
-      "too_long": 85,
-      "not_instruction": 2295,
-      "not_english": 29
+      "too_short": 186,
+      "too_long": 4,
+      "not_instruction": 316,
+      "not_english": 16
     },
     "rejected_detail": {
-      "excluded_path_non_charter": 405,
-      "not_instruction:no_opener": 2074,
-      "too_short": 431,
-      "not_instruction:low_density": 202,
-      "excluded_path_repo_meta": 181,
-      "too_long": 85,
-      "not_english": 29,
-      "not_instruction:link_rows": 19,
+      "not_instruction:no_opener": 271,
+      "not_instruction:low_density": 43,
+      "excluded_path_repo_meta": 69,
+      "excluded_path_non_charter": 22,
+      "too_short": 186,
+      "too_long": 4,
       "excluded_class_link_directory_or_plugin": 475,
-      "excluded_path_site_source": 89
+      "excluded_path_site_source": 87,
+      "not_instruction:link_rows": 2,
+      "not_english": 16
     },
-    "accepted_before_dedup": 1622,
-    "exact_duplicates": 19,
-    "near_duplicate_clusters": 6,
-    "near_duplicates_removed": 7,
-    "final_n": 1596,
+    "accepted_before_dedup": 1112,
+    "exact_duplicates": 5,
+    "near_duplicate_clusters": 4,
+    "near_duplicates_removed": 5,
+    "final_n": 1102,
     "per_repo_final_n": {
-      "AmitMirgal/orgbot-hub": 1,
       "Chakhdz/grok-bot-token-saver": 1,
-      "EndeavorYen/grok-bot-skills": 14,
       "GlobalTC/steer": 3,
       "HAEGONG/grok-bot-profiles": 12,
       "HammeredSmithy/bull-trade": 28,
       "Heyvhuang/werewolf-gamemaster": 1,
-      "Logos52/grok-bot-packets": 19,
       "Octo-o-o-o/grok-job-kit": 10,
       "OpulentiaAI/gtm-agent-automations": 262,
       "PROJECT-073-X/grok-bot-workforce": 1,
       "PramodDutta/botskills": 119,
-      "Steltic/steltic_grokbot": 1,
-      "Uncle-Gizmo/grok-bot-info": 1,
       "WebDevJasonCameron/ExploreGrokBot": 5,
       "YannisKiefer/grokbot-x": 10,
       "ZeroPointRepo/GrokBotDev": 137,
       "ZooHero500/plays": 110,
-      "a70win-wq/usegrokbot": 1,
-      "aaravarr/openbot": 3,
-      "andrewkittridge/grokory": 4,
-      "bcharleson/grokbot-peekaboo": 1,
       "codejunkie99/rosterroom": 80,
       "composio-community/awesome-grok-bots": 20,
       "danielvegac/grok-bot-startup-services-outbound": 4,
       "divo12/awesome-grok-bot-templates": 10,
-      "dragosroua/grok-bot-add-plugin": 6,
       "ellelion/botteams": 70,
       "ethanolivertroy/grokbot-cloudflare-inbox": 2,
-      "function1st/PhoneZero": 11,
       "galleonlabs/hypergrok-trading-desk": 27,
-      "hariou/technocore-grokbot-ja": 1,
       "jaredtrichard/grok-factory": 10,
       "jaredtrichard/grok-research": 4,
-      "jaskirat1616/grok-skills": 186,
-      "jblack4vols/grok-bot": 2,
-      "jeremybrasher/grokbot-skills": 92,
       "kunchenguid/grok-ship": 7,
-      "kwakseongjae/awesome-grok-bot": 3,
-      "kydlikebtc/awesome-grokbot": 2,
-      "lazerusrm/botrouter": 1,
-      "mKay00/grok-bot-second-brain": 11,
       "mahathir69/technocore-safe": 3,
-      "maplefukku/grok-bot-ops": 1,
       "matteoantoci/firstmate": 2,
       "mergisi/awesome-grokbot": 113,
-      "mozilla/diversity": 10,
       "mtrxdev/build-brief": 3,
-      "napiermd/heavy-lift-cloud-agents": 1,
       "noam99moyal-sudo/podcast-summary-bot": 1,
       "novusordos666/grokbot-outreach-agent-team": 6,
       "p10ns11y/botify": 2,
-      "pacifico-1106/grokbot-control-plane": 1,
       "palehonk0-o/grokbot-market-memory": 6,
-      "richard7463/askgrokwallet": 1,
-      "shrdgn/grokbot-skills": 74,
-      "steve228uk/grok-bot-shopping": 4,
       "swcstudiospace/PumpGrok": 32,
-      "tal-giladi/grokbot-field-guide": 1,
-      "thomasbek3/hermes-bot-kit": 1,
-      "vercel/vercel-plugin": 41
+      "tal-giladi/grokbot-field-guide": 1
     },
     "run_one_final_n": 1448,
     "run_one_final_n_minus_excluded_repos": 763,
     "strict_n_at_cap_2500": null,
     "added_by_cap_3000": [],
     "excluded_repo_reasons": {
+      "AmitMirgal/orgbot-hub": "hand_review_out",
       "Anil-matcha/awesome-grok-bot": "setup_prompt_directory",
+      "EndeavorYen/grok-bot-skills": "hand_review_out",
+      "KinGao294/grok-bot-orange-book": "hand_review_out",
+      "Logos52/grok-bot-packets": "hand_review_out",
+      "Steltic/steltic_grokbot": "hand_review_out",
+      "Uncle-Gizmo/grok-bot-info": "hand_review_out",
+      "a70win-wq/usegrokbot": "hand_review_out",
+      "aaravarr/openbot": "hand_review_out",
       "aaron-he-zhu/aaron-marketing-skills": "claude_code_skill_library",
-      "elie222/botdirectory.ai": "setup_prompt_directory"
+      "andrewkittridge/grokory": "hand_review_out",
+      "banana2556/cursor-grokbot-helper": "hand_review_out",
+      "bcharleson/grokbot-peekaboo": "hand_review_out",
+      "cs68614-hash/awesome-grokbot-templates": "hand_review_out",
+      "dadamingmax/Grok-Bot-Setup-and-Usage-Guide": "hand_review_out",
+      "ddhjy/grok-bot-hub": "hand_review_out",
+      "dragosroua/grok-bot-add-plugin": "hand_review_out",
+      "elie222/botdirectory.ai": "setup_prompt_directory",
+      "enderzcx/grok-bot-switch": "hand_review_out",
+      "function1st/PhoneZero": "hand_review_out",
+      "hariou/technocore-grokbot-ja": "hand_review_out",
+      "hesreallyhim/awesome-claude-code": "hand_review_out",
+      "jaskirat1616/grok-skills": "hand_review_out",
+      "jblack4vols/grok-bot": "hand_review_out",
+      "jeremybrasher/grokbot-skills": "hand_review_out",
+      "jinank/great-grokbots": "hand_review_out",
+      "kwakseongjae/awesome-grok-bot": "hand_review_out",
+      "kydlikebtc/awesome-grokbot": "hand_review_out",
+      "lazerusrm/botrouter": "hand_review_out",
+      "lureilly1/botjobs": "hand_review_out",
+      "mKay00/grok-bot-second-brain": "hand_review_out",
+      "maplefukku/grok-bot-ops": "hand_review_out",
+      "matsutouya/note-kojo": "hand_review_out",
+      "mostdesign01-sudo/grokbot-use-cases": "hand_review_out",
+      "mozilla/diversity": "hand_review_out",
+      "napiermd/heavy-lift-cloud-agents": "hand_review_out",
+      "nescafe2009/dsh-grokbot": "hand_review_out",
+      "njpatel/omabot": "hand_review_out",
+      "owenisas/grokbot-openai": "hand_review_out",
+      "pacifico-1106/grokbot-control-plane": "hand_review_out",
+      "quolu/plaude": "hand_review_out",
+      "richard7463/askgrokwallet": "hand_review_out",
+      "rockyzhuo/grok-bot-blue-book": "hand_review_out",
+      "shrdgn/grokbot-skills": "hand_review_out",
+      "steve228uk/grok-bot-shopping": "hand_review_out",
+      "thomasbek3/hermes-bot-kit": "hand_review_out",
+      "tiankonglan/awesome-grok-bot-template": "hand_review_out",
+      "vercel/vercel-plugin": "hand_review_out",
+      "zhulin025/LaoA-GrokBot": "hand_review_out"
     }
   },
   "corpus_full_robustness": {
@@ -188,16 +252,16 @@
     "R1_approval_gate": {
       "publication_row": 4,
       "publication_row_meaning": "row 4: fails everything: sample only, n = 60, with interval",
-      "gate_a_three_way": 0.5666666666666667,
-      "gate_b_binary_true": 0.8166666666666667,
-      "agreement": 0.5666666666666667,
-      "precision_on_true": 0.88,
-      "recall_on_true": 0.7333333333333333,
+      "gate_a_three_way": 0.5833333333333334,
+      "gate_b_binary_true": 0.75,
+      "agreement": 0.5833333333333334,
+      "precision_on_true": 0.8571428571428571,
+      "recall_on_true": 0.75,
       "stage_a_strict_counts": {
-        "true": 724,
-        "false": 658,
-        "unclear": 214,
-        "denominator": 1596
+        "true": 623,
+        "false": 351,
+        "unclear": 128,
+        "denominator": 1102
       },
       "stage_a_full_counts_robustness": {
         "true": 1003,
@@ -206,20 +270,20 @@
         "denominator": 2282
       },
       "hand_label_sample_counts": {
-        "true": 30,
-        "false": 3,
-        "unclear": 27,
+        "true": 40,
+        "false": 4,
+        "unclear": 16,
         "n": 60
       },
-      "true": 30,
-      "false": 3,
-      "unclear": 27,
+      "true": 40,
+      "false": 4,
+      "unclear": 16,
       "denominator": 60,
       "basis": "sample",
-      "rate_reported": 0.5,
+      "rate_reported": 0.6666666666666666,
       "ci95": [
-        0.37734812427246284,
-        0.6226518757275372
+        0.540566298666634,
+        0.7727090578407216
       ],
       "rate_definition": "share of denominator labelled true",
       "site_label": "require a human yes before an irreversible action"
@@ -227,16 +291,16 @@
     "R2_state_file": {
       "publication_row": 4,
       "publication_row_meaning": "row 4: fails everything: sample only, n = 60, with interval",
-      "gate_a_three_way": 0.6333333333333333,
-      "gate_b_binary_true": 0.7333333333333333,
-      "agreement": 0.6333333333333333,
-      "precision_on_true": 0.7857142857142857,
-      "recall_on_true": 0.4583333333333333,
+      "gate_a_three_way": 0.75,
+      "gate_b_binary_true": 0.8,
+      "agreement": 0.75,
+      "precision_on_true": 0.9285714285714286,
+      "recall_on_true": 0.5416666666666666,
       "stage_a_strict_counts": {
-        "true": 433,
-        "false": 413,
-        "unclear": 750,
-        "denominator": 1596
+        "true": 324,
+        "false": 301,
+        "unclear": 477,
+        "denominator": 1102
       },
       "stage_a_full_counts_robustness": {
         "true": 554,
@@ -246,13 +310,13 @@
       },
       "hand_label_sample_counts": {
         "true": 24,
-        "false": 2,
-        "unclear": 34,
+        "false": 9,
+        "unclear": 27,
         "n": 60
       },
       "true": 24,
-      "false": 2,
-      "unclear": 34,
+      "false": 9,
+      "unclear": 27,
       "denominator": 60,
       "basis": "sample",
       "rate_reported": 0.4,
@@ -266,16 +330,16 @@
     "R3_silence_rule": {
       "publication_row": 2,
       "publication_row_meaning": "row 2: fails gate A, clears gate B (binary true vs not-true >= 0.85): corpus-wide TRUE count publishable as a plain count with denominator; the false/unclear split is not",
-      "gate_a_three_way": 0.8333333333333334,
-      "gate_b_binary_true": 0.95,
-      "agreement": 0.8333333333333334,
-      "precision_on_true": 0.9230769230769231,
-      "recall_on_true": 0.8571428571428571,
+      "gate_a_three_way": 0.8166666666666667,
+      "gate_b_binary_true": 0.8833333333333333,
+      "agreement": 0.8166666666666667,
+      "precision_on_true": 0.85,
+      "recall_on_true": 0.8095238095238095,
       "stage_a_strict_counts": {
-        "true": 378,
-        "false": 449,
-        "unclear": 769,
-        "denominator": 1596
+        "true": 329,
+        "false": 307,
+        "unclear": 466,
+        "denominator": 1102
       },
       "stage_a_full_counts_robustness": {
         "true": 398,
@@ -284,37 +348,37 @@
         "denominator": 2282
       },
       "hand_label_sample_counts": {
-        "true": 14,
-        "false": 8,
-        "unclear": 38,
+        "true": 21,
+        "false": 12,
+        "unclear": 27,
         "n": 60
       },
-      "true": 378,
+      "true": 329,
       "false": null,
       "unclear": null,
-      "denominator": 1596,
+      "denominator": 1102,
       "basis": "corpus true count only",
-      "rate_reported": 0.23684210526315788,
+      "rate_reported": 0.2985480943738657,
       "ci95": [
-        0.21663131256960477,
-        0.2583167072843607
+        0.2722666848063472,
+        0.3262291576361871
       ],
       "rate_definition": "share of denominator labelled true",
       "site_label": "allow an empty run to send nothing"
     },
     "R4_ownership_boundary": {
-      "publication_row": 4,
-      "publication_row_meaning": "row 4: fails everything: sample only, n = 60, with interval",
-      "gate_a_three_way": 0.7666666666666667,
-      "gate_b_binary_true": 0.7666666666666667,
-      "agreement": 0.7666666666666667,
-      "precision_on_true": 0.7959183673469388,
-      "recall_on_true": 0.9069767441860465,
+      "publication_row": 1,
+      "publication_row_meaning": "row 1: clears gate A (three-way agreement >= 0.85): corpus-wide true/false/unclear counts publishable as stated",
+      "gate_a_three_way": 0.9166666666666666,
+      "gate_b_binary_true": 0.9166666666666666,
+      "agreement": 0.9166666666666666,
+      "precision_on_true": 0.9423076923076923,
+      "recall_on_true": 0.9607843137254902,
       "stage_a_strict_counts": {
-        "true": 1305,
-        "false": 291,
+        "true": 956,
+        "false": 146,
         "unclear": 0,
-        "denominator": 1596
+        "denominator": 1102
       },
       "stage_a_full_counts_robustness": {
         "true": 1526,
@@ -323,20 +387,20 @@
         "denominator": 2282
       },
       "hand_label_sample_counts": {
-        "true": 43,
-        "false": 17,
+        "true": 51,
+        "false": 9,
         "unclear": 0,
         "n": 60
       },
-      "true": 43,
-      "false": 17,
+      "true": 956,
+      "false": 146,
       "unclear": 0,
-      "denominator": 60,
-      "basis": "sample",
-      "rate_reported": 0.7166666666666667,
+      "denominator": 1102,
+      "basis": "corpus",
+      "rate_reported": 0.867513611615245,
       "ci95": [
-        0.5923247495026482,
-        0.8149332139569141
+        0.8462144110698064,
+        0.8862593898796243
       ],
       "rate_definition": "share of denominator labelled true",
       "site_label": "state what the bot does not touch"
@@ -344,16 +408,16 @@
     "R5_stop_condition": {
       "publication_row": 4,
       "publication_row_meaning": "row 4: fails everything: sample only, n = 60, with interval",
-      "gate_a_three_way": 0.8166666666666667,
-      "gate_b_binary_true": 0.8166666666666667,
-      "agreement": 0.8166666666666667,
-      "precision_on_true": 0.9318181818181818,
-      "recall_on_true": 0.8367346938775511,
+      "gate_a_three_way": 0.8333333333333334,
+      "gate_b_binary_true": 0.8333333333333334,
+      "agreement": 0.8333333333333334,
+      "precision_on_true": 0.8444444444444444,
+      "recall_on_true": 0.926829268292683,
       "stage_a_strict_counts": {
-        "true": 1147,
-        "false": 449,
+        "true": 830,
+        "false": 272,
         "unclear": 0,
-        "denominator": 1596
+        "denominator": 1102
       },
       "stage_a_full_counts_robustness": {
         "true": 1819,
@@ -362,20 +426,20 @@
         "denominator": 2282
       },
       "hand_label_sample_counts": {
-        "true": 49,
-        "false": 11,
+        "true": 41,
+        "false": 19,
         "unclear": 0,
         "n": 60
       },
-      "true": 49,
-      "false": 11,
+      "true": 41,
+      "false": 19,
       "unclear": 0,
       "denominator": 60,
       "basis": "sample",
-      "rate_reported": 0.8166666666666667,
+      "rate_reported": 0.6833333333333333,
       "ci95": [
-        0.7008000677353371,
-        0.8944231096286387
+        0.5576599505698345,
+        0.7869429415882567
       ],
       "rate_definition": "share of denominator labelled true",
       "site_label": "define when the run is finished"
@@ -383,16 +447,16 @@
     "R6_undisclosed_capability": {
       "publication_row": 4,
       "publication_row_meaning": "row 4: fails everything: sample only, n = 60, with interval",
-      "gate_a_three_way": 0.5166666666666667,
-      "gate_b_binary_true": 0.5166666666666667,
-      "agreement": 0.5166666666666667,
-      "precision_on_true": 0.32558139534883723,
+      "gate_a_three_way": 0.5833333333333334,
+      "gate_b_binary_true": 0.5833333333333334,
+      "agreement": 0.5833333333333334,
+      "precision_on_true": 0.34210526315789475,
       "recall_on_true": 1.0,
       "stage_a_strict_counts": {
-        "true": 1018,
-        "false": 578,
+        "true": 720,
+        "false": 382,
         "unclear": 0,
-        "denominator": 1596
+        "denominator": 1102
       },
       "stage_a_full_counts_robustness": {
         "true": 1234,
@@ -401,20 +465,20 @@
         "denominator": 2282
       },
       "hand_label_sample_counts": {
-        "true": 14,
-        "false": 46,
+        "true": 13,
+        "false": 47,
         "unclear": 0,
         "n": 60
       },
-      "true": 14,
-      "false": 46,
+      "true": 13,
+      "false": 47,
       "unclear": 0,
       "denominator": 60,
       "basis": "sample",
-      "rate_reported": 0.23333333333333334,
+      "rate_reported": 0.21666666666666667,
       "ci95": [
-        0.1443943161843107,
-        0.3543651134039202
+        0.13122921046407016,
+        0.3362026834734252
       ],
       "rate_definition": "share of denominator labelled true",
       "site_label": "name every tool the bot uses in its role statement"
@@ -429,9 +493,9 @@
       "recall_on_true": null,
       "stage_a_strict_counts": {
         "true": 0,
-        "false": 1596,
+        "false": 1102,
         "unclear": 0,
-        "denominator": 1596
+        "denominator": 1102
       },
       "stage_a_full_counts_robustness": {
         "true": 0,
@@ -446,14 +510,14 @@
         "n": 60
       },
       "true": 0,
-      "false": 1596,
+      "false": 1102,
       "unclear": 0,
-      "denominator": 1596,
+      "denominator": 1102,
       "basis": "corpus",
       "rate_reported": 0.0,
       "ci95": [
         0.0,
-        0.00240123772253453
+        0.003473915251515226
       ],
       "rate_definition": "share of denominator labelled true",
       "site_label": "carry no secret shape in the text"
@@ -461,16 +525,16 @@
     "R8_injection_resistance": {
       "publication_row": 1,
       "publication_row_meaning": "row 1: clears gate A (three-way agreement >= 0.85): corpus-wide true/false/unclear counts publishable as stated",
-      "gate_a_three_way": 0.9166666666666666,
-      "gate_b_binary_true": 0.9166666666666666,
-      "agreement": 0.9166666666666666,
-      "precision_on_true": 0.7857142857142857,
-      "recall_on_true": 0.8461538461538461,
+      "gate_a_three_way": 0.9333333333333333,
+      "gate_b_binary_true": 0.95,
+      "agreement": 0.9333333333333333,
+      "precision_on_true": 0.9230769230769231,
+      "recall_on_true": 0.8571428571428571,
       "stage_a_strict_counts": {
-        "true": 294,
+        "true": 252,
         "false": 0,
-        "unclear": 1302,
-        "denominator": 1596
+        "unclear": 850,
+        "denominator": 1102
       },
       "stage_a_full_counts_robustness": {
         "true": 381,
@@ -479,59 +543,59 @@
         "denominator": 2282
       },
       "hand_label_sample_counts": {
-        "true": 13,
-        "false": 0,
-        "unclear": 47,
+        "true": 14,
+        "false": 1,
+        "unclear": 45,
         "n": 60
       },
-      "true": 294,
+      "true": 252,
       "false": 0,
-      "unclear": 1302,
-      "denominator": 1596,
+      "unclear": 850,
+      "denominator": 1102,
       "basis": "corpus",
-      "rate_reported": 0.8157894736842105,
+      "rate_reported": 0.7713248638838476,
       "ci95": [
-        0.796019985647212,
-        0.8340423905280293
+        0.7456108008959493,
+        0.7951538077062231
       ],
       "rate_definition": "share of denominator silent on injection (unclear)",
       "site_label": "say nothing about whether content the bot reads can give it orders"
     }
   },
   "derived": {
-    "consequential_capability_present": 33,
-    "consequential_ungated": 3,
+    "consequential_capability_present": 44,
+    "consequential_ungated": 4,
     "consequential_ungated_share": 0.09090909090909091,
     "basis": "sample",
     "publication_row": 4,
     "ci95_share": [
-      0.03140337104926305,
-      0.23572943534351032
+      0.035921611478836546,
+      0.21159519397917487
     ],
     "denominator_definition": "sampled charters (n=60) hand-labelled as containing at least one live consequential action",
     "stage_a_strict_variant": {
-      "consequential_capability_present": 1382,
-      "consequential_ungated": 658,
-      "share": 0.4761215629522431,
+      "consequential_capability_present": 974,
+      "consequential_ungated": 351,
+      "share": 0.3603696098562628,
       "publishable": false
     },
     "hand_label_sample_variant": {
-      "consequential_capability_present": 33,
-      "consequential_ungated": 3,
+      "consequential_capability_present": 44,
+      "consequential_ungated": 4,
       "share": 0.09090909090909091,
       "n": 60,
       "ci95_share": [
-        0.03140337104926305,
-        0.23572943534351032
+        0.035921611478836546,
+        0.21159519397917487
       ]
     },
     "family_mentions_strict_stage_a": {
-      "SEND": 950,
-      "PUBLISH": 987,
-      "PAY": 639,
-      "DELETE": 431,
-      "SIGN": 104,
-      "TRADE": 636
+      "SEND": 798,
+      "PUBLISH": 755,
+      "PAY": 540,
+      "DELETE": 253,
+      "SIGN": 65,
+      "TRADE": 451
     }
   },
   "cross_tabs": {
@@ -544,42 +608,42 @@
     "core_rule_publication_rows": {
       "R1_approval_gate": 4,
       "R2_state_file": 4,
-      "R4_ownership_boundary": 4,
+      "R4_ownership_boundary": 1,
       "R5_stop_condition": 4
     },
     "core_histogram_publishable_corpus_wide": false,
-    "scheduled_without_state_file": 413,
-    "scheduled_without_silence_rule": 449,
-    "denominator_scheduled": 762,
-    "zero_of_four_core_rules": 123,
-    "four_of_four_core_rules": 294,
-    "denominator_all": 1596,
+    "scheduled_without_state_file": 301,
+    "scheduled_without_silence_rule": 307,
+    "denominator_scheduled": 601,
+    "zero_of_four_core_rules": 63,
+    "four_of_four_core_rules": 273,
+    "denominator_all": 1102,
     "basis": "corpus (Stage A); publishable only where the contributing rules sit in row 1",
     "sample_variant": {
-      "scheduled_without_state_file": 2,
-      "denominator_scheduled_for_state_file": 26,
-      "scheduled_without_silence_rule": 8,
-      "denominator_scheduled_for_silence_rule": 22,
-      "zero_of_four_core_rules": 4,
+      "scheduled_without_state_file": 9,
+      "denominator_scheduled_for_state_file": 33,
+      "scheduled_without_silence_rule": 12,
+      "denominator_scheduled_for_silence_rule": 33,
+      "zero_of_four_core_rules": 3,
       "four_of_four_core_rules": 15,
       "n": 60
     }
   },
   "distribution": {
     "core_rules_met_histogram": {
-      "0": 123,
-      "1": 334,
-      "2": 436,
-      "3": 409,
-      "4": 294
+      "0": 63,
+      "1": 206,
+      "2": 245,
+      "3": 315,
+      "4": 273
     },
     "basis": "strict corpus (Stage A)",
-    "denominator": 1596,
+    "denominator": 1102,
     "sample_variant_histogram": {
-      "0": 4,
-      "1": 11,
-      "2": 15,
-      "3": 15,
+      "0": 3,
+      "1": 6,
+      "2": 18,
+      "3": 18,
       "4": 15
     },
     "sample_n": 60,
@@ -600,9 +664,9 @@
       "R5_stop_condition"
     ],
     "basis": "Stage A over the strict corpus",
-    "cohort_size": 294,
-    "denominator": 1596,
-    "cohort_share": 0.18421052631578946,
+    "cohort_size": 273,
+    "denominator": 1102,
+    "cohort_share": 0.24773139745916514,
     "repo_distribution": {
       "OpulentiaAI/gtm-agent-automations": 234,
       "composio-community/awesome-grok-bots": 9,
@@ -610,85 +674,76 @@
       "HammeredSmithy/bull-trade": 4,
       "PramodDutta/botskills": 4,
       "codejunkie99/rosterroom": 4,
-      "jaskirat1616/grok-skills": 4,
-      "jeremybrasher/grokbot-skills": 4,
-      "shrdgn/grokbot-skills": 4,
-      "EndeavorYen/grok-bot-skills": 3,
       "divo12/awesome-grok-bot-templates": 2,
       "mahathir69/technocore-safe": 2,
-      "vercel/vercel-plugin": 2,
-      "andrewkittridge/grokory": 1,
       "ellelion/botteams": 1,
       "galleonlabs/hypergrok-trading-desk": 1,
-      "hariou/technocore-grokbot-ja": 1,
       "jaredtrichard/grok-factory": 1,
-      "mKay00/grok-bot-second-brain": 1,
       "matteoantoci/firstmate": 1,
       "mergisi/awesome-grokbot": 1,
-      "novusordos666/grokbot-outreach-agent-team": 1,
-      "steve228uk/grok-bot-shopping": 1
+      "novusordos666/grokbot-outreach-agent-team": 1
     },
     "largest_repo": "OpulentiaAI/gtm-agent-automations",
     "largest_repo_count": 234,
-    "largest_repo_share_of_cohort": 0.7959183673469388,
-    "largest_repo_share_of_corpus": 0.16416040100250626,
+    "largest_repo_share_of_cohort": 0.8571428571428571,
+    "largest_repo_share_of_corpus": 0.23774954627949182,
     "per_rule_true_rate": {
       "R1_approval_gate": {
         "cohort": 1.0,
-        "rest": 0.3302611367127496,
-        "cohort_n": 294,
-        "rest_n": 1302
+        "rest": 0.4221954161640531,
+        "cohort_n": 273,
+        "rest_n": 829
       },
       "R2_state_file": {
         "cohort": 1.0,
-        "rest": 0.10675883256528418,
-        "cohort_n": 294,
-        "rest_n": 1302
+        "rest": 0.061519903498190594,
+        "cohort_n": 273,
+        "rest_n": 829
       },
       "R3_silence_rule": {
-        "cohort": 0.8163265306122449,
-        "rest": 0.10599078341013825,
-        "cohort_n": 294,
-        "rest_n": 1302
+        "cohort": 0.8681318681318682,
+        "rest": 0.11097708082026538,
+        "cohort_n": 273,
+        "rest_n": 829
       },
       "R4_ownership_boundary": {
         "cohort": 1.0,
-        "rest": 0.7764976958525346,
-        "cohort_n": 294,
-        "rest_n": 1302
+        "rest": 0.8238841978287093,
+        "cohort_n": 273,
+        "rest_n": 829
       },
       "R5_stop_condition": {
         "cohort": 1.0,
-        "rest": 0.6551459293394777,
-        "cohort_n": 294,
-        "rest_n": 1302
+        "rest": 0.6718938480096501,
+        "cohort_n": 273,
+        "rest_n": 829
       },
       "R6_undisclosed_capability": {
-        "cohort": 0.9285714285714286,
-        "rest": 0.5721966205837173,
-        "cohort_n": 294,
-        "rest_n": 1302
+        "cohort": 0.9487179487179487,
+        "rest": 0.5560916767189384,
+        "cohort_n": 273,
+        "rest_n": 829
       },
       "R7_visible_secret": {
         "cohort": 0.0,
         "rest": 0.0,
-        "cohort_n": 294,
-        "rest_n": 1302
+        "cohort_n": 273,
+        "rest_n": 829
       },
       "R8_injection_resistance": {
-        "cohort": 0.7891156462585034,
-        "rest": 0.047619047619047616,
-        "cohort_n": 294,
-        "rest_n": 1302
+        "cohort": 0.8315018315018315,
+        "rest": 0.030156815440289506,
+        "cohort_n": 273,
+        "rest_n": 829
       }
     },
-    "median_words_cohort": 350.5,
-    "median_words_rest": 273.5,
+    "median_words_cohort": 350,
+    "median_words_rest": 232,
     "core_rule_true_rate_overall": {
-      "R1_approval_gate": 0.45363408521303256,
-      "R2_state_file": 0.27130325814536344,
-      "R4_ownership_boundary": 0.8176691729323309,
-      "R5_stop_condition": 0.718671679197995
+      "R1_approval_gate": 0.5653357531760436,
+      "R2_state_file": 0.294010889292196,
+      "R4_ownership_boundary": 0.867513611615245,
+      "R5_stop_condition": 0.7531760435571688
     },
     "binding_constraint": "R2_state_file",
     "surface_forms": {
@@ -712,25 +767,25 @@
           "charters": 223
         },
         {
-          "form": "do not post a second copy",
+          "form": "do not reuse cached state from a prior run",
           "charters": 223
         },
         {
-          "form": "do not reuse cached state from a prior run",
+          "form": "do not post a second copy",
           "charters": 223
         }
       ],
       "R4_ownership_boundary": [
         {
-          "form": "do not become inbox manager, calendar ea, or a general researcher unless this prompt says",
-          "charters": 223
-        },
-        {
-          "form": "never invent a record, quote, count, or urgency",
-          "charters": 223
-        },
-        {
           "form": "stay inside this job",
+          "charters": 223
+        },
+        {
+          "form": "do not post a second copy",
+          "charters": 223
+        },
+        {
+          "form": "do not become inbox manager, calendar ea, or a general researcher unless this prompt says",
           "charters": 223
         }
       ],
@@ -744,7 +799,7 @@
           "charters": 4
         },
         {
-          "form": "when the roster is real, reply only with",
+          "form": "operating contract the lead owns prioritization, delegation, quality control, and the final packet",
           "charters": 4
         }
       ]
@@ -782,22 +837,22 @@
           "charters": 2
         },
         {
-          "form": "0), no security label approve and merge when patch-and-minor policy major semver major bump (x",
-          "repos": 1,
-          "charters": 1
-        },
-        {
           "form": "15-minute daily check read only, unless the user already typed approve send for a specific",
           "repos": 1,
           "charters": 1
         },
         {
-          "form": "9 (cve-2024-39338) flagged for human review",
+          "form": "@desk lead to obtain user approval, then @execution trader a reject looks the same, with",
           "repos": 1,
           "charters": 1
         },
         {
-          "form": "@desk lead to obtain user approval, then @execution trader a reject looks the same, with",
+          "form": "a mission is complete only when records reconcile, proof exists, approval state is explicit and",
+          "repos": 1,
+          "charters": 1
+        },
+        {
+          "form": "a slack message that contains /sdk-release, or a green release tag workflow i already approved",
           "repos": 1,
           "charters": 1
         }
@@ -834,22 +889,22 @@
           "charters": 1
         },
         {
-          "form": "a project- or task-specific follow-up that belongs in the report or backlog, not the shared",
-          "repos": 1,
-          "charters": 1
-        },
-        {
-          "form": "a retrospective remains read-only unless the user or the surrounding workflow explicitly requests promotion to",
-          "repos": 1,
-          "charters": 1
-        },
-        {
-          "form": "a thin ledger is more useful than a repetitive one",
-          "repos": 1,
-          "charters": 1
-        },
-        {
           "form": "account state comes from the shared state cache (webull-account",
+          "repos": 1,
+          "charters": 1
+        },
+        {
+          "form": "at the reconcile, after you have reconciled your own file, update index.md and preferences",
+          "repos": 1,
+          "charters": 1
+        },
+        {
+          "form": "attach the claim ledger and direct source links",
+          "repos": 1,
+          "charters": 1
+        },
+        {
+          "form": "broker/paper account i connect, the data sites i list, a local ledger file",
           "repos": 1,
           "charters": 1
         }
@@ -978,27 +1033,27 @@
           "charters": 2
         },
         {
-          "form": "complete when the skill file exists and matches the approved draft",
+          "form": "expect the pre-send checklist and a refusal to send without approval by id",
           "charters": 1
         },
         {
-          "form": "generation, social scout, posting, skill write without approval, empty polling",
+          "form": "order writes always stay behind approval",
           "charters": 1
         },
         {
-          "form": "archive keeper packages into github repo [owner/name] via cloudagent, and draft skills only after explicit",
+          "form": "execution trader is the one bot that sends orders, on a ticket the user approved",
           "charters": 1
         },
         {
-          "form": "after explicit approval (yes / write it / equivalent in the operator's language), write the",
+          "form": "approvals ask the user to open settings, general, auto-review and add a require approval rule",
           "charters": 1
         },
         {
-          "form": "source gate — inputs are real, fresh, deduped, on disk evidence gate — artifact exists",
+          "form": "group chats become subagents or role-labelled passes, and the approval model is unchanged",
           "charters": 1
         },
         {
-          "form": "md (role titles, environment-local names) instantiate bots from templates (or @design-grok-bot) wire one proven task",
+          "form": "the execution trader sends only after the user writes \"approve \" in chat, and the",
           "charters": 1
         }
       ],
@@ -1006,22 +1061,6 @@
         {
           "form": "keep a log of runs under strategies/ /runs/",
           "charters": 2
-        },
-        {
-          "form": "deduplicate by prompt hash/slug",
-          "charters": 1
-        },
-        {
-          "form": "check “already done” before retry so posts/prs stay unique",
-          "charters": 1
-        },
-        {
-          "form": "gate owns stops before source collect / dedupe inputs to disk producing final artifacts evidence",
-          "charters": 1
-        },
-        {
-          "form": "if the user is unsure, do not repeat the same question",
-          "charters": 1
         },
         {
           "form": "md - how the team fits together, and why account reads go through a shared",
@@ -1042,6 +1081,22 @@
         {
           "form": "scan the inbox for messages received since your last run",
           "charters": 1
+        },
+        {
+          "form": "memory.md as the index, one topic file per area beneath it",
+          "charters": 1
+        },
+        {
+          "form": "a file that grows every day stops being reread, and an unread memory file is",
+          "charters": 1
+        },
+        {
+          "form": "deduplicate on write",
+          "charters": 1
+        },
+        {
+          "form": "you never send a reply, never auto-respond, never mark a ticket answered, and never edit",
+          "charters": 1
         }
       ],
       "R4_ownership_boundary": [
@@ -1050,7 +1105,7 @@
           "charters": 9
         },
         {
-          "form": "creation check if you cannot create teammates, say exactly",
+          "form": "specialists work only inside their stated ownership and return drafts to the lead",
           "charters": 4
         },
         {
@@ -1058,19 +1113,19 @@
           "charters": 4
         },
         {
+          "form": "never spend money, make purchases, or accept terms",
+          "charters": 4
+        },
+        {
           "form": "never send messages or contact people without explicit approval",
           "charters": 4
         },
         {
+          "form": "creation check if you cannot create teammates, say exactly",
+          "charters": 4
+        },
+        {
           "form": "never claim an action, connection, file, teammate, or result exists unless it was verified",
-          "charters": 4
-        },
-        {
-          "form": "specialists work only inside their stated ownership and return drafts to the lead",
-          "charters": 4
-        },
-        {
-          "form": "never spend money, make purchases, or accept terms",
           "charters": 4
         },
         {
@@ -1092,7 +1147,11 @@
           "charters": 4
         },
         {
-          "form": "when the roster is real, reply only with",
+          "form": "operating contract the lead owns prioritization, delegation, quality control, and the final packet",
+          "charters": 4
+        },
+        {
+          "form": "specialists work only inside their stated ownership and return drafts to the lead",
           "charters": 4
         },
         {
@@ -1100,11 +1159,7 @@
           "charters": 4
         },
         {
-          "form": "operating contract the lead owns prioritization, delegation, quality control, and the final packet",
-          "charters": 4
-        },
-        {
-          "form": "specialists work only inside their stated ownership and return drafts to the lead",
+          "form": "when the roster is real, reply only with",
           "charters": 4
         },
         {
@@ -1120,16 +1175,16 @@
           "charters": 2
         },
         {
-          "form": "complete when both the report and the card update exist",
+          "form": "return the receipt finish by giving the user",
           "charters": 1
         },
         {
-          "form": "complete when the pr url exists",
+          "form": "prepare the desk computer (read-only) follow skills/webull-setup/skill",
           "charters": 1
         }
       ]
     },
-    "surface_forms_excluding_largest_repo_n": 60,
+    "surface_forms_excluding_largest_repo_n": 39,
     "surface_forms_note": "surface_forms counts charters (plan 1.8, top 3); surface_forms_one_vote_per_repo ranks by distinct repositories using the form (top 10), added because the charter count is dominated by one template family",
     "hand_label_sample": {
       "four_of_four": 15,
@@ -1138,7 +1193,7 @@
     }
   },
   "density": {
-    "denominator": 1596,
+    "denominator": 1102,
     "thresholds": {
       "0.8": {
         "clusters": 0,
@@ -1146,63 +1201,63 @@
         "largest_cluster_size": 0
       },
       "0.65": {
-        "clusters": 18,
-        "charters_covered": 56,
+        "clusters": 17,
+        "charters_covered": 54,
         "largest_cluster_size": 7,
         "largest_family_shared_block_words": 185,
         "largest_family_repos": 1
       },
       "0.5": {
-        "clusters": 12,
-        "charters_covered": 363,
+        "clusters": 8,
+        "charters_covered": 355,
         "largest_cluster_size": 205,
         "largest_family_shared_block_words": 146,
         "largest_family_repos": 1
       }
     },
-    "share_in_any_cluster_at_0_50": 0.2274436090225564
+    "share_in_any_cluster_at_0_50": 0.3221415607985481
   },
   "extras": {
     "dual_gate_table": {
       "R1_approval_gate": {
-        "gate_a": 0.5666666666666667,
-        "gate_b": 0.8166666666666667,
-        "precision_on_true": 0.88,
-        "recall_on_true": 0.7333333333333333,
+        "gate_a": 0.5833333333333334,
+        "gate_b": 0.75,
+        "precision_on_true": 0.8571428571428571,
+        "recall_on_true": 0.75,
         "row": 4
       },
       "R2_state_file": {
-        "gate_a": 0.6333333333333333,
-        "gate_b": 0.7333333333333333,
-        "precision_on_true": 0.7857142857142857,
-        "recall_on_true": 0.4583333333333333,
+        "gate_a": 0.75,
+        "gate_b": 0.8,
+        "precision_on_true": 0.9285714285714286,
+        "recall_on_true": 0.5416666666666666,
         "row": 4
       },
       "R3_silence_rule": {
-        "gate_a": 0.8333333333333334,
-        "gate_b": 0.95,
-        "precision_on_true": 0.9230769230769231,
-        "recall_on_true": 0.8571428571428571,
+        "gate_a": 0.8166666666666667,
+        "gate_b": 0.8833333333333333,
+        "precision_on_true": 0.85,
+        "recall_on_true": 0.8095238095238095,
         "row": 2
       },
       "R4_ownership_boundary": {
-        "gate_a": 0.7666666666666667,
-        "gate_b": 0.7666666666666667,
-        "precision_on_true": 0.7959183673469388,
-        "recall_on_true": 0.9069767441860465,
-        "row": 4
+        "gate_a": 0.9166666666666666,
+        "gate_b": 0.9166666666666666,
+        "precision_on_true": 0.9423076923076923,
+        "recall_on_true": 0.9607843137254902,
+        "row": 1
       },
       "R5_stop_condition": {
-        "gate_a": 0.8166666666666667,
-        "gate_b": 0.8166666666666667,
-        "precision_on_true": 0.9318181818181818,
-        "recall_on_true": 0.8367346938775511,
+        "gate_a": 0.8333333333333334,
+        "gate_b": 0.8333333333333334,
+        "precision_on_true": 0.8444444444444444,
+        "recall_on_true": 0.926829268292683,
         "row": 4
       },
       "R6_undisclosed_capability": {
-        "gate_a": 0.5166666666666667,
-        "gate_b": 0.5166666666666667,
-        "precision_on_true": 0.32558139534883723,
+        "gate_a": 0.5833333333333334,
+        "gate_b": 0.5833333333333334,
+        "precision_on_true": 0.34210526315789475,
         "recall_on_true": 1.0,
         "row": 4
       },
@@ -1214,10 +1269,10 @@
         "row": 1
       },
       "R8_injection_resistance": {
-        "gate_a": 0.9166666666666666,
-        "gate_b": 0.9166666666666666,
-        "precision_on_true": 0.7857142857142857,
-        "recall_on_true": 0.8461538461538461,
+        "gate_a": 0.9333333333333333,
+        "gate_b": 0.95,
+        "precision_on_true": 0.9230769230769231,
+        "recall_on_true": 0.8571428571428571,
         "row": 1
       }
     },
@@ -1237,72 +1292,67 @@
       "cap_per_repo": 12,
       "stratification": "by repo, max 20 percent from any single repo",
       "allocation": {
-        "EndeavorYen/grok-bot-skills": 1,
         "HAEGONG/grok-bot-profiles": 1,
-        "HammeredSmithy/bull-trade": 1,
-        "Logos52/grok-bot-packets": 1,
+        "HammeredSmithy/bull-trade": 2,
         "Octo-o-o-o/grok-job-kit": 1,
-        "OpulentiaAI/gtm-agent-automations": 10,
-        "PramodDutta/botskills": 5,
-        "ZeroPointRepo/GrokBotDev": 5,
-        "ZooHero500/plays": 4,
-        "codejunkie99/rosterroom": 3,
+        "OpulentiaAI/gtm-agent-automations": 12,
+        "PramodDutta/botskills": 7,
+        "YannisKiefer/grokbot-x": 1,
+        "ZeroPointRepo/GrokBotDev": 8,
+        "ZooHero500/plays": 6,
+        "codejunkie99/rosterroom": 5,
         "composio-community/awesome-grok-bots": 1,
-        "ellelion/botteams": 3,
-        "function1st/PhoneZero": 1,
-        "galleonlabs/hypergrok-trading-desk": 1,
-        "jaskirat1616/grok-skills": 7,
-        "jeremybrasher/grokbot-skills": 4,
-        "mKay00/grok-bot-second-brain": 1,
-        "mergisi/awesome-grokbot": 4,
-        "shrdgn/grokbot-skills": 3,
-        "swcstudiospace/PumpGrok": 1,
-        "vercel/vercel-plugin": 2
+        "divo12/awesome-grok-bot-templates": 1,
+        "ellelion/botteams": 4,
+        "galleonlabs/hypergrok-trading-desk": 2,
+        "jaredtrichard/grok-factory": 1,
+        "mergisi/awesome-grokbot": 6,
+        "swcstudiospace/PumpGrok": 2
       }
     },
     "carryovers_from_run_one_sample": 0,
     "fresh_labels": 60,
     "r5_agreement_fresh_only": {
-      "agreement": 0.8166666666666667,
+      "agreement": 0.8333333333333334,
       "n": 60
     },
     "r5_extension_pattern": "\\b(show me (every|the|all|a|an|each|which|what|who|my|its|your|proposed|before)|give me (a|an|the|one|two|three|every|each)|prepare (the|a|an|one|targeted|every|each)|prepares (the|a|an|one)|drafts? (a|an|the|one|every|each|any|replies|reply|follow-ups|follow ups|notes|posts|copy|slots|stacked|outreach|channel-native|platform-specific|the welcome|it|them|for)|hold (it|them|everything|all|each|every|the|any|the purchase|the order|drafts?|calendar drafts)[a-z ,'-]{0,40}(for|until) (my|your|human|explicit|i |the owner)|one-pagers?|report back|what good looks like|build (a|an|the|one) [a-z -]{0,20}(deck|digest|brief|report|summary|list|plan|packet|note|page|matrix|runbook)|post (the|a|an|one) [a-z ]{0,20}(result|results|memo|scoreboard|digest|summary|list|report|link|brief|readout)|(write|writes) (a|an|the|one) [a-z -]{0,20}(digest|brief|note|report|summary|memo|list|plan|changelog|scorecard|readout|packet|one-pager)|update (only )?the [a-z '\\\"-]{0,30}(slide|sheet|row|record|note|doc|page|tab|entry)|summari[sz]e (the|what|each|every|it|them|themes)|recommend (one|a|an|the|which)|send me (a|an|one|the|every|each)|turn (it|this|that|them|each) into (a|an|one|the)|rank (them|each|by)|prep (for|one-pagers|a|an|the)|then save (it|this|the bot|it for)|dry run|supervised (first )?(pass|run|trial|plan|session)|with me watching|(compare|cluster|list|score|extract|classify|match) [a-z ,'-]{0,40}(and|then) (give|show|write|draft|produce|return|report|deliver|post|send) (me |it |them )?(a|an|the|one|back)|stop if|stop as|stop when|stop once|stop after)\\b",
     "r7": {
       "strict_true": 0,
-      "denominator": 1596,
+      "denominator": 1102,
       "raw_shape_hits_before_placeholder_filter": {},
       "placeholder_filtered": {}
     },
     "r8": {
-      "silent_strict": 1302,
-      "resistant_strict": 294,
+      "silent_strict": 850,
+      "resistant_strict": 252,
       "exposed_strict_detector_floor": 0,
-      "exposed_hand_sample": 0,
-      "denominator": 1596,
+      "exposed_hand_sample": 1,
+      "denominator": 1102,
       "n": 60
     },
     "unclear_share_stage_a_strict": {
-      "R1": 0.13408521303258145,
-      "R2": 0.4699248120300752,
-      "R3": 0.4818295739348371,
+      "R1": 0.1161524500907441,
+      "R2": 0.43284936479128855,
+      "R3": 0.42286751361161523,
       "R4": 0.0,
       "R5": 0.0,
       "R6": 0.0,
       "R7": 0.0,
-      "R8": 0.8157894736842105
+      "R8": 0.7713248638838476
     },
     "schedule": {
-      "time": 640,
+      "time": 479,
       "event": 122,
-      "none": 834,
-      "denominator": 1596
+      "none": 501,
+      "denominator": 1102
     },
     "split_rule_distribution": {
-      "1": 505,
+      "1": 82,
       "2": 107,
-      "3": 560,
-      "5": 8,
-      "6": 442
+      "3": 548,
+      "5": 4,
+      "6": 371
     },
     "expansion": {
       "discovery_root_unique_repo_links": 269,
@@ -1484,11 +1534,11 @@
     "side_by_side_with_run_two": {
       "final_n": {
         "run_two": 765,
-        "run_three": 1596
+        "run_three": 1102
       },
       "repos_in_strict_corpus": {
         "run_two": 12,
-        "run_three": 86
+        "run_three": 40
       },
       "rules": {
         "R1_approval_gate": {
@@ -1500,9 +1550,9 @@
           },
           "run_three": {
             "row": 4,
-            "true": 724,
-            "denominator": 1596,
-            "gate_a": 0.5666666666666667
+            "true": 623,
+            "denominator": 1102,
+            "gate_a": 0.5833333333333334
           }
         },
         "R2_state_file": {
@@ -1514,9 +1564,9 @@
           },
           "run_three": {
             "row": 4,
-            "true": 433,
-            "denominator": 1596,
-            "gate_a": 0.6333333333333333
+            "true": 324,
+            "denominator": 1102,
+            "gate_a": 0.75
           }
         },
         "R3_silence_rule": {
@@ -1528,9 +1578,9 @@
           },
           "run_three": {
             "row": 2,
-            "true": 378,
-            "denominator": 1596,
-            "gate_a": 0.8333333333333334
+            "true": 329,
+            "denominator": 1102,
+            "gate_a": 0.8166666666666667
           }
         },
         "R4_ownership_boundary": {
@@ -1541,10 +1591,10 @@
             "gate_a": 0.9
           },
           "run_three": {
-            "row": 4,
-            "true": 1305,
-            "denominator": 1596,
-            "gate_a": 0.7666666666666667
+            "row": 1,
+            "true": 956,
+            "denominator": 1102,
+            "gate_a": 0.9166666666666666
           }
         },
         "R5_stop_condition": {
@@ -1556,9 +1606,9 @@
           },
           "run_three": {
             "row": 4,
-            "true": 1147,
-            "denominator": 1596,
-            "gate_a": 0.8166666666666667
+            "true": 830,
+            "denominator": 1102,
+            "gate_a": 0.8333333333333334
           }
         },
         "R6_undisclosed_capability": {
@@ -1570,9 +1620,9 @@
           },
           "run_three": {
             "row": 4,
-            "true": 1018,
-            "denominator": 1596,
-            "gate_a": 0.5166666666666667
+            "true": 720,
+            "denominator": 1102,
+            "gate_a": 0.5833333333333334
           }
         },
         "R7_visible_secret": {
@@ -1585,7 +1635,7 @@
           "run_three": {
             "row": 1,
             "true": 0,
-            "denominator": 1596,
+            "denominator": 1102,
             "gate_a": 1.0
           }
         },
@@ -1598,15 +1648,15 @@
           },
           "run_three": {
             "row": 1,
-            "true": 294,
-            "denominator": 1596,
-            "gate_a": 0.9166666666666666
+            "true": 252,
+            "denominator": 1102,
+            "gate_a": 0.9333333333333333
           }
         }
       },
       "cohort_four_of_four": {
         "run_two": 262,
-        "run_three": 294
+        "run_three": 273
       },
       "consequential_ungated_sample": {
         "run_two": {
@@ -1620,20 +1670,848 @@
           ]
         },
         "run_three": {
-          "consequential_capability_present": 33,
-          "consequential_ungated": 3,
+          "consequential_capability_present": 44,
+          "consequential_ungated": 4,
           "share": 0.09090909090909091,
           "n": 60,
           "ci95_share": [
-            0.03140337104926305,
-            0.23572943534351032
+            0.035921611478836546,
+            0.21159519397917487
           ]
         }
       },
       "density_share_in_cluster_at_0_50": {
         "run_two": 0.3869281045751634,
-        "run_three": 0.2274436090225564
+        "run_three": 0.3221415607985481
       }
+    },
+    "hand_review": {
+      "plan": "LINTCHA_07 block 1: every row of the stage-1 strict source table read by hand on 2026-09-06. Test unchanged: the repository publishes text a person could paste into a bot profile as a role description. A repository about something else that happens to contain instruction-shaped prose is out. Decisions are repository-level; the file-level inclusion test still applies inside a kept repository.",
+      "removed_with_charters": {
+        "jaskirat1616/grok-skills": {
+          "charters_run_three": 186,
+          "reason": "195 SKILL.md task playbooks (a/b test analyzer, academy guide); a skill library, not role descriptions"
+        },
+        "jeremybrasher/grokbot-skills": {
+          "charters_run_three": 92,
+          "reason": "skill collection sourced from awesome-claude-skills; Claude Code skill library"
+        },
+        "shrdgn/grokbot-skills": {
+          "charters_run_three": 74,
+          "reason": "skill library (brand voice keeper, content repurposer); task skills, not role descriptions"
+        },
+        "vercel/vercel-plugin": {
+          "charters_run_three": 41,
+          "reason": "Vercel ecosystem plugin with Claude Code benchmark skills; software, not bot profiles"
+        },
+        "EndeavorYen/grok-bot-skills": {
+          "charters_run_three": 14,
+          "reason": "skill library (archive gate, cheap routines) that points at a separate architecture repo"
+        },
+        "function1st/PhoneZero": {
+          "charters_run_three": 11,
+          "reason": "a runtime plus phone plugin; the texts are its disclaimer and README"
+        },
+        "mozilla/diversity": {
+          "charters_run_three": 10,
+          "reason": "Mozilla's diversity and inclusion repository; code-of-conduct enforcement guides"
+        },
+        "mKay00/grok-bot-second-brain": {
+          "charters_run_three": 11,
+          "reason": "a consolidation plan whose sources/ folder holds copied articles (Tiago Forte, xAI docs); 9 of 11 texts are those copies"
+        },
+        "Logos52/grok-bot-packets": {
+          "charters_run_three": 19,
+          "reason": "a personal note bank: video recaps, scrape logs and 5 bot cards copied from X shares; the repository is about the bank, not about publishing profiles"
+        },
+        "dragosroua/grok-bot-add-plugin": {
+          "charters_run_three": 6,
+          "reason": "assess-decide-do framework packaged as plugin skills"
+        },
+        "steve228uk/grok-bot-shopping": {
+          "charters_run_three": 4,
+          "reason": "shopping skills pack (merchant checkout, shop cli) plus an install prompt; tooling, not a role"
+        },
+        "andrewkittridge/grokory": {
+          "charters_run_three": 4,
+          "reason": "how-to articles for listing templates on a board site"
+        },
+        "aaravarr/openbot": {
+          "charters_run_three": 3,
+          "reason": "bring-your-own-model tool; the texts are harness prompt injections from its docs"
+        },
+        "kwakseongjae/awesome-grok-bot": {
+          "charters_run_three": 3,
+          "reason": "a directory site's own Cursor skill pointers and test fixtures"
+        },
+        "jblack4vols/grok-bot": {
+          "charters_run_three": 2,
+          "reason": "daily run logs of a job-finder bot (what shipped on which PR), not a profile"
+        },
+        "kydlikebtc/awesome-grokbot": {
+          "charters_run_three": 2,
+          "reason": "directory of x.ai/bot share links (the excluded class since run one); its two texts are the catalog's maintenance routine and a vetting checklist"
+        },
+        "a70win-wq/usegrokbot": {
+          "charters_run_three": 1,
+          "reason": "a website build prompt for a use-case library site; the bot text sits inside a prompt to build the site"
+        },
+        "hariou/technocore-grokbot-ja": {
+          "charters_run_three": 1,
+          "reason": "one-off task prompts for creating a testnet identity, not a standing role"
+        },
+        "Steltic/steltic_grokbot": {
+          "charters_run_three": 1,
+          "reason": "setup procedures for a structural-steel assistant; the text is the README overview, no profile is published"
+        },
+        "Uncle-Gizmo/grok-bot-info": {
+          "charters_run_three": 1,
+          "reason": "public notes on what Cursor agents are for"
+        },
+        "pacifico-1106/grokbot-control-plane": {
+          "charters_run_three": 1,
+          "reason": "a commerce event contract schema document"
+        },
+        "maplefukku/grok-bot-ops": {
+          "charters_run_three": 1,
+          "reason": "an operations guide with one example overnight task prompt"
+        },
+        "AmitMirgal/orgbot-hub": {
+          "charters_run_three": 1,
+          "reason": "a Mastra framework guide skill inside a directory site"
+        },
+        "bcharleson/grokbot-peekaboo": {
+          "charters_run_three": 1,
+          "reason": "a skill for controlling a local Mac; tooling"
+        },
+        "lazerusrm/botrouter": {
+          "charters_run_three": 1,
+          "reason": "subscription routing tooling; a plugin skill"
+        },
+        "napiermd/heavy-lift-cloud-agents": {
+          "charters_run_three": 1,
+          "reason": "a skill that hands work to Cursor cloud agents; tooling"
+        },
+        "richard7463/askgrokwallet": {
+          "charters_run_three": 1,
+          "reason": "a wallet product description in SKILL.md form"
+        },
+        "thomasbek3/hermes-bot-kit": {
+          "charters_run_three": 1,
+          "reason": "a computer-basics skill inside a Hermes plugin; software"
+        }
+      },
+      "removed_without_charters": {
+        "hesreallyhim/awesome-claude-code": "Claude Code resource list",
+        "owenisas/grokbot-openai": "API bridge tool",
+        "enderzcx/grok-bot-switch": "inference switch tool",
+        "banana2556/cursor-grokbot-helper": "Cursor client switch tool",
+        "njpatel/omabot": "menu bar tool",
+        "quolu/plaude": "recording pipeline tool",
+        "nescafe2009/dsh-grokbot": "plugin implementation of a harness",
+        "zhulin025/LaoA-GrokBot": "emoji and share-card lab",
+        "cs68614-hash/awesome-grokbot-templates": "share-link directory",
+        "lureilly1/botjobs": "directory site",
+        "jinank/great-grokbots": "catalog collected from directories",
+        "tiankonglan/awesome-grok-bot-template": "awesome list",
+        "matsutouya/note-kojo": "drafting tool",
+        "dadamingmax/Grok-Bot-Setup-and-Usage-Guide": "setup and usage guide",
+        "ddhjy/grok-bot-hub": "navigation site",
+        "mostdesign01-sudo/grokbot-use-cases": "showcase site",
+        "rockyzhuo/grok-bot-blue-book": "a book",
+        "KinGao294/grok-bot-orange-book": "a book"
+      },
+      "kept": {
+        "OpulentiaAI/gtm-agent-automations": "agent files, each a role plus a session prompt for an automation",
+        "ZeroPointRepo/GrokBotDev": "use-case files that open with role and mission",
+        "PramodDutta/botskills": "seed bots with name, description, connectors and the one action never taken without approval",
+        "mergisi/awesome-grokbot": "copy-paste PROFILE.md files per bot",
+        "ZooHero500/plays": "catalog of plays: what people run their bots on, mostly written as pasteable instructions; some entries are editorial write-ups, which the file-level test handles",
+        "codejunkie99/rosterroom": "roster prompts that rename the bot, give it a title and an ownership list",
+        "ellelion/botteams": "bot files with name, tagline, connectors and refusals",
+        "swcstudiospace/PumpGrok": "agent role files for a trading desk (chief, analysts); SETUP.md is a setup prompt, handled by the file-level test",
+        "HammeredSmithy/bull-trade": "agent role files for a trading desk",
+        "galleonlabs/hypergrok-trading-desk": "agent role files for a trading desk",
+        "composio-community/awesome-grok-bots": "setup briefs meant to be pasted into a new bot",
+        "HAEGONG/grok-bot-profiles": "ready-to-use profiles with approval boundaries",
+        "Octo-o-o-o/grok-job-kit": "job templates (scout, judge) that define a seat",
+        "YannisKiefer/grokbot-x": "operator rules for a distribution bot plus its skills",
+        "divo12/awesome-grok-bot-templates": "engineering-org prompts (nightly auditor role, area engineer brief) published for pasting",
+        "jaredtrichard/grok-factory": "firstmate and crewmate role descriptions",
+        "jaredtrichard/grok-research": "firstmate role for an equity research factory",
+        "kunchenguid/grok-ship": "firstmate and triage role descriptions",
+        "matteoantoci/firstmate": "a firstmate prompt for people who run several bots",
+        "novusordos666/grokbot-outreach-agent-team": "five agent identities for an outreach team",
+        "palehonk0-o/grokbot-market-memory": "agent files (analyst, etc.) for a market memory system",
+        "WebDevJasonCameron/ExploreGrokBot": "role and instruction files per agent",
+        "danielvegac/grok-bot-startup-services-outbound": "a profile plus first-task file for an outbound bot",
+        "mtrxdev/build-brief": "a profile for a brief-writing bot",
+        "p10ns11y/botify": "shareable templates with a profile per bot",
+        "ethanolivertroy/grokbot-cloudflare-inbox": "publishes grokbot.md, the charter of the inbox bot, next to the worker template",
+        "GlobalTC/steer": "share.json is a public share profile with a constitution",
+        "mahathir69/technocore-safe": "README in profile form (name, description, standing rules: draft in chat, do not publish until the user types approve send)",
+        "PROJECT-073-X/grok-bot-workforce": "a sales outbound profile that waits for release",
+        "Chakhdz/grok-bot-token-saver": "a chief role card",
+        "Heyvhuang/werewolf-gamemaster": "a gamemaster role description",
+        "noam99moyal-sudo/podcast-summary-bot": "a bot template whose instructions are the extracted text",
+        "tal-giladi/grokbot-field-guide": "the README is itself a chief-of-staff charter",
+        "WeSs1982/echo-chief-of-staff": "a chief-of-staff template (no charter passed the file-level test)",
+        "lsj210001/crew-contract": "an operating protocol for bot teams (no charter passed the file-level test)",
+        "HxHippy/grok-bot-arch": "no description, no charter passed; left in, nothing rests on it",
+        "fantomsuj/grokbot": "no description, no charter passed; left in, nothing rests on it",
+        "jay-sahnan/growth-grok-bots": "no description, no charter passed; left in, nothing rests on it",
+        "lroolle/awesome-grokbot-templates": "no description, no charter passed; left in, nothing rests on it",
+        "s-hiraoku/grok-bot-playbook": "no description, no charter passed; left in, nothing rests on it"
+      },
+      "n_before": 1596,
+      "n_after": 1102
+    }
+  },
+  "corpus_stage2_robustness": {
+    "definition": "stage 2, code search frame: every fetched repository (curated lists plus code-search finds) under the same strict rule. robustness line only, never the headline.",
+    "sampling_frame": "code search",
+    "final_n": 109794,
+    "full_n": 110387,
+    "per_repo_final_n": {
+      "10-X-eng/vibecad": 6,
+      "44isthenumber/disney-dining-bot": 6,
+      "AccumuLatata/ThesisTester": 16,
+      "Adaptive-Liquidity/Floks": 2,
+      "Aiworkflow360/grokmd": 3,
+      "AlexMercedCoder/grokoverflow": 107,
+      "AlexMercedCoder/lakehouse-iceberg-blog": 3,
+      "AlexMercedCoder/tutorialblog": 29,
+      "AmitMirgal/orgbot-hub": 1,
+      "Anil-matcha/awesome-generative-ai-apps": 16,
+      "BennyKok/omg.dev": 5,
+      "BobYeger/state-of-agents": 51,
+      "Chakhdz/grok-bot-token-saver": 1,
+      "Christophersimons13/eride-content-queue": 5,
+      "Cloud-Peek/agent-plugin": 5,
+      "Dahhrk/dark-factory": 8,
+      "DanielKillenberger/grok-bot-factory": 6,
+      "DavidWells/stars": 833,
+      "DranakCorps-bot/EQBuddy": 13,
+      "EndeavorYen/grok-bot-skills": 14,
+      "GlobalTC/steer": 3,
+      "HAEGONG/grok-bot-profiles": 12,
+      "HammeredSmithy/bull-trade": 28,
+      "Heyvhuang/werewolf-gamemaster": 1,
+      "IgorGanapolsky/mac-yolo-safeguards": 126,
+      "Iron-Mark/grok-bot-spec-to-ship": 2,
+      "JefferyLee/awesome-vibe-coded-apps": 1,
+      "JettNguyen/Otian-AI": 3,
+      "JoeProAI/the-wringer": 2,
+      "JonusNattapong/chatgpt-skills": 127,
+      "Lev-it/lev-skills": 157,
+      "Lightwing-Ng/agenticContext": 2,
+      "Logos52/grok-bot-packets": 19,
+      "MAHDTech/agent-skills": 249,
+      "MOMENTRIXMARKETING/MOMENTRIX-MARKETING-ENGINE": 29,
+      "MartinHedevag/poteto-mode": 78,
+      "MigmaAI/migma-skills": 3,
+      "NathaliaLietuvaite/Quantenkommunikation": 7,
+      "Neuroca-Inc/Perfect_Prompts": 1407,
+      "Novadiem-Studio/bureau": 27,
+      "Octo-o-o-o/grok-job-kit": 10,
+      "OpenRaiser/PaperFlow": 1,
+      "OpulentiaAI/gtm-agent-automations": 262,
+      "PKEMEDIA/pke-ai-agent-skills": 75,
+      "PROJECT-073-X/grok-bot-workforce": 1,
+      "PaulKinlan/chrome-agent-platform": 13,
+      "PramodDutta/botskills": 119,
+      "PrisacariuRobert/openbot": 1,
+      "Quriosity-agent/articles": 55,
+      "ShaulLavo/platform": 10,
+      "SmokedMeats/umbrella-skills": 12,
+      "SohamKukreti/obsidian-vault-plugin": 9,
+      "SpillwaveSolutions/account-management": 8,
+      "SpillwaveSolutions/codex-ager": 1,
+      "SpillwaveSolutions/consulting-leads": 6,
+      "SpillwaveSolutions/content-media": 6,
+      "SpillwaveSolutions/data-engineering-knowledge-capture": 17,
+      "SpillwaveSolutions/executive-coordination": 6,
+      "SpillwaveSolutions/executive-job-search": 6,
+      "SpillwaveSolutions/grok-build-ager": 1,
+      "SpillwaveSolutions/gtm-positioning": 6,
+      "SpillwaveSolutions/news-digest": 6,
+      "SpillwaveSolutions/okf-agent-graph": 9,
+      "SpillwaveSolutions/okf-plugin": 11,
+      "SpillwaveSolutions/okf-pointers": 3,
+      "SpillwaveSolutions/okf-time-series": 3,
+      "SpillwaveSolutions/project-knowledge-capture": 19,
+      "SpillwaveSolutions/research-knowledge-capture": 8,
+      "SpillwaveSolutions/sales-pipeline": 6,
+      "SpillwaveSolutions/second-brain-core": 7,
+      "SpillwaveSolutions/second-brain-starter": 10,
+      "SpillwaveSolutions/system-architecture-capture": 14,
+      "SpillwaveSolutions/wiki_ticket_sdd": 20,
+      "Steamedhams89/hermes-pstack": 36,
+      "Steltic/steltic_grokbot": 1,
+      "TanmaySangam18/competitor-inc": 15,
+      "The-Vibe-Company/companion": 19,
+      "TheHalfMoon/Golam": 13,
+      "TimCole666/pi-sand": 2,
+      "Uncle-Gizmo/grok-bot-info": 1,
+      "WebDevJasonCameron/ExploreGrokBot": 5,
+      "YannisKiefer/grokbot-x": 10,
+      "Yeachan-Heo/oh-my-claudecode": 64,
+      "Yeachan-Heo/oh-my-codex": 80,
+      "ZacharyTFerguson/Fleet-Management": 1,
+      "ZeroPointRepo/GrokBotDev": 137,
+      "ZooHero500/plays": 110,
+      "a70win-wq/usegrokbot": 1,
+      "aadivyaraushan/botbox": 1,
+      "aaravarr/openbot": 3,
+      "aaronjmars/aeon-agent": 81,
+      "aartem1/GramScope": 5,
+      "adamsch0100/openbot": 7,
+      "adebioponazeez/automatic-octo-graph-tree": 4,
+      "aiedwardyi/Orbit": 9,
+      "aigorahub/elves": 47,
+      "ajaxhe/fetch-archive-to-lexiang": 7,
+      "ajitsing/ajitsing.github.io": 31,
+      "am-will/gooey-pi": 3,
+      "anajuliabit/aeon": 211,
+      "andrewkittridge/grokory": 4,
+      "aredwan-xyz/ai-news-tracker": 13,
+      "asgeirtj/system_prompts_leaks": 15,
+      "astrajax/astrajax": 175,
+      "austery/thought-foundry-content": 500,
+      "b-open-io/prompts": 107,
+      "bcharleson/autogtm": 3,
+      "bcharleson/grokbot-peekaboo": 1,
+      "benmowinckel/alexandria": 20,
+      "blamouche/Engineering-Forward": 26,
+      "chris-yyau/busdriver": 72,
+      "codejunkie99/rosterroom": 80,
+      "codemower-ai/code-mower": 12,
+      "cogine-ai/OpenUsageCN": 4,
+      "composio-community/awesome-grok-bots": 20,
+      "cookys/autopilot": 60,
+      "cursor/plugins": 49,
+      "cwfuller/agent-comms": 2,
+      "danielvegac/grok-bot-startup-services-outbound": 4,
+      "darkmatter/hermes": 203,
+      "davidcastelnuovo/aios": 3,
+      "davidondrej/skills": 58,
+      "dimthink/awesome-ai-podcast-notes": 38,
+      "divo12/awesome-grok-bot-templates": 10,
+      "doasfrancisco/newspaper-hackathon": 1,
+      "douglasjarquin/consigliere": 30,
+      "dragosroua/grok-bot-add-plugin": 6,
+      "earlyaidopters/gumroad-resources": 208,
+      "eddiebelaval/shipped": 2,
+      "ellelion/botteams": 70,
+      "emo-eth/skills": 78,
+      "eriqbre/grok-skills": 2,
+      "eryzerz/prime-pstack": 7,
+      "ethanolivertroy/grokbot-cloudflare-inbox": 2,
+      "fakechris/lumenbox": 3,
+      "function1st/PhoneZero": 11,
+      "gabrielmoreira/agent-skills-mirror": 40449,
+      "galleonlabs/hypergrok-trading-desk": 27,
+      "garylesueur/askmeatsack": 1,
+      "garylesueur/showmeatsack": 1,
+      "grettke/help": 6,
+      "grt8guy/AWS_Deepracer": 9,
+      "guzus/ai-research-arm": 2,
+      "h-mascot/weeklyclaw-ai": 1,
+      "h3y6e/agent-skills": 151,
+      "hariou/technocore-grokbot-ja": 1,
+      "hemnaath04/job-os": 6,
+      "heredotnow/skill": 1,
+      "heymoosh/content-agents": 30,
+      "hopchouinard/RecapFlow-automation": 103,
+      "huhuhulululu/ponyo": 1,
+      "humblehuman369/dealscope": 16,
+      "iXanadu/ShareWeb": 4,
+      "idildogaturkmen/COOK": 16,
+      "inspr-at/paimos": 3,
+      "ja153903/dotfiles": 20,
+      "jadenlee7/coineasy-content-engine": 4,
+      "jaredtrichard/grok-factory": 8,
+      "jaredtrichard/grok-research": 4,
+      "jaskirat1616/grok-skills": 144,
+      "javier-jaime/Second-Brain": 40,
+      "jaywedgeworth22/Autorotate": 9,
+      "jaywedgeworth22/ai-fleet-coordinator": 72,
+      "jblack4vols/grok-bot": 2,
+      "jeffhuber/claudecowork-imessage-skill": 3,
+      "jim80net/flotilla": 28,
+      "jk4905/agent-skills": 11,
+      "jmcombs/ynabro": 2,
+      "joshmysore/nett": 32,
+      "jsoyer/blog.jeromesoyer.fr": 2,
+      "jssblck/agents": 15,
+      "karlorz/agent-skills": 32,
+      "kerberos742-commits/resona-comm-room": 1,
+      "kitsboy/satohash": 30,
+      "knocklabs/skills": 14,
+      "korallis/K-pi": 38,
+      "kunchenguid/grok-ship": 5,
+      "kunchenguid/quota-axi": 2,
+      "kwakseongjae/awesome-grok-bot": 3,
+      "kydlikebtc/awesome-grokbot": 2,
+      "l0ng-ai/tty7": 3,
+      "lance-live/dstack": 17,
+      "langgptai/awesome-system-prompts": 15,
+      "lawrence3699/agent-skills-corpus": 4644,
+      "lazerusrm/botrouter": 1,
+      "learn-ukrainian/learn-ukrainian.github.io": 177,
+      "levineam/jarvOS": 45,
+      "lukejmorrison/omamusic": 1,
+      "m-check1B/t3-code-tentacles": 2,
+      "mKay00/grok-bot-second-brain": 5,
+      "mackfuller60-hash/kalshi-demo": 1,
+      "mahathir69/technocore-safe": 3,
+      "majiayu000/claude-skill-registry": 51344,
+      "manu042k/CursorHackathon": 3,
+      "marcelormendes/poteto-pi": 31,
+      "matteoantoci/firstmate": 2,
+      "mcorbett51090/RavenClaude": 2187,
+      "mdsmithaustin/pstack": 12,
+      "mergisi/awesome-grokbot": 113,
+      "mgalihpp/skills": 25,
+      "moddose081018-dotcom/propeloseo.com": 2,
+      "moderatesoup/haunt": 1,
+      "modiqo/play": 3,
+      "mozilla/diversity": 10,
+      "mrkhachaturov/agent-harness-docs": 207,
+      "mtrxdev/build-brief": 3,
+      "napiermd/heavy-lift-cloud-agents": 1,
+      "ndjordjevic/agentic-ai-wiki": 290,
+      "nexmo-community/node-voice-example": 1,
+      "noam99moyal-sudo/podcast-summary-bot": 1,
+      "novusordos666/grokbot-outreach-agent-team": 6,
+      "p10ns11y/botify": 2,
+      "pacifico-1106/grokbot-control-plane": 1,
+      "palehonk0-o/grokbot-market-memory": 6,
+      "petalas/skills": 43,
+      "phatblat/dotfiles": 88,
+      "platformology/company-os": 252,
+      "praxstack/ai-visual-code-review": 178,
+      "praxstack/markdown-viewer-app": 13,
+      "professorpalmer/Puppetmaster": 7,
+      "project-noemi/agents": 87,
+      "radiofrequency/folstad-site": 1,
+      "rbelem/devbox-global": 33,
+      "rdyson2622-del/dysonrelo-april-10-pivot": 3,
+      "rechedev9/cliphub-typescript": 10,
+      "renoise-ai/awesome-seedance-prompts": 102,
+      "requena242/stackailearn": 6,
+      "richard7463/askgrokwallet": 1,
+      "rkanjani/skills": 4,
+      "rocksun/mwblog": 375,
+      "rohithkandula19/RohiRo": 6,
+      "saadkamal/boxcrew": 2,
+      "saidur2k/youtube-digest-writeback": 10,
+      "sanky369/codexbot": 2,
+      "saurabh4269/product-os": 2,
+      "sayandahiyagt/internalskills": 1,
+      "sdad1018/Eigentrace": 104,
+      "sean-lai-sh/morpheus": 3,
+      "seanGSISG/cstack": 27,
+      "shrdgn/grokbot-skills": 74,
+      "simoncrypta/agentic-dev-setup": 2,
+      "skyremote/skool-navaigate-install": 28,
+      "smfworks/wisdomforge": 310,
+      "sohailbhamani/alex-finn-transcripts": 40,
+      "sohailbhamani/nate-jones-transcripts": 93,
+      "songjiun10-collab/Hncs": 25,
+      "stealth-factory/grok-bot-skills": 2,
+      "steve228uk/grok-bot-shopping": 4,
+      "stevologic/shiba-studio": 2,
+      "superboyyy/bot-bureau": 6,
+      "supersuit-tech/permission-slip": 6,
+      "swcstudiospace/PumpGrok": 32,
+      "swcstudiospace/swc-studio-heavy": 7,
+      "tal-giladi/grokbot-field-guide": 1,
+      "tatdt622989/blog": 3,
+      "tbhrc/drf-main": 9,
+      "templetwo/conditioned-kernel": 14,
+      "tempoxyz/docs": 5,
+      "the-missionary-company/error-analysis-tool": 1,
+      "thecuriousts/ensembly": 2,
+      "thomasbek3/hermes-bot-kit": 1,
+      "timoconnellaus/frockbot": 3,
+      "tommy-ca/pstack": 60,
+      "toomanybrians/brianmadden-ai": 27,
+      "trycua/cua": 26,
+      "unmet23-lab/synk-appsscript": 7,
+      "vanshyadav1408/Omentir": 1,
+      "vercel/vercel-plugin": 37,
+      "vibewatch/vibewatch.github.io": 1,
+      "vinodrajendran001/All_You_Need_Is_AI": 53,
+      "vltansky/vs": 32,
+      "wenxiu216/github-scout": 1,
+      "yiranzhimo/transcript-rss": 10,
+      "yorkLiu/knownleges": 2,
+      "ythx-101/pi-bot-foundry": 2,
+      "zhongjis/agent-skills": 32
+    },
+    "excluded_repos": [
+      "Anil-matcha/awesome-grok-bot",
+      "SpillwaveSolutions/claude-code-ager",
+      "aaron-he-zhu/aaron-marketing-skills",
+      "elie222/botdirectory.ai",
+      "jeremybrasher/grokbot-skills",
+      "justinlietz93/Perfect_Prompts",
+      "lonormaly/worktree-zero",
+      "mehmetbaykar/cursor-docs-skill",
+      "ptmrio/harness-subagent"
+    ],
+    "rejected": {
+      "excluded_path_repo_meta": 11953,
+      "not_instruction:no_opener": 97165,
+      "not_instruction:low_density": 34225,
+      "too_short": 20850,
+      "excluded_path_non_charter": 93261,
+      "too_long": 44251,
+      "excluded_path_site_source": 5515,
+      "not_instruction:link_rows": 2280,
+      "not_english": 134737,
+      "excluded_class_link_directory_or_plugin": 475,
+      "unreadable": 20
+    },
+    "stage_a_counts": {
+      "R1": {
+        "false": 63956,
+        "true": 7929,
+        "unclear": 37909
+      },
+      "R2": {
+        "unclear": 81978,
+        "true": 16680,
+        "false": 11136
+      },
+      "R3": {
+        "unclear": 92025,
+        "true": 4303,
+        "false": 13466
+      },
+      "R4": {
+        "true": 59214,
+        "false": 50580
+      },
+      "R5": {
+        "true": 50624,
+        "false": 59170
+      },
+      "R6": {
+        "false": 56996,
+        "true": 52798
+      },
+      "R7": {
+        "false": 109622,
+        "true": 172
+      },
+      "R8": {
+        "unclear": 102859,
+        "true": 6929,
+        "false": 6
+      }
+    },
+    "unclear_share": {
+      "R1": 0.34527387653241526,
+      "R2": 0.7466528225586098,
+      "R3": 0.8381605552215968,
+      "R4": 0.0,
+      "R5": 0.0,
+      "R6": 0.0,
+      "R7": 0.0,
+      "R8": 0.9368362569903638
+    },
+    "no_hand_sample": "no hand-labelled sample was drawn on this corpus; the counts are Stage A only and carry no publication row",
+    "skill_query": {
+      "skill_query": "\"grok bot\" filename:SKILL.md",
+      "repos_added_by_query": 76,
+      "repos": [
+        "ZhuLinsen/daily_stock_analysis",
+        "trycua/cua",
+        "davidondrej/skills",
+        "cursor/plugins",
+        "aigorahub/elves",
+        "am-will/gooey-pi",
+        "mercuretechnologies/xprem",
+        "DavidWells/stars",
+        "agentskillexchange/skills",
+        "Kripu77/software-factory",
+        "phatblat/dotfiles",
+        "simoncrypta/agentic-dev-setup",
+        "nowledge-co/community",
+        "SpillwaveSolutions/sales-pipeline",
+        "SpillwaveSolutions/system-architecture-capture",
+        "SpillwaveSolutions/news-digest",
+        "SpillwaveSolutions/consulting-leads",
+        "SpillwaveSolutions/executive-coordination",
+        "SpillwaveSolutions/okf-agent-graph",
+        "SpillwaveSolutions/executive-job-search",
+        "SpillwaveSolutions/okf-plugin",
+        "SpillwaveSolutions/data-engineering-knowledge-capture",
+        "SpillwaveSolutions/second-brain-core",
+        "rkanjani/skills",
+        "rbelem/devbox-global",
+        "Yeshwanthyk/agent-skills",
+        "SpillwaveSolutions/research-knowledge-capture",
+        "SpillwaveSolutions/codex-ager",
+        "SpillwaveSolutions/grok-build-ager",
+        "SpillwaveSolutions/claude-code-ager",
+        "lukejmorrison/omamusic",
+        "SpillwaveSolutions/okf-pointers",
+        "skyremote/skool-navaigate-install",
+        "SpillwaveSolutions/okf-remote",
+        "SpillwaveSolutions/okf-time-series",
+        "knowz-io/deepseek-knowz-plugin",
+        "lance-live/dstack",
+        "gouzhongfei/daily-stock-analysis-cn",
+        "Howdrian/invest-system",
+        "ThangLuuQuoc/daily_stock_analysis",
+        "PKEMEDIA/pke-ai-agent-skills",
+        "h3y6e/agent-skills",
+        "MartinHedevag/poteto-mode",
+        "modiqo/play",
+        "vltansky/vs",
+        "praxstack/markdown-viewer-app",
+        "knowz-io/deepseek-knowzcode-plugin",
+        "garylesueur/showmeatsack",
+        "mgalihpp/skills",
+        "lonormaly/worktree-zero",
+        "MigmaAI/migma-skills",
+        "supainc/supacatch-js",
+        "songjiun10-collab/Hncs",
+        "jaywedgeworth22/BotFleet",
+        "tempoxyz/plugins",
+        "appaloft/appaloft",
+        "emo-eth/skills",
+        "karlorz/agent-skills",
+        "h-mascot/weeklyclaw-ai",
+        "jssblck/agents",
+        "timdoes/proof-inbox-mcp",
+        "jnyross/pstack-muse",
+        "mdsmithaustin/pstack",
+        "AstroQore/vibe-bar",
+        "eryzerz/prime-pstack",
+        "marcelormendes/poteto-pi",
+        "tempoxyz/docs",
+        "praxstack/ai-visual-code-review",
+        "Steamedhams89/hermes-pstack",
+        "seanGSISG/cstack",
+        "ja153903/dotfiles",
+        "44isthenumber/disney-dining-bot",
+        "sayandahiyagt/internalskills",
+        "moderatesoup/haunt",
+        "garylesueur/askmeatsack",
+        "rechedev9/cliphub-typescript"
+      ],
+      "repos_with_charters_full": 57,
+      "charters_full": 2164,
+      "repos_dropped_by_strict_rule": [
+        "SpillwaveSolutions/claude-code-ager",
+        "lonormaly/worktree-zero"
+      ],
+      "repos_dropped_count": 2,
+      "repos_in_strict_with_charters": 55,
+      "charters_strict": 2160,
+      "strict_n_stage2": 109794,
+      "full_n_stage2": 110387,
+      "share_of_strict_stage2": 0.01967320618613039,
+      "per_repo_strict": {
+        "DavidWells/stars": 833,
+        "praxstack/ai-visual-code-review": 178,
+        "h3y6e/agent-skills": 151,
+        "phatblat/dotfiles": 88,
+        "MartinHedevag/poteto-mode": 78,
+        "emo-eth/skills": 78,
+        "PKEMEDIA/pke-ai-agent-skills": 75,
+        "davidondrej/skills": 58,
+        "cursor/plugins": 49,
+        "aigorahub/elves": 47,
+        "Steamedhams89/hermes-pstack": 36,
+        "rbelem/devbox-global": 33,
+        "karlorz/agent-skills": 32,
+        "vltansky/vs": 32,
+        "marcelormendes/poteto-pi": 31,
+        "skyremote/skool-navaigate-install": 28,
+        "seanGSISG/cstack": 27,
+        "trycua/cua": 26,
+        "mgalihpp/skills": 25,
+        "songjiun10-collab/Hncs": 25,
+        "ja153903/dotfiles": 20,
+        "SpillwaveSolutions/data-engineering-knowledge-capture": 17,
+        "lance-live/dstack": 17,
+        "jssblck/agents": 15,
+        "SpillwaveSolutions/system-architecture-capture": 14,
+        "praxstack/markdown-viewer-app": 13,
+        "mdsmithaustin/pstack": 12,
+        "SpillwaveSolutions/okf-plugin": 11,
+        "rechedev9/cliphub-typescript": 10,
+        "SpillwaveSolutions/okf-agent-graph": 9,
+        "SpillwaveSolutions/research-knowledge-capture": 8,
+        "SpillwaveSolutions/second-brain-core": 7,
+        "eryzerz/prime-pstack": 7,
+        "44isthenumber/disney-dining-bot": 6,
+        "SpillwaveSolutions/consulting-leads": 6,
+        "SpillwaveSolutions/executive-coordination": 6,
+        "SpillwaveSolutions/executive-job-search": 6,
+        "SpillwaveSolutions/news-digest": 6,
+        "SpillwaveSolutions/sales-pipeline": 6,
+        "tempoxyz/docs": 5,
+        "rkanjani/skills": 4,
+        "MigmaAI/migma-skills": 3,
+        "SpillwaveSolutions/okf-pointers": 3,
+        "SpillwaveSolutions/okf-time-series": 3,
+        "am-will/gooey-pi": 3,
+        "modiqo/play": 3,
+        "simoncrypta/agentic-dev-setup": 2,
+        "SpillwaveSolutions/codex-ager": 1,
+        "SpillwaveSolutions/grok-build-ager": 1,
+        "garylesueur/askmeatsack": 1,
+        "garylesueur/showmeatsack": 1,
+        "h-mascot/weeklyclaw-ai": 1,
+        "lukejmorrison/omamusic": 1,
+        "moderatesoup/haunt": 1,
+        "sayandahiyagt/internalskills": 1
+      },
+      "classes_of_skill_query_repos": {
+        "ZhuLinsen/daily_stock_analysis": null,
+        "trycua/cua": null,
+        "davidondrej/skills": null,
+        "cursor/plugins": null,
+        "aigorahub/elves": null,
+        "am-will/gooey-pi": null,
+        "mercuretechnologies/xprem": null,
+        "DavidWells/stars": null,
+        "agentskillexchange/skills": null,
+        "Kripu77/software-factory": null,
+        "phatblat/dotfiles": null,
+        "simoncrypta/agentic-dev-setup": null,
+        "nowledge-co/community": null,
+        "SpillwaveSolutions/sales-pipeline": null,
+        "SpillwaveSolutions/system-architecture-capture": null,
+        "SpillwaveSolutions/news-digest": null,
+        "SpillwaveSolutions/consulting-leads": null,
+        "SpillwaveSolutions/executive-coordination": null,
+        "SpillwaveSolutions/okf-agent-graph": null,
+        "SpillwaveSolutions/executive-job-search": null,
+        "SpillwaveSolutions/okf-plugin": null,
+        "SpillwaveSolutions/data-engineering-knowledge-capture": null,
+        "SpillwaveSolutions/second-brain-core": null,
+        "rkanjani/skills": null,
+        "rbelem/devbox-global": null,
+        "Yeshwanthyk/agent-skills": null,
+        "SpillwaveSolutions/research-knowledge-capture": null,
+        "SpillwaveSolutions/codex-ager": null,
+        "SpillwaveSolutions/grok-build-ager": null,
+        "SpillwaveSolutions/claude-code-ager": "claude_code_skill_library",
+        "lukejmorrison/omamusic": null,
+        "SpillwaveSolutions/okf-pointers": null,
+        "skyremote/skool-navaigate-install": null,
+        "SpillwaveSolutions/okf-remote": null,
+        "SpillwaveSolutions/okf-time-series": null,
+        "knowz-io/deepseek-knowz-plugin": null,
+        "lance-live/dstack": null,
+        "gouzhongfei/daily-stock-analysis-cn": null,
+        "Howdrian/invest-system": null,
+        "ThangLuuQuoc/daily_stock_analysis": null,
+        "PKEMEDIA/pke-ai-agent-skills": null,
+        "h3y6e/agent-skills": null,
+        "MartinHedevag/poteto-mode": null,
+        "modiqo/play": null,
+        "vltansky/vs": null,
+        "praxstack/markdown-viewer-app": null,
+        "knowz-io/deepseek-knowzcode-plugin": null,
+        "garylesueur/showmeatsack": null,
+        "mgalihpp/skills": null,
+        "lonormaly/worktree-zero": "claude_code_skill_library",
+        "MigmaAI/migma-skills": null,
+        "supainc/supacatch-js": null,
+        "songjiun10-collab/Hncs": null,
+        "jaywedgeworth22/BotFleet": null,
+        "tempoxyz/plugins": null,
+        "appaloft/appaloft": null,
+        "emo-eth/skills": null,
+        "karlorz/agent-skills": null,
+        "h-mascot/weeklyclaw-ai": null,
+        "jssblck/agents": null,
+        "timdoes/proof-inbox-mcp": null,
+        "jnyross/pstack-muse": null,
+        "mdsmithaustin/pstack": null,
+        "AstroQore/vibe-bar": null,
+        "eryzerz/prime-pstack": null,
+        "marcelormendes/poteto-pi": null,
+        "tempoxyz/docs": null,
+        "praxstack/ai-visual-code-review": null,
+        "Steamedhams89/hermes-pstack": null,
+        "seanGSISG/cstack": null,
+        "ja153903/dotfiles": null,
+        "44isthenumber/disney-dining-bot": null,
+        "sayandahiyagt/internalskills": null,
+        "moderatesoup/haunt": null,
+        "garylesueur/askmeatsack": null,
+        "rechedev9/cliphub-typescript": null
+      }
+    },
+    "concentration": {
+      "repos_with_charters": 276,
+      "top5": [
+        {
+          "repo": "majiayu000/claude-skill-registry",
+          "charters": 51344,
+          "share": 0.4676393974169809,
+          "root": "code search"
+        },
+        {
+          "repo": "gabrielmoreira/agent-skills-mirror",
+          "charters": 40449,
+          "share": 0.36840810973277227,
+          "root": "code search"
+        },
+        {
+          "repo": "lawrence3699/agent-skills-corpus",
+          "charters": 4644,
+          "share": 0.042297393300180335,
+          "root": "code search"
+        },
+        {
+          "repo": "mcorbett51090/RavenClaude",
+          "charters": 2187,
+          "share": 0.019919121263457018,
+          "root": "code search"
+        },
+        {
+          "repo": "Neuroca-Inc/Perfect_Prompts",
+          "charters": 1407,
+          "share": 0.01281490791846549,
+          "root": "code search"
+        }
+      ],
+      "top5_share": 0.911078929631856,
+      "repos_at_or_above_1000": [
+        [
+          "majiayu000/claude-skill-registry",
+          51344
+        ],
+        [
+          "gabrielmoreira/agent-skills-mirror",
+          40449
+        ],
+        [
+          "lawrence3699/agent-skills-corpus",
+          4644
+        ],
+        [
+          "mcorbett51090/RavenClaude",
+          2187
+        ],
+        [
+          "Neuroca-Inc/Perfect_Prompts",
+          1407
+        ]
+      ],
+      "n_without_repos_at_or_above_1000": 9763,
+      "charters_from_code_search_repos": 108347,
+      "charters_from_stage1_repos": 1447
     }
   }
 }

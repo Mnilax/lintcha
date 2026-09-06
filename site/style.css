@@ -5,7 +5,7 @@
 :root, [data-theme="dark"] {
   --bg:#0d0e0f; --panel:#141618; --panel-2:#1b1e21; --field:#101214;
   --line:#26292c; --line-soft:#1d2023;
-  --ink:#f4f5f6; --ink-2:#99a1a7; --ink-3:#6b7277;
+  --ink:#f4f5f6; --ink-2:#99a1a7; --ink-3:#7a8288;
   --btn:#f4f5f6; --btn-ink:#0d0e0f; --btn-quiet-line:#33373a;
   --pos:#3fa07a; --neg:#d9584f; --eye:#111213;
   --c1:#d96a92; --c2:#d1823f; --c3:#8b78dc; --c4:#3f9fa8; --c5:#6ba148; --c6:#4f88d4;
@@ -14,7 +14,7 @@
 [data-theme="light"] {
   --bg:#f3efe8; --panel:#fffdf9; --panel-2:#ebe5db; --field:#fffdf9;
   --line:#ded7ca; --line-soft:#e7e1d6;
-  --ink:#1a1917; --ink-2:#5e5a53; --ink-3:#8d867c;
+  --ink:#1a1917; --ink-2:#5e5a53; --ink-3:#6f6960;
   --btn:#1a1917; --btn-ink:#f7f4ee; --btn-quiet-line:#cfc7b8;
   --pos:#237a5c; --neg:#b23a33; --eye:#1a1917;
   --c1:#c4557f; --c2:#b56c2a; --c3:#7461c8; --c4:#2f8790; --c5:#588c36; --c6:#3a71bd;
@@ -60,6 +60,20 @@ summary { list-style:none; cursor:pointer; }
   [data-rail] { display:none !important; }
   [data-strip] { display:block !important; }
 }
+/* --ink-3 was #6b7277 (dark) and #8d867c (light) in the delivered shell: 3.96 and 3.14 against the ground, below AA 4.5 for text.
+   Lifted to #7a8288 (4.95) and #6f6960 (4.74) on 2026-09-06, the smallest step that clears the gate. */
 /* the language select built by ui-controls.js carries .lc-select and nothing else (CONTROLS_CONTRACT.md section 4) */
 .lc-select { font-family:'IBM Plex Mono',monospace; font-size:12px; padding:7px 12px; border-radius:999px; border:1px solid var(--line); background:var(--panel); color:var(--ink); cursor:pointer; }
 [hidden] { display:none !important; }
+/* brand lockup: the mark is monochrome black and inverts to the light ink on the dark theme (never a black mark on a dark ground) */
+.lockup { display:flex; flex-direction:column; align-items:flex-start; gap:8px; border:0; }
+.lockup .mark { display:block; width:56px; height:56px; }
+.lockup .wordmark { font-size:44px; }
+.lockup-small { flex-direction:row; align-items:center; gap:10px; margin:0 0 1.2rem; text-decoration:none; }
+.lockup-small .mark { width:32px; height:32px; }
+.lockup-small .wordmark { font-size:22px; }
+.lockup .mark { mix-blend-mode:multiply; }   /* the png ground is white: multiply drops it onto the paper */
+:root[data-theme="dark"] .lockup .mark { filter:invert(1); mix-blend-mode:screen; }   /* inverted to the light ink, its ground drops onto the dark shell */
+@media (max-width:900px) { .lockup .mark { width:40px; height:40px; } .lockup .wordmark { font-size:34px; } }
+/* resting state: nothing has been checked yet, so the margin figures sit in the neutral ink until a read resolves them */
+[data-inputgrid][data-resolved="0"] [data-crit] [data-ink] { fill:var(--ink-3); }

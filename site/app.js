@@ -5,7 +5,9 @@
   "use strict";
   var LANG_KEY = "lintcha:lang";
   var NUMBERS_FILE = "numbers.json";
-  var ORDER = ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8"];
+  // canonical order: boundary, finished, approval, memory, quiet, input, then tools, then secrets (the two weakest rules last)
+  var ORDER = ["R4", "R5", "R1", "R2", "R3", "R8", "R6", "R7"];
+  function canon(names) { return names.slice().sort(function (x, y) { return ORDER.indexOf(x.split("_")[0]) - ORDER.indexOf(y.split("_")[0]); }); }
   var MONO = "font-family:'IBM Plex Mono',monospace;";
 
   var $ = function (id) { return document.getElementById(id); };
@@ -29,14 +31,14 @@
   // rules the comparison block shows: publication rows 1 to 3, minus R7 whose count carries no information at this corpus
   function stripRules() {
     if (!numbers) return [];
-    return Object.keys(numbers.rules).filter(function (k) { var row = numbers.rules[k].publication_row; return (row === 1 || row === 2 || row === 3) && k.split("_")[0] !== "R7"; });
+    return canon(Object.keys(numbers.rules)).filter(function (k) { var row = numbers.rules[k].publication_row; return (row === 1 || row === 2 || row === 3) && k.split("_")[0] !== "R7"; });
   }
   // every figure comes from numbers.json (inline subset or the fetched file); nothing is typed into strings
   function pageVars() {
     if (!numbers) return { date: "", n: "", rules: "", recall: "", precision: "", failed_rules: "", row4_rules: "", sample_n: "", method: t("footer.method"), hidden: "", shown: "" };
     var rules = numbers.rules, names = Object.keys(rules), N = numbers.corpus.final_n;
     var ex = function (k) { return numbers.extras && numbers.extras.expansion && (k in numbers.extras.expansion) ? numbers.extras.expansion[k] : undefined; };
-    var failed = names.filter(function (k) { return rules[k].publication_row === 4; }).map(function (k) { return t("rules." + k.split("_")[0] + ".name"); }).join(", ");
+    var failed = canon(names).filter(function (k) { return rules[k].publication_row === 4; }).map(function (k) { return t("rules." + k.split("_")[0] + ".name"); }).join(", ");
     var r1 = rules.R1_approval_gate, r6 = rules.R6_undisclosed_capability, r7 = rules.R7_visible_secret, r8 = rules.R8_injection_resistance;
     return {
       date: numbers.snapshot_date, n: N, rules: names.length, labels: names.length * N,
@@ -113,18 +115,30 @@
   // ------------------------------------------------------------ language heuristic for the pasted text
   var ES_STOP = ["el", "la", "los", "las", "de", "del", "que", "y", "en", "un", "una", "para", "con", "por", "no", "es", "se", "al", "como", "más", "pero", "sus", "este", "esta", "cuando", "nunca", "antes", "después", "si", "eres", "debes", "cada"];
   var EN_STOP = ["the", "and", "to", "you", "of", "a", "in", "for", "is", "it", "your", "with", "on", "that", "this", "or", "not", "be", "as", "are", "do", "if", "an", "by", "from", "when", "never", "before", "after", "only"];
+  // cheap heuristic, any language: share of Latin letters against every letter, plus a check for non-Latin scripts;
+  // then the Spanish stop-word test for Latin-script text that is still not English. It never names the language.
   function readsAsEnglish(text) {
-    var letters = text.match(/[A-Za-zÀ-ɏ]/g) || [];
-    if (letters.length < 40) return true;
-    var accented = (text.match(/[áéíóúñü¿¡ÁÉÍÓÚÑÜ]/g) || []).length;
+    var all = text.match(/\p{L}/gu) || [];
+    if (all.length < 20) return true;
+    var latin = (text.match(/[A-Za-z\u00C0-\u024F]/g) || []).length;
+    var nonLatin = (text.match(/[\u0370-\u03FF\u0400-\u052F\u0530-\u058F\u0590-\u05FF\u0600-\u06FF\u0900-\u0DFF\u0E00-\u0E7F\u1100-\u11FF\u3040-\u30FF\u3400-\u4DBF\u4E00-\u9FFF\uAC00-\uD7AF]/g) || []).length;
+    if (nonLatin / all.length > 0.15) return false;
+    if (latin / all.length < 0.85) return false;
+    var accented = (text.match(/[áéíóúñü¿¡ÁÉÍÓÚÑÜãõçÃÕÇ]/g) || []).length;
     var words = text.toLowerCase().split(/[^a-zà-ÿ]+/).filter(Boolean);
     var es = 0, en = 0;
     words.forEach(function (w) { if (ES_STOP.indexOf(w) >= 0) es++; if (EN_STOP.indexOf(w) >= 0) en++; });
-    var asciiShare = (text.match(/[A-Za-z]/g) || []).length / letters.length;
-    if (accented / letters.length > 0.01 && es >= en) return false;
+    if (accented / all.length > 0.01 && es >= en) return false;
     if (es >= 3 && es > en) return false;
-    if (asciiShare < 0.85) return false;
+    if ((text.match(/[A-Za-z]/g) || []).length / all.length < 0.85) return false;
     return true;
+  }
+  // block 6: the notice shows under the textarea as soon as the text stops reading as English, before any button
+  function updateNotice() {
+    var raw = $("charter").value, notice = $("lang-notice");
+    if (raw.trim() && !readsAsEnglish(raw)) { notice.textContent = t("notice.not_english"); notice.hidden = false; }
+    else { notice.hidden = true; notice.textContent = ""; }
+    return !notice.hidden;
   }
 
   // ------------------------------------------------------------ verdict per rule
@@ -297,6 +311,7 @@
 
   function clearAll() {
     $("results").hidden = true; $("meta").textContent = ""; $("lang-notice").hidden = true; $("lang-notice").textContent = "";
+    if ($("results-notice")) { $("results-notice").hidden = true; $("results-notice").textContent = ""; }
     setVerdicts(null); resolve(false);
   }
   function run() {
@@ -305,8 +320,9 @@
     var out = CharterRules.scan(raw);
     var wc = out.normalized.word_count;
     $("meta").textContent = t("status.words", { n: wc }) + (wc < 40 ? t("status.under_40") : "") + (CharterRules.hasSchedule(out.normalized.text) ? t("status.scheduled") : t("status.on_demand"));
-    var notice = $("lang-notice");
-    if (readsAsEnglish(raw)) { notice.hidden = true; notice.textContent = ""; } else { notice.textContent = t("notice.not_english"); notice.hidden = false; }
+    var showing = updateNotice();
+    var rn = $("results-notice");
+    if (rn) { rn.textContent = showing ? t("notice.not_english") : ""; rn.hidden = !showing; }
     render(out.results);
     resolve(true);
   }
@@ -315,9 +331,13 @@
     $("check").addEventListener("click", run);
     $("clear").addEventListener("click", function () { $("charter").value = ""; clearAll(); $("charter").focus(); });
     $("charter").addEventListener("keydown", function (e) { if ((e.ctrlKey || e.metaKey) && e.key === "Enter") run(); });
+    $("charter").addEventListener("input", updateNotice);
+    $("charter").addEventListener("paste", function () { setTimeout(updateNotice, 0); });
+    // block 9: the missing clauses are appended as plain continuous text, one blank line apart, no markers.
+    // The result must read as one charter written by one person; the count under the button says what was added.
     $("copy-all").addEventListener("click", function () {
       var missing = JSON.parse($("copy-all").dataset.missing || "[]");
-      var text = $("charter").value.replace(/\s+$/, "") + "\n\n" + t("copy.marker") + "\n" + missing.join("\n\n") + "\n" + t("copy.end") + "\n";
+      var text = $("charter").value.replace(/\s+$/, "") + "\n\n" + missing.join("\n\n") + "\n";
       copyText(text, null);
       $("copy-status").textContent = missing.length === 1 ? t("results.copied_one") : t("results.copied_many", { n: missing.length });
     });
