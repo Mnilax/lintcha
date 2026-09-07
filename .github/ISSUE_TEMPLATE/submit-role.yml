@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks. The library collects profiles people run for real. Paste the text as it goes into the bot profile; nothing is edited before review.
+        Thanks. The library collects profiles people run for real. Paste the text as it goes into the bot profile; nothing is edited before review. The text is linted before merge by the same engine as the check page, and the verdict is published next to the role, pass or fail.
   - type: input
     id: role-name
     attributes:
@@ -31,10 +31,39 @@ body:
       render: text
     validations:
       required: true
+  - type: input
+    id: author
+    attributes:
+      label: Author
+      description: The author string exactly as it should appear next to the role.
+      placeholder: Your Name
+    validations:
+      required: true
+  - type: input
+    id: author-url
+    attributes:
+      label: Author link
+      description: Optional. An https address, or leave it empty. It becomes the author_url field, which is required in the file even when empty.
+      placeholder: https://
+    validations:
+      required: false
+  - type: dropdown
+    id: license
+    attributes:
+      label: License
+      description: The role is published under this license. A role without one is never published.
+      options:
+        - CC0-1.0
+        - MIT
+        - Apache-2.0
+    validations:
+      required: true
   - type: checkboxes
     id: rights
     attributes:
       label: Rights
       options:
-        - label: I wrote this profile or have the right to share it, and it may be published in the library.
+        - label: I wrote this role or hold the right to publish it, and I grant it under the license chosen above.
+          required: true
+        - label: I understand the text is linted before merge and that the verdict is published next to the role, pass or fail.
           required: true

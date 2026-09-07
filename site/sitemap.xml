@@ -1,6 +1,195 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/library/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/"/>
+  </url>
+  <url>
+    <loc>/library/browser-reader/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/browser-reader/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/browser-reader/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/browser-reader/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/browser-reader/"/>
+  </url>
+  <url>
+    <loc>/library/code-reviewer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/code-reviewer/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/code-reviewer/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/code-reviewer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/code-reviewer/"/>
+  </url>
+  <url>
+    <loc>/library/data-cleaner/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/data-cleaner/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/data-cleaner/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/data-cleaner/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/data-cleaner/"/>
+  </url>
+  <url>
+    <loc>/library/doc-scout/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/doc-scout/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/doc-scout/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/doc-scout/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/doc-scout/"/>
+  </url>
+  <url>
+    <loc>/library/incident-scribe/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/incident-scribe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/incident-scribe/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/incident-scribe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/incident-scribe/"/>
+  </url>
+  <url>
+    <loc>/library/migration-runner/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/migration-runner/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/migration-runner/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/migration-runner/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/migration-runner/"/>
+  </url>
+  <url>
+    <loc>/library/release-captain/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/release-captain/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/release-captain/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/release-captain/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/release-captain/"/>
+  </url>
+  <url>
+    <loc>/library/support-triage/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/support-triage/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/support-triage/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/support-triage/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/support-triage/"/>
+  </url>
+  <url>
+    <loc>/es/library/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/"/>
+  </url>
+  <url>
+    <loc>/es/library/browser-reader/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/browser-reader/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/browser-reader/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/browser-reader/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/browser-reader/"/>
+  </url>
+  <url>
+    <loc>/es/library/code-reviewer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/code-reviewer/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/code-reviewer/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/code-reviewer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/code-reviewer/"/>
+  </url>
+  <url>
+    <loc>/es/library/data-cleaner/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/data-cleaner/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/data-cleaner/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/data-cleaner/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/data-cleaner/"/>
+  </url>
+  <url>
+    <loc>/es/library/doc-scout/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/doc-scout/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/doc-scout/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/doc-scout/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/doc-scout/"/>
+  </url>
+  <url>
+    <loc>/es/library/incident-scribe/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/incident-scribe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/incident-scribe/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/incident-scribe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/incident-scribe/"/>
+  </url>
+  <url>
+    <loc>/es/library/migration-runner/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/migration-runner/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/migration-runner/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/migration-runner/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/migration-runner/"/>
+  </url>
+  <url>
+    <loc>/es/library/release-captain/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/release-captain/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/release-captain/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/release-captain/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/release-captain/"/>
+  </url>
+  <url>
+    <loc>/es/library/support-triage/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/support-triage/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/support-triage/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/support-triage/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/support-triage/"/>
+  </url>
+  <url>
+    <loc>/pt/library/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/"/>
+  </url>
+  <url>
+    <loc>/pt/library/browser-reader/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/browser-reader/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/browser-reader/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/browser-reader/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/browser-reader/"/>
+  </url>
+  <url>
+    <loc>/pt/library/code-reviewer/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/code-reviewer/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/code-reviewer/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/code-reviewer/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/code-reviewer/"/>
+  </url>
+  <url>
+    <loc>/pt/library/data-cleaner/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/data-cleaner/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/data-cleaner/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/data-cleaner/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/data-cleaner/"/>
+  </url>
+  <url>
+    <loc>/pt/library/doc-scout/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/doc-scout/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/doc-scout/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/doc-scout/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/doc-scout/"/>
+  </url>
+  <url>
+    <loc>/pt/library/incident-scribe/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/incident-scribe/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/incident-scribe/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/incident-scribe/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/incident-scribe/"/>
+  </url>
+  <url>
+    <loc>/pt/library/migration-runner/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/migration-runner/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/migration-runner/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/migration-runner/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/migration-runner/"/>
+  </url>
+  <url>
+    <loc>/pt/library/release-captain/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/release-captain/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/release-captain/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/release-captain/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/release-captain/"/>
+  </url>
+  <url>
+    <loc>/pt/library/support-triage/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/library/support-triage/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/library/support-triage/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/library/support-triage/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/library/support-triage/"/>
+  </url>
+  <url>
     <loc>/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="/"/>
     <xhtml:link rel="alternate" hreflang="es" href="/es/"/>

@@ -106,3 +106,10 @@ body[data-page="method"] { position:relative; z-index:0; }
 [data-deco]:nth-child(3n) { animation-duration:5.6s; animation-delay:-4s; }
 /* resting state: nothing has been checked yet, so the margin figures sit in the neutral ink until a read resolves them */
 [data-inputgrid][data-resolved="0"] [data-crit] [data-ink] { fill:var(--ink-3); }
+/* assembled charter preview (check page, section 02): the exact text the copy button copies. Added clauses carry a left
+   rule and a text label from i18n (never colour alone); bracketed slots are highlighted by a background token, with no
+   character inserted, so the preview's text equals the copied string byte for byte. */
+.preview { margin:0; white-space:pre-wrap; overflow-wrap:anywhere; background:var(--panel-2); border:1px solid var(--card-line); border-radius:12px; padding:16px 18px; font-family:'IBM Plex Mono',monospace; font-size:13px; line-height:1.65; color:var(--ink); }
+.preview-added { display:block; padding-left:14px; border-left:3px solid var(--pos); }
+.preview-added::before { content:attr(data-label); display:block; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--pos); line-height:1.4; }
+.preview-slot { background:var(--bar-track); color:var(--ink); border-radius:4px; padding:0 2px; }

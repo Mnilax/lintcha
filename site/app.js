@@ -141,15 +141,8 @@
     return !notice.hidden;
   }
 
-  // ------------------------------------------------------------ verdict per rule
-  function classify(rule, res) {
-    var v = res.value;
-    if (rule === "R7") return v === "false" ? "pass" : "miss";
-    if (rule === "R6") return v === "false" ? "pass" : "note";
-    if (rule === "R8") return v === "true" ? "pass" : (v === "false" ? "miss" : "note");
-    if (rule === "R1" || rule === "R2" || rule === "R3") return v === "true" ? "pass" : (v === "false" ? "miss" : "note");
-    return v === "true" ? "pass" : "miss";   // R4, R5
-  }
+  // ------------------------------------------------------------ verdict per rule: shared with the library build (verdict.js)
+  var classify = CharterVerdict.classify;
   function uniqueSystems(list) {
     var seen = {}, names = [];
     (list || []).forEach(function (u) { var k = u.replace(/^connect:/, "").replace(/[.,;:!?'"]+$/, ""); if (!seen[k]) { seen[k] = true; names.push(k); } });
@@ -271,12 +264,50 @@
       if (r !== "R7") missing.push(clause);   // the secret warning stays on screen but is never pasted into the charter
     });
     $("block2-intro").textContent = missing.length ? t("results.block2_intro") : t("results.block2_none");
+    // one source of truth: the assembled text, built here once. The preview renders it and the copy button copies it.
+    // Charter as typed with trailing whitespace stripped, then each missing clause one blank line apart, R7 excluded above.
+    var typed = $("charter").value;
+    var assembled = missing.length ? typed.replace(/\s+$/, "") + "\n\n" + missing.join("\n\n") + "\n" : typed;
     $("copy-all").disabled = !missing.length;
-    $("copy-all").dataset.missing = JSON.stringify(missing);
+    $("copy-all").dataset.text = assembled;
+    $("copy-all").dataset.count = String(missing.length);
+    renderPreview(typed, missing, assembled);
     renderStrip();
     setVerdicts(results);
     $("results").hidden = false;
     redecorate();
+  }
+
+  // the preview is a read-only <pre>: appended clauses are wrapped with a left rule and a text label, bracketed slots are
+  // wrapped in a highlight with a screen-reader label. Only spans are added, never a character, so the pre's textContent is
+  // the assembled string itself.
+  function slotted(parent, text) {
+    var re = /\[[^\]\n]+\]/g, last = 0, m;
+    while ((m = re.exec(text)) !== null) {
+      if (m.index > last) parent.appendChild(document.createTextNode(text.slice(last, m.index)));
+      var mark = document.createElement("mark");
+      mark.className = "preview-slot"; mark.setAttribute("role", "mark"); mark.setAttribute("aria-label", t("preview.slot") + ": " + m[0]);
+      mark.textContent = m[0]; parent.appendChild(mark);
+      last = m.index + m[0].length;
+    }
+    if (last < text.length) parent.appendChild(document.createTextNode(text.slice(last)));
+  }
+  function renderPreview(typed, missing, assembled) {
+    var pre = $("preview"), wrap = $("preview-wrap");
+    if (!pre || !wrap) return;
+    pre.textContent = "";
+    if (!missing.length) { slotted(pre, assembled); wrap.hidden = false; return; }
+    slotted(pre, typed.replace(/\s+$/, ""));
+    missing.forEach(function (clause) {
+      pre.appendChild(document.createTextNode("\n\n"));
+      var added = document.createElement("span");
+      added.className = "preview-added"; added.setAttribute("role", "note"); added.setAttribute("data-label", t("preview.added")); added.setAttribute("aria-label", t("preview.added"));
+      slotted(added, clause);
+      pre.appendChild(added);
+    });
+    pre.appendChild(document.createTextNode("\n"));
+    wrap.hidden = false;
+    if (pre.textContent !== assembled) console.warn("preview text differs from the assembled string");
   }
 
   function renderStrip() {
@@ -375,6 +406,7 @@
   function clearAll() {
     $("results").hidden = true; $("meta").textContent = ""; $("lang-notice").hidden = true; $("lang-notice").textContent = "";
     if ($("results-notice")) { $("results-notice").hidden = true; $("results-notice").textContent = ""; }
+    if ($("preview-wrap")) { $("preview-wrap").hidden = true; $("preview").textContent = ""; }
     hideGate(); if ($("builder")) { $("builder").hidden = true; $("builder").reset(); $("builder-status").textContent = ""; }
     setVerdicts(null); resolve(false); redecorate();
   }
@@ -415,12 +447,11 @@
       $("charter").value = EXAMPLES[e.currentTarget.getAttribute("data-example")] || ""; updateNotice(); $("charter").scrollIntoView({ block: "start" }); run();
     });
     // block 9: the missing clauses are appended as plain continuous text, one blank line apart, no markers.
-    // The result must read as one charter written by one person; the count under the button says what was added.
+    // The string is the one render() assembled and the preview shows; nothing is recomputed here.
     $("copy-all").addEventListener("click", function () {
-      var missing = JSON.parse($("copy-all").dataset.missing || "[]");
-      var text = $("charter").value.replace(/\s+$/, "") + "\n\n" + missing.join("\n\n") + "\n";
-      copyText(text, null);
-      $("copy-status").textContent = missing.length === 1 ? t("results.copied_one") : t("results.copied_many", { n: missing.length });
+      var count = parseInt($("copy-all").dataset.count || "0", 10);
+      copyText($("copy-all").dataset.text || "", null);
+      $("copy-status").textContent = count === 1 ? t("results.copied_one") : t("results.copied_many", { n: count });
     });
     // numbers.json is this page's own file and the source of truth; the inline subset is the file:// fallback
     try {

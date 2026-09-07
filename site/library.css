@@ -1,0 +1,48 @@
+/* lintcha library: catalog and role pages. Palette, fonts and the shell rules come from style.css; this file only adds
+   the structures the library needs. Verdict pips carry a shape and a text label, never colour alone. */
+.sr { position:absolute; left:-9999px; }
+.filters { display:flex; flex-direction:column; gap:10px; padding:0 0 18px; }
+.filter-group { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+.filter-label { font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-3); min-width:88px; }
+.filter-group button { font-family:'IBM Plex Mono',monospace; font-size:12px; padding:6px 12px; border-radius:999px; border:1px solid var(--line); background:var(--panel); color:var(--ink-2); cursor:pointer; }
+.filter-group button[aria-pressed="true"] { background:var(--btn); color:var(--btn-ink); border-color:var(--btn); }
+.count { margin:0 0 22px; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-3); }
+.cards { display:grid; grid-template-columns:repeat(auto-fill, minmax(280px, 1fr)); gap:14px; }
+.card { display:flex; flex-direction:column; gap:10px; padding:20px; border:1px solid var(--card-line); border-radius:18px; background:var(--card-bg); color:var(--ink); text-decoration:none; }
+.card:hover { border-color:var(--ink-3); color:var(--ink); }
+.card-title { font-size:19px; font-weight:600; letter-spacing:-0.02em; }
+.card-purpose { font-size:15px; line-height:1.45; color:var(--ink-2); }
+.chips { display:flex; gap:6px; flex-wrap:wrap; }
+.chip { font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-3); border:1px solid var(--line); border-radius:999px; padding:3px 9px; }
+.pips { display:flex; gap:6px; margin-top:auto; padding-top:6px; }
+.pip { display:inline-block; width:12px; height:12px; border-radius:50%; border:2px solid var(--ink-3); box-sizing:border-box; position:relative; }
+.pip-stated { background:var(--pos); border-color:var(--pos); }
+.pip-silent { background:transparent; border-color:var(--ink-3); }
+.pip-violated { background:transparent; border-color:var(--neg); border-radius:2px; }
+.pip-violated::before, .pip-violated::after { content:""; position:absolute; left:1px; right:1px; top:3px; height:2px; background:var(--neg); transform:rotate(45deg); }
+.pip-violated::after { transform:rotate(-45deg); }
+/* role page */
+.crumbs { margin:0; font-family:'IBM Plex Mono',monospace; font-size:12px; }
+.crumbs a, .role-links a, .body-actions a { color:var(--ink-2); }
+.purpose { margin:14px 0 0; max-width:640px; font-size:18px; line-height:1.5; color:var(--ink-2); }
+.meta-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:12px 18px; margin:26px 0 0; padding:18px 0; border-top:1px solid var(--line-soft); border-bottom:1px solid var(--line-soft); }
+.meta-grid dt { font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-3); }
+.meta-grid dd { margin:4px 0 0; font-size:15px; }
+.section-h { margin:48px 0 6px; font-size:22px; font-weight:600; letter-spacing:-0.03em; }
+.section-note { margin:0 0 16px; font-size:14px; color:var(--ink-3); }
+.scorecard { list-style:none; margin:0; padding:0; border-top:1px solid var(--line-soft); }
+.score { display:grid; grid-template-columns:20px 1fr auto; align-items:center; gap:0 12px; padding:12px 2px; border-bottom:1px solid var(--line-soft); }
+.score .pip { width:14px; height:14px; }
+.score-name { font-size:16px; font-weight:600; }
+.score-verdict { font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-3); }
+.score-stated .score-verdict { color:var(--pos); }
+.score-violated .score-verdict { color:var(--neg); }
+.score-line { grid-column:2 / -1; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-2); padding-top:4px; }
+.body-actions { display:flex; align-items:center; gap:14px; margin:0 0 18px; }
+.body-actions button { font-family:inherit; font-size:14px; font-weight:600; padding:10px 20px; border-radius:999px; border:1px solid var(--btn-quiet-line); background:transparent; color:var(--ink); cursor:pointer; }
+.body { border:1px solid var(--card-line); border-radius:18px; background:var(--card-bg); padding:8px 24px 18px; font-size:16px; line-height:1.55; }
+.body h2 { font-size:20px; margin:18px 0 6px; }
+.body h3 { font-size:16px; margin:20px 0 4px; }
+.body p { margin:6px 0; color:var(--ink-2); max-width:640px; text-wrap:pretty; }
+.body ul { margin:6px 0; padding-left:20px; color:var(--ink-2); }
+.role-links { margin:28px 0 0; font-size:15px; }

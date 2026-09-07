@@ -1,0 +1,144 @@
+{
+  "$comment": "Front matter schema for roles/**/*.md (LINTCHA_08 section 2). Validated by tools/build-library.mjs and tools/lint-role.mjs with no dependency: the subset used here is type, enum, pattern, maxLength, minimum and required. Field order in the file must follow the order of `order`.",
+  "type": "object",
+  "order": [
+    "slug",
+    "title",
+    "purpose",
+    "category",
+    "surface",
+    "origin",
+    "author",
+    "author_url",
+    "license",
+    "version",
+    "updated"
+  ],
+  "required": [
+    "slug",
+    "title",
+    "purpose",
+    "category",
+    "surface",
+    "origin",
+    "author",
+    "author_url",
+    "license",
+    "version",
+    "updated"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(-[a-z0-9]+)*$",
+      "$comment": "kebab, unique, must equal the file name without .md"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 32
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 90
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "coding",
+        "research",
+        "ops",
+        "support",
+        "data",
+        "writing"
+      ]
+    },
+    "surface": {
+      "type": "string",
+      "enum": [
+        "claude-code",
+        "system-prompt",
+        "grok-bot",
+        "generic"
+      ]
+    },
+    "origin": {
+      "type": "string",
+      "enum": [
+        "house",
+        "community"
+      ]
+    },
+    "author": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "author_url": {
+      "type": "string",
+      "pattern": "^(|https://[^\\s]+)$",
+      "$comment": "optional: empty string, or https only; rendered as text, never as a link, when empty"
+    },
+    "license": {
+      "type": "string",
+      "enum": [
+        "CC0-1.0",
+        "MIT",
+        "Apache-2.0"
+      ],
+      "$comment": "a role without this field is never published; the build aborts"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "updated": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "$comment": "ISO date, must be a real calendar date"
+    }
+  },
+  "reserved_slugs": [
+    "index",
+    "es",
+    "pt",
+    "method",
+    "library",
+    "fonts",
+    "i18n",
+    "assets",
+    "roles",
+    "tools",
+    "build",
+    "checker",
+    "grok-bot-checker",
+    "library-numbers",
+    "dist"
+  ],
+  "publication_gate": {
+    "$comment": "The six rules a role is scored on, in the site's canonical order, by rules.js id. R6 (undisclosed capability) and R7 (visible secret) are measured but are not part of the six, as on the check page.",
+    "six": [
+      "R4",
+      "R5",
+      "R1",
+      "R2",
+      "R3",
+      "R8"
+    ],
+    "publish_rule": "publish when no rule classifies as miss under site/verdict.js classify(), the check page's own mapping; reject on any miss. Same rule for house and community. All eight rules are classified: R4 and R5 must be true, R1/R2/R3/R8 must not be false, R7 must be false; R6 is never a miss.",
+    "$comment_publish": "The strict six-of-six rule was withdrawn on 2026-09-07: the check page treats unclear on R1, R2, R3 and R8 as a note, not a miss (rules.<id>.pass_unclear tells the visitor those lines are optional for an on-demand role), and an on-demand role that approves nothing has no approval line to state.",
+    "$comment_community": "The empty-run rule is R3 silence rule: R3_SILENCE carries 'empty run', 'empty is valid', 'skip the run entirely', 'nothing to report'. A community role that violates R4 ownership boundary, R8 injection resistance or R3 is rejected by this same rule, because those violations classify as miss.",
+    "render_vocabulary": {
+      "true": "stated",
+      "unclear": "silent",
+      "false": "violated"
+    }
+  },
+  "body_words": {
+    "min": 200,
+    "max": 330,
+    "$comment": "counted by the engine's normalizer (site/rules.js normalize), the count the check page shows"
+  }
+}
