@@ -113,3 +113,13 @@ body[data-page="method"] { position:relative; z-index:0; }
 .preview-added { display:block; padding-left:14px; border-left:3px solid var(--pos); }
 .preview-added::before { content:attr(data-label); display:block; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--pos); line-height:1.4; }
 .preview-slot { background:var(--bar-track); color:var(--ink); border-radius:4px; padding:0 2px; }
+/* block 02, the job: one row per question the charter leaves open; a row may carry the rules that wait on it, shown as
+   undecided (a separate state, not a colour of pass), never as a clause */
+.job-row { display:flex; flex-direction:column; gap:8px; padding:16px 2px; border-bottom:1px solid var(--line-soft); }
+.job-q { font-size:17px; font-weight:600; letter-spacing:-0.01em; }
+.job-after { font-size:15px; line-height:1.45; color:var(--ink-2); max-width:640px; }
+.job-rule { display:flex; align-items:flex-start; gap:12px; padding:8px 0 0 14px; border-left:3px solid var(--line); }
+.job-rule .job-rule-name { font-size:15px; font-weight:600; flex:0 0 auto; }
+.job-rule .job-rule-line { font-size:14px; line-height:1.45; color:var(--ink-2); }
+.tag-undecided { flex:0 0 auto; font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-3); border:1px dashed var(--ink-3); border-radius:999px; padding:5px 11px; }
+#job-builder-host #builder { margin-top:20px; }

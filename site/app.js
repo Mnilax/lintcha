@@ -167,10 +167,10 @@
       s.eyes.map(function (e) { return '<ellipse cx="' + e[0] + '" cy="' + e[1] + '" rx="2.7" ry="3.7" fill="var(--eye)"></ellipse>'; }).join("") + "</svg>";
     return span;
   }
-  function setVerdicts(results) {
+  function setVerdicts(results, job) {
     var crits = document.querySelectorAll("[data-crit][data-rule]");
     for (var i = 0; i < crits.length; i++) {
-      var r = crits[i].getAttribute("data-rule"), cls = results ? classify(r, results[r]) : null;
+      var r = crits[i].getAttribute("data-rule"), cls = results ? classify(r, results[r], job) : null;   // undecided: neutral, like a note
       if (cls === "pass") crits[i].setAttribute("data-v", "pos"); else if (cls === "miss") crits[i].setAttribute("data-v", "neg"); else crits[i].removeAttribute("data-v");
     }
   }
@@ -210,13 +210,47 @@
   function tag(text, color) {
     return el("span", "flex:0 0 auto; " + MONO + " font-size:11px; color:" + color + "; border:1px solid var(--line); border-radius:999px; padding:5px 11px;", text);
   }
-  function render(results) {
+  // block 02, the job: one row per check the charter leaves open, with the question the operator alone can answer,
+  // one line on what changes once it is answered, and the rules that wait on it (R2, R3 on the trigger; R1 on the
+  // destination) shown as undecided. A stated check produces no row; all four stated collapse the block to one line.
+  // The existing builder form moves under the rows: the answers go into the charter box and he reads again.
+  var JOB_QUESTION = { J1: "gate.q2", J2: "gate.q3", J3: "gate.q4", J4: "gate.q5" };
+  var JOB_CARRIES = { J3: ["R2", "R3"], J4: ["R1"] };
+  function renderJob(results, job) {
+    var rows = $("job-rows"), all = $("job-all"), host = $("job-builder-host"), builder = $("builder");
+    if (!rows) return;
+    rows.innerHTML = "";
+    var open = ["J1", "J2", "J3", "J4"].filter(function (k) { return job[k].state === "not stated"; });
+    all.hidden = open.length > 0;
+    rows.hidden = open.length === 0;
+    open.forEach(function (k) {
+      var li = el("li", null); li.className = "job-row"; li.setAttribute("data-check", k);
+      li.appendChild(el("div", null, t(JOB_QUESTION[k]))).className = "job-q";
+      li.appendChild(el("div", null, t("job.after." + k))).className = "job-after";
+      (JOB_CARRIES[k] || []).forEach(function (r) {
+        if (classify(r, results[r], job) !== "undecided") return;
+        var rule = el("div", null); rule.className = "job-rule"; rule.setAttribute("data-rule", r);
+        rule.appendChild(crit(r, 22, 26, " margin-top:1px;"));
+        rule.appendChild(el("span", null, t("rules." + r + ".name"))).className = "job-rule-name";
+        rule.appendChild(el("span", null, t("verdict.undecided"))).className = "tag-undecided";
+        rule.appendChild(el("span", null, t("rules." + r + ".undecided"))).className = "job-rule-line";
+        li.appendChild(rule);
+      });
+      rows.appendChild(li);
+    });
+    if (builder && host) {
+      if (open.length) { host.appendChild(builder); builder.hidden = false; }
+      else if (builder.parentNode === host) { $("gate").appendChild(builder); builder.hidden = true; }
+    }
+  }
+
+  function render(results, job) {
     var b1 = $("block1"), b2 = $("block2");
     b1.innerHTML = ""; b2.innerHTML = "";
     var missing = [];
     ORDER.forEach(function (r) {
-      var cls = classify(r, results[r]), name = t("rules." + r + ".name");
-      if (cls !== "pass" && cls !== "note") return;
+      var cls = classify(r, results[r], job), name = t("rules." + r + ".name");
+      if (cls !== "pass" && cls !== "note") return;   // undecided lives in block 02, next to the question that closes it
       var line;
       if (cls === "pass") line = t("rules." + r + ".pass");
       else line = r === "R6" ? t("rules.R6.note", pageVars()).replace("[SYSTEMS]", uniqueSystems(results.R6.undisclosed).join(", ")) : t("rules." + r + ".pass_unclear");
@@ -236,8 +270,9 @@
       var empty = el("li", "display:flex; padding:16px 2px; border-bottom:1px solid var(--line-soft); font-size:15px; color:var(--ink-2);", t("results.nothing_yet"));
       b1.appendChild(empty);
     }
+    renderJob(results, job);
     ORDER.forEach(function (r) {
-      var cls = classify(r, results[r]);
+      var cls = classify(r, results[r], job);
       if (cls !== "miss") return;
       var name = t("rules." + r + ".name"), clause = t("rules." + r + ".clause");
       var card = el("div", "border:1px solid var(--card-line); border-radius:18px; background:var(--card-bg); padding:20px;");
@@ -273,7 +308,7 @@
     $("copy-all").dataset.count = String(missing.length);
     renderPreview(typed, missing, assembled);
     renderStrip();
-    setVerdicts(results);
+    setVerdicts(results, job);
     $("results").hidden = false;
     redecorate();
   }
@@ -377,6 +412,7 @@
   function showGate(state) {
     var g = $("gate"); if (!g) return;
     $("results").hidden = true; setVerdicts(null); resolve(false);
+    if ($("builder") && $("builder").parentNode !== g) { g.appendChild($("builder")); $("builder").hidden = true; }
     redecorate();
     $("gate-line").textContent = t(state === "too_thin" ? "gate.too_thin" : "gate.not_readable");
     $("gate-examples").hidden = state !== "not_readable";
@@ -423,7 +459,9 @@
     var showing = updateNotice();
     var rn = $("results-notice");
     if (rn) { rn.textContent = showing ? t("notice.not_english") : ""; rn.hidden = !showing; }
-    render(out.results);
+    // the job block: four checks over the same normalized text, never scored, never counted, never compared to the corpus
+    var job = (typeof CharterJob !== "undefined") ? CharterJob.detect(out.normalized.text) : null;
+    render(out.results, job);
     resolve(true);
   }
 
@@ -440,7 +478,7 @@
     $("charter").addEventListener("keydown", function (e) { if ((e.ctrlKey || e.metaKey) && e.key === "Enter") run(); });
     $("charter").addEventListener("input", updateNotice);
     $("charter").addEventListener("paste", function () { setTimeout(updateNotice, 0); });
-    $("gate-build").addEventListener("click", function () { $("builder").hidden = false; $("builder").elements.q1.focus(); });
+    $("gate-build").addEventListener("click", function () { var b = $("builder"); if (b.parentNode !== $("gate")) $("gate").appendChild(b); b.hidden = false; b.elements.q1.focus(); });
     $("builder").addEventListener("submit", function (e) { e.preventDefault(); buildFromQuestions(); });
     var exs = document.querySelectorAll("[data-example]");
     for (var i = 0; i < exs.length; i++) exs[i].addEventListener("click", function (e) {
