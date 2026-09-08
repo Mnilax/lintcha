@@ -11,3 +11,6 @@ out_v3/
 audit/
 run3_harvest/
 *.jsonl
+# audit-core holds the only copy of the run 4 blind labels and the exclusion
+# reasons; *.jsonl above must not swallow them
+!audit-core/*.jsonl

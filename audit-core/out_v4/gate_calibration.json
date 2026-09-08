@@ -1,0 +1,24 @@
+{
+  "corpus": "work_v4",
+  "n": 1102,
+  "thresholds": {
+    "MIN_WORDS": 20,
+    "THIN_WORDS": 40,
+    "FN_RATIO_MIN": 0.03,
+    "FN_RATIO_WORDS": 5,
+    "ODD_SHARE_MAX": 0.2,
+    "ODD_MIN_TOKENS": 3,
+    "LATIN_MAJORITY": 0.5,
+    "OBJECT_WINDOW": 6
+  },
+  "verb_stems": 386,
+  "states": {
+    "profile": 1102,
+    "too_thin": 0,
+    "not_readable": 0
+  },
+  "min_fn_ratio": 0.04838709677419355,
+  "max_odd_share": 0.09433962264150944,
+  "min_latin_share": 0.984884645982498,
+  "not_profile": []
+}

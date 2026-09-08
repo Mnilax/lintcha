@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<script>
+(function(){try{var t=localStorage.getItem("lintcha:theme")
+||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{t:method.meta.title}}</title>
+<meta name="description" content="{{t:method.meta.description}}">
+<link rel="canonical" href="{{url}}">
+<link rel="alternate" hreflang="en" href="{{alt_en}}">
+<link rel="alternate" hreflang="es" href="{{alt_es}}">
+<link rel="alternate" hreflang="pt" href="{{alt_pt}}">
+<link rel="alternate" hreflang="x-default" href="{{alt_en}}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{t:method.meta.og_title}}">
+<meta property="og:description" content="{{t:method.meta.description}}">
+<meta property="og:image" content="{{og_image}}">
+<meta property="og:url" content="{{url}}">
+<meta property="og:locale" content="{{og_locale}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{t:method.meta.og_title}}">
+<meta name="twitter:description" content="{{t:method.meta.description}}">
+<meta name="twitter:image" content="{{og_image}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{root}}icon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{{root}}icon-180.png">
+<link rel="manifest" href="{{root}}manifest.webmanifest">
+<link rel="stylesheet" href="{{root}}style.css">
+<link rel="stylesheet" href="{{root}}method.css">
+<script id="i18n-data" type="application/json">{{i18n_json}}</script>
+<script id="numbers-data" type="application/json">{{numbers_json}}</script>
+</head>
+<body data-lang="{{lang}}" data-root="{{root}}" data-alt-en="{{rel_en}}" data-alt-es="{{rel_es}}" data-alt-pt="{{rel_pt}}" data-page="method">
+<div id="deco" data-column="704" aria-hidden="true"></div>
+<header>
+  <div class="toolbar">
+    <nav class="nav" data-i18n-attr="aria-label:nav.label"><a href="{{rel_index}}" data-i18n="nav.tool"></a><a href="{{rel_method}}" data-i18n="nav.method" aria-current="page"></a><a href="{{rel_library}}" data-i18n="nav.library"></a><span class="soon"><span data-i18n="nav.checker"></span> <small data-i18n="nav.soon"></small></span></nav>
+    <button type="button" data-theme-toggle data-i18n-attr="data-label-dark:theme.dark;data-label-light:theme.light" aria-pressed="false" style="font-family:'IBM Plex Mono',monospace; font-size:12px; padding:7px 14px; border-radius:999px; border:1px solid var(--line); cursor:pointer; background:var(--panel); color:var(--ink);"><svg class="icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"></path></svg><svg class="icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z"></path></svg><span data-theme-label>{{t:theme.light}}</span></button>
+    <span data-lang-host data-i18n-attr="data-label:lang.label"></span>
+  </div>
+  <a class="lockup lockup-small" href="{{rel_index}}" aria-label="Lintcha">
+    <img class="mark" src="{{root}}icon-512.png" alt="" width="40" height="40" decoding="async">
+    <span data-i18n="app.name" class="wordmark"></span>
+  </a>
+  <h1 data-i18n="method.h1"></h1>
+  <p data-i18n="method.intro"></p>
+  <p class="privacy" data-i18n="method.privacy"></p>
+</header>
+<main>
+  <h2 data-i18n="method.corpus.h"></h2>
+  <p data-i18n="method.corpus.p1" data-i18n-vars="date,excluded"></p>
+  <p data-i18n="method.corpus.p2" data-i18n-vars="n,repos,cap,full,excluded"></p>
+  <p data-i18n="method.corpus.p3"></p>
+  <p data-i18n="method.corpus.p4" data-i18n-vars="repos_read,harvested,harvest_excluded,harvest_failed,harvest_fetched,frame" data-build="expansion"></p>
+
+  <h2 data-i18n="method.sources.h"></h2>
+  <div class="scroll"><table class="method">
+    <thead><tr>
+      <th data-i18n="method.sources.th.repo"></th><th data-i18n="method.sources.th.branch"></th><th data-i18n="method.sources.th.commit"></th><th data-i18n="method.sources.th.status"></th><th data-i18n="method.sources.th.charters"></th>
+    </tr></thead>
+    <tbody data-build="sources"></tbody>
+  </table></div>
+
+  <h2 data-i18n="method.rules.h"></h2>
+  <p data-i18n="method.rules.p" data-i18n-vars="sample_n"></p>
+  <div class="scroll"><table class="method">
+    <thead><tr>
+      <th data-i18n="method.rules.th.rule"></th><th data-i18n="method.rules.th.asks"></th><th data-i18n="method.rules.th.gate_a"></th><th data-i18n="method.rules.th.gate_b"></th><th data-i18n="method.rules.th.precision"></th><th data-i18n="method.rules.th.row"></th><th data-i18n="method.rules.th.reported"></th>
+    </tr></thead>
+    <tbody data-build="rules"></tbody>
+  </table></div>
+  <p class="meta" data-i18n="method.rules.note"></p>
+
+  <h2 data-i18n="method.misread.h"></h2>
+  <p data-i18n="method.misread.r7" data-i18n-vars="count,n"></p>
+  <p data-build="r7_detector"></p>
+  <p data-i18n="method.misread.r8" data-i18n-vars="silent,n,exposed,exposed_sample,sample_n"></p>
+
+  <h2 data-i18n="method.limits.h"></h2>
+  <ul class="lines">
+    <li class="note" data-i18n="method.limits.1"></li>
+    <li class="note" data-i18n="method.limits.2" data-i18n-vars="date,repo_share,fam,n"></li>
+    <li class="note" data-i18n="method.limits.3" data-i18n-vars="row4_rules,sample_n"></li>
+    <li class="note" data-i18n="method.limits.4"></li>
+  </ul>
+
+  <h2 data-i18n="method.reproduce.h"></h2>
+  <p data-i18n="method.reproduce.p" data-i18n-vars="labels"></p>
+</main>
+<footer>
+  <span data-i18n="footer.rules" data-i18n-vars="rules"></span>
+  <span data-i18n="footer.privacy"></span>
+  <span class="contact">
+    <a href="https://github.com/Mnilax/lintcha/issues/new?template=submit-role.yml" rel="noopener" data-i18n="footer.submit_role"></a>
+    <a href="https://t.me/dobzhik" rel="noopener" data-i18n-attr="aria-label:contact.telegram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 3.3L2.9 10.5c-1 .4-1 1.2-.1 1.5l4.6 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.9-.5l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.2-1.9zM8.9 13.3l9.7-6.1c.4-.3.8 0 .5.3l-8 7.3-.3 3.3-1.9-4.8z"></path></svg></a>
+    <a href="https://x.com/mnilax" rel="noopener" data-i18n-attr="aria-label:contact.x"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"></path></svg></a>
+  </span>
+</footer>
+<script src="{{root}}ui-controls.js"></script>
+<script src="{{root}}verdict.js"></script>
+<script src="{{root}}app.js"></script>
+</body>
+</html>

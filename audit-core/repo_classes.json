@@ -1,0 +1,594 @@
+{
+ "classes": {
+  "AmitMirgal/orgbot-hub": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "a Mastra framework guide skill inside a directory site"
+  },
+  "Anil-matcha/awesome-grok-bot": {
+   "charters_full": 183,
+   "setup_prompts": 181,
+   "claude_code_skills": 0,
+   "class": "setup_prompt_directory"
+  },
+  "Chakhdz/grok-bot-token-saver": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "EndeavorYen/grok-bot-skills": {
+   "charters_full": 14,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "skill library (archive gate, cheap routines) that points at a separate architecture repo"
+  },
+  "GlobalTC/steer": {
+   "charters_full": 3,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "HAEGONG/grok-bot-profiles": {
+   "charters_full": 12,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "HammeredSmithy/bull-trade": {
+   "charters_full": 28,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "Heyvhuang/werewolf-gamemaster": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "Logos52/grok-bot-packets": {
+   "charters_full": 19,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "a personal note bank: video recaps, scrape logs and 5 bot cards copied from X shares; the repository is about the bank, not about publishing profiles"
+  },
+  "Octo-o-o-o/grok-job-kit": {
+   "charters_full": 10,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "OpulentiaAI/gtm-agent-automations": {
+   "charters_full": 262,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "PROJECT-073-X/grok-bot-workforce": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "PramodDutta/botskills": {
+   "charters_full": 119,
+   "setup_prompts": 1,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "Steltic/steltic_grokbot": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "setup procedures for a structural-steel assistant; the text is the README overview, no profile is published"
+  },
+  "Uncle-Gizmo/grok-bot-info": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "public notes on what Cursor agents are for"
+  },
+  "WebDevJasonCameron/ExploreGrokBot": {
+   "charters_full": 5,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "YannisKiefer/grokbot-x": {
+   "charters_full": 10,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "ZeroPointRepo/GrokBotDev": {
+   "charters_full": 137,
+   "setup_prompts": 3,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "ZooHero500/plays": {
+   "charters_full": 110,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "a70win-wq/usegrokbot": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "a website build prompt for a use-case library site; the bot text sits inside a prompt to build the site"
+  },
+  "aaravarr/openbot": {
+   "charters_full": 3,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "bring-your-own-model tool; the texts are harness prompt injections from its docs"
+  },
+  "aaron-he-zhu/aaron-marketing-skills": {
+   "charters_full": 113,
+   "setup_prompts": 0,
+   "claude_code_skills": 112,
+   "class": "claude_code_skill_library"
+  },
+  "andrewkittridge/grokory": {
+   "charters_full": 4,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "how-to articles for listing templates on a board site"
+  },
+  "bcharleson/grokbot-peekaboo": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "a skill for controlling a local Mac; tooling"
+  },
+  "codejunkie99/rosterroom": {
+   "charters_full": 80,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "composio-community/awesome-grok-bots": {
+   "charters_full": 20,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "danielvegac/grok-bot-startup-services-outbound": {
+   "charters_full": 4,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "divo12/awesome-grok-bot-templates": {
+   "charters_full": 10,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "dragosroua/grok-bot-add-plugin": {
+   "charters_full": 6,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "assess-decide-do framework packaged as plugin skills"
+  },
+  "elie222/botdirectory.ai": {
+   "charters_full": 390,
+   "setup_prompts": 360,
+   "claude_code_skills": 0,
+   "class": "setup_prompt_directory"
+  },
+  "ellelion/botteams": {
+   "charters_full": 70,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "ethanolivertroy/grokbot-cloudflare-inbox": {
+   "charters_full": 2,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "function1st/PhoneZero": {
+   "charters_full": 11,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "a runtime plus phone plugin; the texts are its disclaimer and README"
+  },
+  "galleonlabs/hypergrok-trading-desk": {
+   "charters_full": 27,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "hariou/technocore-grokbot-ja": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "one-off task prompts for creating a testnet identity, not a standing role"
+  },
+  "jaredtrichard/grok-factory": {
+   "charters_full": 10,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "jaredtrichard/grok-research": {
+   "charters_full": 4,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "jaskirat1616/grok-skills": {
+   "charters_full": 186,
+   "setup_prompts": 0,
+   "claude_code_skills": 48,
+   "class": "hand_review_out",
+   "hand_review": "195 SKILL.md task playbooks (a/b test analyzer, academy guide); a skill library, not role descriptions"
+  },
+  "jblack4vols/grok-bot": {
+   "charters_full": 2,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "daily run logs of a job-finder bot (what shipped on which PR), not a profile"
+  },
+  "jeremybrasher/grokbot-skills": {
+   "charters_full": 92,
+   "setup_prompts": 0,
+   "claude_code_skills": 35,
+   "class": "hand_review_out",
+   "hand_review": "skill collection sourced from awesome-claude-skills; Claude Code skill library"
+  },
+  "kunchenguid/grok-ship": {
+   "charters_full": 7,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "kwakseongjae/awesome-grok-bot": {
+   "charters_full": 3,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "a directory site's own Cursor skill pointers and test fixtures"
+  },
+  "kydlikebtc/awesome-grokbot": {
+   "charters_full": 2,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "directory of x.ai/bot share links (the excluded class since run one); its two texts are the catalog's maintenance routine and a vetting checklist"
+  },
+  "lazerusrm/botrouter": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "subscription routing tooling; a plugin skill"
+  },
+  "mKay00/grok-bot-second-brain": {
+   "charters_full": 11,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "a consolidation plan whose sources/ folder holds copied articles (Tiago Forte, xAI docs); 9 of 11 texts are those copies"
+  },
+  "mahathir69/technocore-safe": {
+   "charters_full": 3,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "maplefukku/grok-bot-ops": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "an operations guide with one example overnight task prompt"
+  },
+  "matteoantoci/firstmate": {
+   "charters_full": 2,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "mergisi/awesome-grokbot": {
+   "charters_full": 113,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "mozilla/diversity": {
+   "charters_full": 10,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "Mozilla's diversity and inclusion repository; code-of-conduct enforcement guides"
+  },
+  "mtrxdev/build-brief": {
+   "charters_full": 3,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "napiermd/heavy-lift-cloud-agents": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "a skill that hands work to Cursor cloud agents; tooling"
+  },
+  "noam99moyal-sudo/podcast-summary-bot": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "novusordos666/grokbot-outreach-agent-team": {
+   "charters_full": 6,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "p10ns11y/botify": {
+   "charters_full": 2,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "pacifico-1106/grokbot-control-plane": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "a commerce event contract schema document"
+  },
+  "palehonk0-o/grokbot-market-memory": {
+   "charters_full": 6,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "richard7463/askgrokwallet": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "a wallet product description in SKILL.md form"
+  },
+  "shrdgn/grokbot-skills": {
+   "charters_full": 74,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "skill library (brand voice keeper, content repurposer); task skills, not role descriptions"
+  },
+  "steve228uk/grok-bot-shopping": {
+   "charters_full": 4,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "shopping skills pack (merchant checkout, shop cli) plus an install prompt; tooling, not a role"
+  },
+  "swcstudiospace/PumpGrok": {
+   "charters_full": 32,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "tal-giladi/grokbot-field-guide": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": null
+  },
+  "thomasbek3/hermes-bot-kit": {
+   "charters_full": 1,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "a computer-basics skill inside a Hermes plugin; software"
+  },
+  "vercel/vercel-plugin": {
+   "charters_full": 41,
+   "setup_prompts": 0,
+   "claude_code_skills": 12,
+   "class": "hand_review_out",
+   "hand_review": "Vercel ecosystem plugin with Claude Code benchmark skills; software, not bot profiles"
+  },
+  "hesreallyhim/awesome-claude-code": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "Claude Code resource list"
+  },
+  "owenisas/grokbot-openai": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "API bridge tool"
+  },
+  "enderzcx/grok-bot-switch": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "inference switch tool"
+  },
+  "banana2556/cursor-grokbot-helper": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "Cursor client switch tool"
+  },
+  "njpatel/omabot": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "menu bar tool"
+  },
+  "quolu/plaude": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "recording pipeline tool"
+  },
+  "nescafe2009/dsh-grokbot": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "plugin implementation of a harness"
+  },
+  "zhulin025/LaoA-GrokBot": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "emoji and share-card lab"
+  },
+  "cs68614-hash/awesome-grokbot-templates": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "share-link directory"
+  },
+  "lureilly1/botjobs": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "directory site"
+  },
+  "jinank/great-grokbots": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "catalog collected from directories"
+  },
+  "tiankonglan/awesome-grok-bot-template": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "awesome list"
+  },
+  "matsutouya/note-kojo": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "drafting tool"
+  },
+  "dadamingmax/Grok-Bot-Setup-and-Usage-Guide": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "setup and usage guide"
+  },
+  "ddhjy/grok-bot-hub": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "navigation site"
+  },
+  "mostdesign01-sudo/grokbot-use-cases": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "showcase site"
+  },
+  "rockyzhuo/grok-bot-blue-book": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "a book"
+  },
+  "KinGao294/grok-bot-orange-book": {
+   "charters_full": 0,
+   "setup_prompts": 0,
+   "claude_code_skills": 0,
+   "class": "hand_review_out",
+   "hand_review": "a book"
+  }
+ },
+ "excluded": [
+  "AmitMirgal/orgbot-hub",
+  "Anil-matcha/awesome-grok-bot",
+  "EndeavorYen/grok-bot-skills",
+  "KinGao294/grok-bot-orange-book",
+  "Logos52/grok-bot-packets",
+  "Steltic/steltic_grokbot",
+  "Uncle-Gizmo/grok-bot-info",
+  "a70win-wq/usegrokbot",
+  "aaravarr/openbot",
+  "aaron-he-zhu/aaron-marketing-skills",
+  "andrewkittridge/grokory",
+  "banana2556/cursor-grokbot-helper",
+  "bcharleson/grokbot-peekaboo",
+  "cs68614-hash/awesome-grokbot-templates",
+  "dadamingmax/Grok-Bot-Setup-and-Usage-Guide",
+  "ddhjy/grok-bot-hub",
+  "dragosroua/grok-bot-add-plugin",
+  "elie222/botdirectory.ai",
+  "enderzcx/grok-bot-switch",
+  "function1st/PhoneZero",
+  "hariou/technocore-grokbot-ja",
+  "hesreallyhim/awesome-claude-code",
+  "jaskirat1616/grok-skills",
+  "jblack4vols/grok-bot",
+  "jeremybrasher/grokbot-skills",
+  "jinank/great-grokbots",
+  "kwakseongjae/awesome-grok-bot",
+  "kydlikebtc/awesome-grokbot",
+  "lazerusrm/botrouter",
+  "lureilly1/botjobs",
+  "mKay00/grok-bot-second-brain",
+  "maplefukku/grok-bot-ops",
+  "matsutouya/note-kojo",
+  "mostdesign01-sudo/grokbot-use-cases",
+  "mozilla/diversity",
+  "napiermd/heavy-lift-cloud-agents",
+  "nescafe2009/dsh-grokbot",
+  "njpatel/omabot",
+  "owenisas/grokbot-openai",
+  "pacifico-1106/grokbot-control-plane",
+  "quolu/plaude",
+  "richard7463/askgrokwallet",
+  "rockyzhuo/grok-bot-blue-book",
+  "shrdgn/grokbot-skills",
+  "steve228uk/grok-bot-shopping",
+  "thomasbek3/hermes-bot-kit",
+  "tiankonglan/awesome-grok-bot-template",
+  "vercel/vercel-plugin",
+  "zhulin025/LaoA-GrokBot"
+ ],
+ "hand_review": "LINTCHA_07 block 1, 2026-09-06, see hand_review.json"
+}

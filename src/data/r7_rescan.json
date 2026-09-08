@@ -1,0 +1,35 @@
+{
+  "work": "work_v4",
+  "charters": 1102,
+  "lowercase_layer_changed": 0,
+  "non_r7_findings_changed": 0,
+  "before": {
+    "charters_with_secret_shape": 0,
+    "shape_hits": {},
+    "shapes": [
+      "api_key_generic",
+      "github_token",
+      "aws_key_id",
+      "slack_token",
+      "bearer_token",
+      "internal_host",
+      "private_key",
+      "personal_email"
+    ]
+  },
+  "after": {
+    "charters_with_secret_shape": 0,
+    "shape_hits": {},
+    "shapes": [
+      "api_key_generic",
+      "github_token",
+      "aws_key_id",
+      "slack_token",
+      "bearer_token",
+      "internal_host",
+      "private_key"
+    ],
+    "charters_with_email_address": 1
+  },
+  "note": "run three: 'before' emulates the run-two shapes on the run-two cased layer (underscores removed); 'after' is the current detector"
+}

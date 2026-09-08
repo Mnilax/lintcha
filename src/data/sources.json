@@ -1,0 +1,639 @@
+[
+ {
+  "repo": "Chakhdz/grok-bot-token-saver",
+  "branch": "master",
+  "commit": "fe82eb28665bdef430020999f448013e8491a203",
+  "status": "in",
+  "charters": 1
+ },
+ {
+  "repo": "GlobalTC/steer",
+  "branch": "main",
+  "commit": "2423bf4d347b6ec6c2208d7d5aa9ef6973e9c600",
+  "status": "in",
+  "charters": 3
+ },
+ {
+  "repo": "HAEGONG/grok-bot-profiles",
+  "branch": "main",
+  "commit": "6f3d07e566008175486228a509bd8461e5efb85f",
+  "status": "in",
+  "charters": 12
+ },
+ {
+  "repo": "HammeredSmithy/bull-trade",
+  "branch": "main",
+  "commit": "11feb72876a9572746527521fe05e4cc48f00abd",
+  "status": "in",
+  "charters": 28
+ },
+ {
+  "repo": "Heyvhuang/werewolf-gamemaster",
+  "branch": "main",
+  "commit": "2f18703f30815a295d52f6c09812a076e8354329",
+  "status": "in",
+  "charters": 1
+ },
+ {
+  "repo": "HxHippy/grok-bot-arch",
+  "branch": "main",
+  "commit": "b7c44ba488f4da42d0006a3c126e597ac5a7d465",
+  "status": "in",
+  "charters": 0
+ },
+ {
+  "repo": "Octo-o-o-o/grok-job-kit",
+  "branch": "main",
+  "commit": "90894b2f42723dcae6e25c3e5252f1bfedec6019",
+  "status": "in",
+  "charters": 10
+ },
+ {
+  "repo": "OpulentiaAI/gtm-agent-automations",
+  "branch": "main",
+  "commit": "568371d0b5c5c0ed28597dcc93ac5b6ce938967f",
+  "status": "in",
+  "charters": 262
+ },
+ {
+  "repo": "PROJECT-073-X/grok-bot-workforce",
+  "branch": "main",
+  "commit": "9786f76311c88ad3f12b9ec87ba995d9f994e332",
+  "status": "in",
+  "charters": 1
+ },
+ {
+  "repo": "PramodDutta/botskills",
+  "branch": "main",
+  "commit": "abe793060a7e7ad18e89e1f254e4ad0806556354",
+  "status": "in",
+  "charters": 119
+ },
+ {
+  "repo": "WeSs1982/echo-chief-of-staff",
+  "branch": "main",
+  "commit": "874dc50ec41637233f21bbc0f5256b938afa8b98",
+  "status": "in",
+  "charters": 0
+ },
+ {
+  "repo": "WebDevJasonCameron/ExploreGrokBot",
+  "branch": "main",
+  "commit": "58fe3532ccbd3aecf8af06ea4a3706ac659d8f8c",
+  "status": "in",
+  "charters": 5
+ },
+ {
+  "repo": "YannisKiefer/grokbot-x",
+  "branch": "main",
+  "commit": "cade7d95e2b60c2c60c53648d4d10ba87ae18443",
+  "status": "in",
+  "charters": 10
+ },
+ {
+  "repo": "ZeroPointRepo/GrokBotDev",
+  "branch": "main",
+  "commit": "d2aa69f8640e2ccef42f4b11b664e234c34c211d",
+  "status": "in",
+  "charters": 137
+ },
+ {
+  "repo": "ZooHero500/plays",
+  "branch": "main",
+  "commit": "65fbafc806431ed079a03a03ad474710f65ad31f",
+  "status": "in",
+  "charters": 110
+ },
+ {
+  "repo": "codejunkie99/rosterroom",
+  "branch": "main",
+  "commit": "a7ec5620c85ec19b1d1ac22321ccce531455484f",
+  "status": "in",
+  "charters": 80
+ },
+ {
+  "repo": "composio-community/awesome-grok-bots",
+  "branch": "main",
+  "commit": "d732af02159bc2cc8f350422aaf09908822c2882",
+  "status": "in",
+  "charters": 20
+ },
+ {
+  "repo": "danielvegac/grok-bot-startup-services-outbound",
+  "branch": "main",
+  "commit": "2ba35f365daa6eb7cf9cc7d52f6597b24c9aff24",
+  "status": "in",
+  "charters": 4
+ },
+ {
+  "repo": "divo12/awesome-grok-bot-templates",
+  "branch": "main",
+  "commit": "184d4cc50c34899c00d21ba87ce2eb82da887c27",
+  "status": "in",
+  "charters": 10
+ },
+ {
+  "repo": "ellelion/botteams",
+  "branch": "main",
+  "commit": "e478f8de0d6ee32b985dcb8c08d1d0fd5232bf9d",
+  "status": "in",
+  "charters": 70
+ },
+ {
+  "repo": "ethanolivertroy/grokbot-cloudflare-inbox",
+  "branch": "main",
+  "commit": "9c994514f37738482186b4c422c875f573b4ed98",
+  "status": "in",
+  "charters": 2
+ },
+ {
+  "repo": "fantomsuj/grokbot",
+  "branch": "main",
+  "commit": "7cf5d3d97d8df426f63a40b06dd408379fa5dc11",
+  "status": "in",
+  "charters": 0
+ },
+ {
+  "repo": "galleonlabs/hypergrok-trading-desk",
+  "branch": "main",
+  "commit": "0274d9e2429ff68bef4fd05099deb3f0899fe593",
+  "status": "in",
+  "charters": 27
+ },
+ {
+  "repo": "jaredtrichard/grok-factory",
+  "branch": "main",
+  "commit": "2e9f8e55935e9ec3cb8c1fa823c64bd043c4351b",
+  "status": "in",
+  "charters": 10
+ },
+ {
+  "repo": "jaredtrichard/grok-research",
+  "branch": "main",
+  "commit": "957bf951721ba0004b7c8d61559d44810e3e6666",
+  "status": "in",
+  "charters": 4
+ },
+ {
+  "repo": "jay-sahnan/growth-grok-bots",
+  "branch": "main",
+  "commit": "8cf16436859e2dd3a47f40f1d328052f5a6e3c85",
+  "status": "in",
+  "charters": 0
+ },
+ {
+  "repo": "kunchenguid/grok-ship",
+  "branch": "main",
+  "commit": "ae1f5a787e544dcec69b819370615b2fcbef0eab",
+  "status": "in",
+  "charters": 7
+ },
+ {
+  "repo": "lroolle/awesome-grokbot-templates",
+  "branch": "main",
+  "commit": "a12c2684a994b17647841b882d89d27550323805",
+  "status": "in",
+  "charters": 0
+ },
+ {
+  "repo": "lsj210001/crew-contract",
+  "branch": "main",
+  "commit": "06d24e73f55e6550bcc53d9a8bebea80c6170b0b",
+  "status": "in",
+  "charters": 0
+ },
+ {
+  "repo": "mahathir69/technocore-safe",
+  "branch": "main",
+  "commit": "96d7006d351a7d7de0130aecfb5c00c3a1a3722c",
+  "status": "in",
+  "charters": 3
+ },
+ {
+  "repo": "matteoantoci/firstmate",
+  "branch": "master",
+  "commit": "dc26ad39f5584f23c8408478c6799c2bd69b0a1f",
+  "status": "in",
+  "charters": 2
+ },
+ {
+  "repo": "mergisi/awesome-grokbot",
+  "branch": "main",
+  "commit": "6210f2034c5737d1be100e227c8d308d9757ecf4",
+  "status": "in",
+  "charters": 113
+ },
+ {
+  "repo": "mtrxdev/build-brief",
+  "branch": "main",
+  "commit": "c158ee5333d956b18efc11be187e558485b6684b",
+  "status": "in",
+  "charters": 3
+ },
+ {
+  "repo": "noam99moyal-sudo/podcast-summary-bot",
+  "branch": "main",
+  "commit": "f9b8e871de6880646ff5ad2b6e2a0464dcd44b4f",
+  "status": "in",
+  "charters": 1
+ },
+ {
+  "repo": "novusordos666/grokbot-outreach-agent-team",
+  "branch": "main",
+  "commit": "4ea1fd613329f66a4c51c2f0c231afd0b471a18c",
+  "status": "in",
+  "charters": 6
+ },
+ {
+  "repo": "p10ns11y/botify",
+  "branch": "main",
+  "commit": "8e249c3b84262f5c1eaadd1aa7441de5e28f7df5",
+  "status": "in",
+  "charters": 2
+ },
+ {
+  "repo": "palehonk0-o/grokbot-market-memory",
+  "branch": "main",
+  "commit": "9314e92d77b86c94df6e023e106c76927a91106d",
+  "status": "in",
+  "charters": 6
+ },
+ {
+  "repo": "s-hiraoku/grok-bot-playbook",
+  "branch": "main",
+  "commit": "306c7a12019b2e5aa6457f9f3607e8ff5692c689",
+  "status": "in",
+  "charters": 0
+ },
+ {
+  "repo": "swcstudiospace/PumpGrok",
+  "branch": "main",
+  "commit": "d16963a007b285f1a62687f7fc61c5506583559b",
+  "status": "in",
+  "charters": 32
+ },
+ {
+  "repo": "tal-giladi/grokbot-field-guide",
+  "branch": "main",
+  "commit": "cbdb6b1895f25b5adb2767622860ba33e35c32d2",
+  "status": "in",
+  "charters": 1
+ },
+ {
+  "repo": "AmitMirgal/orgbot-hub",
+  "branch": "main",
+  "commit": "7f65a8011fa119c1ab4321d4437170bd6f8d3ea1",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "Anil-matcha/awesome-grok-bot",
+  "branch": "master",
+  "commit": "2412bacefee2cdc31ceb526443ad780a89a2a2cd",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "EndeavorYen/grok-bot-skills",
+  "branch": "main",
+  "commit": "d1a0e777842821a95bcdab6c88c1a5ae37d0d194",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "KinGao294/grok-bot-orange-book",
+  "branch": "main",
+  "commit": "1f689f8c7c9143dcdbdbd6ae631f9bdcd8572b23",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "Logos52/grok-bot-packets",
+  "branch": "main",
+  "commit": "20903e2a2830010345f7227e1fa685c3722c8f9b",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "Steltic/steltic_grokbot",
+  "branch": "main",
+  "commit": "a76d5f315509b3a7c488844c6f1f0dfbb932785b",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "Uncle-Gizmo/grok-bot-info",
+  "branch": "main",
+  "commit": "e927c1836f80134c898ec94a40d2ce635c6c910a",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "a70win-wq/usegrokbot",
+  "branch": "main",
+  "commit": "49c1dd3182ed14d1d76a99be4034ce153323b2ca",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "aaravarr/openbot",
+  "branch": "main",
+  "commit": "b694d788b1e558112d0443943b1e0ba740075d92",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "aaron-he-zhu/aaron-marketing-skills",
+  "branch": "main",
+  "commit": "33dc05b0eeac3f78f4621ff898a1b84c04a65bda",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "andrewkittridge/grokory",
+  "branch": "main",
+  "commit": "193608e9304de658a77e218c73fea02f41136867",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "banana2556/cursor-grokbot-helper",
+  "branch": "main",
+  "commit": "19af0152c015848d5a10bfe1c85d9143bef08929",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "bcharleson/grokbot-peekaboo",
+  "branch": "main",
+  "commit": "862172e0abfe15c1abf1efc538545fc5f214bb18",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "cs68614-hash/awesome-grokbot-templates",
+  "branch": "main",
+  "commit": "577e696d4a7c128760a7952636c2d10cccfcc9ca",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "dadamingmax/Grok-Bot-Setup-and-Usage-Guide",
+  "branch": "main",
+  "commit": "ad3f3fbb2ae40582379910710a5521d715e72f8c",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "ddhjy/grok-bot-hub",
+  "branch": "main",
+  "commit": "37e4ce343bee7cd05a972b1efda218232e525142",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "dragosroua/grok-bot-add-plugin",
+  "branch": "main",
+  "commit": "80459c4543d2845492fc64dc2ddc4a366e8564fd",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "elie222/botdirectory.ai",
+  "branch": "main",
+  "commit": "badedc0c985bf3e021634e3d7823ded02cd5545e",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "enderzcx/grok-bot-switch",
+  "branch": "main",
+  "commit": "c612786ef8ec5e70c67fc691fea85cee1f06e724",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "function1st/PhoneZero",
+  "branch": "main",
+  "commit": "98a72eb9456477ba3985d4f7a7dc0a22c22c50d2",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "hariou/technocore-grokbot-ja",
+  "branch": "master",
+  "commit": "a442d32a6a6394826616407be9f8c20136e23e5f",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "hesreallyhim/awesome-claude-code",
+  "branch": "main",
+  "commit": "db4db53566d757e31d75536627747fcaef01d7f1",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "jaskirat1616/grok-skills",
+  "branch": "main",
+  "commit": "dfadd540f887c3834e9043a29e9ff402b48aaf66",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "jblack4vols/grok-bot",
+  "branch": "main",
+  "commit": "6f284805b7351e8022d3286624290d13cc3c5293",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "jeremybrasher/grokbot-skills",
+  "branch": "main",
+  "commit": "fa7d4587d50a589b46ed9c3576b5f340549e49a3",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "jinank/great-grokbots",
+  "branch": "main",
+  "commit": "1c318bf616d89574cc1ecde8758cf0c1950badd6",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "kwakseongjae/awesome-grok-bot",
+  "branch": "main",
+  "commit": "1023020613037e354c4526ec8ff2a26549566125",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "kydlikebtc/awesome-grokbot",
+  "branch": "main",
+  "commit": "00304a366a46657b43c2bdc061f3b69fa0f1db48",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "lazerusrm/botrouter",
+  "branch": "main",
+  "commit": "118f909ab0e4e16f15d8b932ced562d65f1dba38",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "lureilly1/botjobs",
+  "branch": "main",
+  "commit": "76e9a0e7491730d067d38c51385718b2232d244a",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "mKay00/grok-bot-second-brain",
+  "branch": "master",
+  "commit": "dfa5d1dc83e34f9a93346c703334027d030d8876",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "maplefukku/grok-bot-ops",
+  "branch": "main",
+  "commit": "c3e54f9e078698b4195abf9a130ed43ba8d4e3be",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "matsutouya/note-kojo",
+  "branch": "main",
+  "commit": "fbf79e2c3c5a60544e6fc3ba5a87105132568c55",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "mostdesign01-sudo/grokbot-use-cases",
+  "branch": "main",
+  "commit": "9cdb036e17099a6f08784219cfba5294a03883a6",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "mozilla/diversity",
+  "branch": "master",
+  "commit": "5e612f24d537b5e7b80ae0aa730c32e499b68db4",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "napiermd/heavy-lift-cloud-agents",
+  "branch": "main",
+  "commit": "3ebcbd91d5d2b0ab69f7f178570d3c24f07ae484",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "nescafe2009/dsh-grokbot",
+  "branch": "main",
+  "commit": "8a3b70813fe5aa720ecddd940d65ec8d58acd771",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "njpatel/omabot",
+  "branch": "main",
+  "commit": "801cb4b1dc3d20e75b43094aed36c3703e3f72e5",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "owenisas/grokbot-openai",
+  "branch": "main",
+  "commit": "bd2e81fe991f699d0d2482d665fef32be1088131",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "pacifico-1106/grokbot-control-plane",
+  "branch": "main",
+  "commit": "4162e5218537d3b3c6213a48195a556b01d3676c",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "quolu/plaude",
+  "branch": "main",
+  "commit": "7c18750f39df0ee5591c9fdacca6b9781dfd1890",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "richard7463/askgrokwallet",
+  "branch": "main",
+  "commit": "bc46298b059352171490390584fd895d92649a48",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "rockyzhuo/grok-bot-blue-book",
+  "branch": "main",
+  "commit": "ebb28026a630e70be8e3da578cf85d5919ed5e19",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "shrdgn/grokbot-skills",
+  "branch": "main",
+  "commit": "ab16e780a80ce74c701022dec726f9174e625f79",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "steve228uk/grok-bot-shopping",
+  "branch": "main",
+  "commit": "c0a52b214e594973cf149aff3ad23068ef59c3ce",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "thomasbek3/hermes-bot-kit",
+  "branch": "master",
+  "commit": "13b446128ee2831d4a1bfa29bfabe0f772ed80c6",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "tiankonglan/awesome-grok-bot-template",
+  "branch": "main",
+  "commit": "826c52a67c816c7c1321f761d27219ff639afa99",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "vercel/vercel-plugin",
+  "branch": "main",
+  "commit": "7b0a6f61b254b0149bb644cadfb588a5c46df0c2",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "zhulin025/LaoA-GrokBot",
+  "branch": "main",
+  "commit": "527c3b5746bed34da3a6d4f9747e483c84534a41",
+  "status": "dropped",
+  "charters": 0
+ },
+ {
+  "repo": "RongleCat/awesome-grok-bot",
+  "branch": "main",
+  "commit": "e8af8ee56813e891657e63dafda90b5755ac021d",
+  "status": "discovery",
+  "charters": 0
+ },
+ {
+  "repo": "majiayu000/awesome-grok-bot",
+  "branch": "main",
+  "commit": "f7f692c71a6379f3849ad2df5bdf2e310b974268",
+  "status": "discovery",
+  "charters": 0
+ }
+]
