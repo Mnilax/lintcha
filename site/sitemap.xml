@@ -231,4 +231,25 @@
     <xhtml:link rel="alternate" hreflang="pt" href="/pt/method"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="/method"/>
   </url>
+  <url>
+    <loc>/launch/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/launch/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/launch/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/launch/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/launch/"/>
+  </url>
+  <url>
+    <loc>/es/launch/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/launch/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/launch/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/launch/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/launch/"/>
+  </url>
+  <url>
+    <loc>/pt/launch/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="/launch/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="/es/launch/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="/pt/launch/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="/launch/"/>
+  </url>
 </urlset>
