@@ -2,7 +2,8 @@
 // first check (never at load), runs LaunchIdentity.check, and renders one row per check in the reading order the
 // owner set: what it calls itself (N1, N2, N3), where it points (I1, I2), who gets paid (I3, only when the recipient
 // is shared across different deployers), what it wrote (I4, or one normal line under the word floor). Every
-// sentence comes from the i18n island; every figure in a sentence comes from the index. Nothing is stored.
+// sentence comes from the i18n island; every figure in a sentence comes from the index, and the window figures come from
+// launch-numbers.json, prerendered and refreshed once at load. Nothing is stored.
 (function () {
   "use strict";
   var $ = function (id) { return document.getElementById(id); };
@@ -19,6 +20,28 @@
   }
   var form = $("launch-form"), state = $("launch-state"), results = $("launch-results"), read = $("launch-read");
   if (!form || !results) return;
+
+  // ---------------------------------------------------------------- the figures: prerendered at build time from launch-numbers.json
+  // and refreshed once at load from the same file on this domain, so a page built before a weekly index refresh states
+  // the window of the index it will fetch. A failed fetch leaves the prerendered figures as they are.
+  function refreshNumbers() {
+    fetch(ROOT + "launch-numbers.json", { credentials: "omit", cache: "no-cache" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (n) {
+        if (!n || !n.window) return;
+        var vars = { from_date: n.window.from_date, to_date: n.window.to_date, from_block: n.window.from_block, to_block: n.window.to_block, blocks: n.window.blocks,
+                     launches: n.launches_scanned, collected: n.collected, min_words: n.description_min_words };
+        var nodes = document.querySelectorAll("[data-i18n][data-i18n-vars]");
+        for (var i = 0; i < nodes.length; i++) {
+          var key = nodes[i].getAttribute("data-i18n"); if (key.indexOf("launch.") !== 0) continue;
+          var sub = {}, names = nodes[i].getAttribute("data-i18n-vars").split(",");
+          for (var j = 0; j < names.length; j++) { var k = names[j].trim(); if (k in vars) sub[k] = vars[k]; }
+          nodes[i].textContent = t(key, sub);
+        }
+      })
+      .catch(function () {});
+  }
+  refreshNumbers();
 
   // ---------------------------------------------------------------- the index: fetched once, on the first check; "no-cache"
   // revalidates with the server so a regenerated index is never served stale from the browser's heuristic cache

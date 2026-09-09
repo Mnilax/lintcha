@@ -102,9 +102,31 @@
     applyLang(current, { persist: read(LANG_KEY) !== null });
   }
 
+  /* ---------- sticky top bar ---------- */
+  /* [data-topbar] is position:sticky in the skin; this only marks it data-stuck once a sentinel placed before it has
+     scrolled out, and publishes its height as --topbar-h on the root so anchored targets clear it. Attributes only. */
+  function initTopbar() {
+    var bar = document.querySelector("[data-topbar]");
+    if (!bar || !bar.parentNode) return;
+    var setHeight = function () { document.documentElement.style.setProperty("--topbar-h", bar.offsetHeight + "px"); };
+    setHeight();
+    if (global.ResizeObserver) new ResizeObserver(setHeight).observe(bar);
+    else global.addEventListener("resize", setHeight);
+    if (!global.IntersectionObserver) return;
+    var sentinel = document.createElement("div");
+    sentinel.setAttribute("data-topbar-sentinel", "");
+    sentinel.setAttribute("aria-hidden", "true");
+    sentinel.style.cssText = "height:1px;margin-top:-1px;visibility:hidden;";
+    bar.parentNode.insertBefore(sentinel, bar);
+    new IntersectionObserver(function (entries) {
+      var e = entries[entries.length - 1];
+      if (e.isIntersecting) bar.removeAttribute("data-stuck"); else bar.setAttribute("data-stuck", "1");
+    }, { threshold: 0 }).observe(sentinel);
+  }
+
   /* ---------- boot ---------- */
 
-  function init() { initTheme(); initLang(); }
+  function init() { initTheme(); initLang(); initTopbar(); }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
   else init();
 

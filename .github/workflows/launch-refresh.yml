@@ -1,0 +1,92 @@
+# launch-refresh: once a week, without a person, rebuild the launch index and its numbers file from the most recent
+# full day of launches and commit the two files. This is the first job that writes to the repository on its own, so
+# every guardrail is hard and the job commits nothing rather than something wrong:
+#   - the collector runs over a day window ending at the latest finalised block, against the public RPC, no key
+#   - zero launches scanned, or an empty block range, aborts before anything is written
+#   - the writer validates the index against its schema before writing; the index test and the engine test then run
+#     against the written files; a failure aborts before the commit
+#   - the frozen files (rules.js, numbers.json, library-numbers.json) are hashed before and after; any change aborts
+#   - the only paths that may change are site/launch-index.json and site/launch-numbers.json; any other modified,
+#     deleted or untracked path aborts before the commit
+#   - GITHUB_TOKEN with contents: write; no personal token, no secret; both actions pinned by commit SHA
+name: launch-refresh
+on:
+  schedule:
+    - cron: "17 11 * * 1"   # Mondays, 11:17 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: launch-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "24"
+
+      - name: hash the frozen files before anything runs
+        run: |
+          sha256sum site/rules.js site/numbers.json site/library-numbers.json | tee "$RUNNER_TEMP/frozen-before.txt"
+
+      - name: collect the most recent full day from the public RPC
+        run: |
+          node tools/launch-collect.mjs --day --out "$RUNNER_TEMP/launch-day.json"
+
+      - name: abort on an empty window, zero launches, or a partial collection (below half of the published day)
+        run: |
+          node -e '
+            const r = require(process.env.RUNNER_TEMP + "/launch-day.json");
+            const w = r.window, v = r.verified;
+            console.log("window", w.from, "..", w.to, "(" + w.blocks + " blocks)", w.from_time, "..", w.to_time, "| launches in the log", v.launches_in_log, "| readable", v.tokens_readable, "| http 429", r.limiter.http429, "| retries", r.limiter.retries);
+            if (!(w.to > w.from) || !(w.blocks > 0)) { console.error("abort: empty block range"); process.exit(1); }
+            if (!(v.launches_in_log > 0) || !(v.tokens_readable > 0)) { console.error("abort: zero launches scanned"); process.exit(1); }
+            if (v.launches_in_log !== v.tokens_readable) { console.error("abort: a launch in the log was not read"); process.exit(1); }
+            // the floor: a run that read far fewer launches than the published day is a degraded endpoint, not a quiet day.
+            // The baseline is the numbers file as committed; missing or unreadable, the job never runs against an unknown one.
+            // No upper bound on purpose: activity can spike and that is a good day.
+            let published;
+            try { published = require(process.cwd() + "/site/launch-numbers.json").launches_scanned; } catch (e) { console.error("abort: site/launch-numbers.json is missing or unreadable: " + e.message); process.exit(1); }
+            if (!Number.isInteger(published) || !(published > 0)) { console.error("abort: the published launches_scanned is not a positive integer: " + published); process.exit(1); }
+            const ratio = v.launches_in_log / published;
+            console.log("published launches_scanned", published, "| this run", v.launches_in_log, "| ratio", ratio.toFixed(3));
+            if (ratio < 0.5) { console.error("abort: partial collection, " + v.launches_in_log + " launches against " + published + " published (ratio " + ratio.toFixed(3) + ", floor 0.5)"); process.exit(1); }'
+
+      - name: rebuild the index and the numbers file (the writer validates the index against its schema first)
+        run: |
+          node tools/launch-index.mjs --in "$RUNNER_TEMP/launch-day.json" --site site
+          rm -rf build
+
+      - name: schema test and index test on the written files, and the engine test
+        run: |
+          node tests/launch_index_test.mjs
+          node tests/launch_test.js
+
+      - name: the frozen files are unchanged
+        run: |
+          sha256sum site/rules.js site/numbers.json site/library-numbers.json | tee "$RUNNER_TEMP/frozen-after.txt"
+          diff "$RUNNER_TEMP/frozen-before.txt" "$RUNNER_TEMP/frozen-after.txt"
+
+      - name: only the two files may have changed
+        run: |
+          # membership test: every status line must name one of the two allowed paths, as a modification. Zero lines is
+          # nothing to commit; one or two lines naming only those paths commit; any other line aborts with the full status.
+          git status --porcelain | tee "$RUNNER_TEMP/status.txt"
+          if [ "$(wc -l < "$RUNNER_TEMP/status.txt")" -eq 0 ]; then echo "nothing changed: the index and the numbers file are already this window"; echo "changed=0" >> "$GITHUB_ENV"; exit 0; fi
+          if grep -v -x -E ' M site/launch-(index|numbers)\.json' "$RUNNER_TEMP/status.txt"; then echo "abort: a path other than the two files changed, or one of them is not a plain modification; full status:"; cat "$RUNNER_TEMP/status.txt"; exit 1; fi
+          echo "changed=1" >> "$GITHUB_ENV"
+
+      - name: commit the two files
+        if: env.changed == '1'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/launch-index.json site/launch-numbers.json
+          git commit -m "launch index: weekly refresh, $(node -p 'const n=require("./site/launch-numbers.json"); n.window.from_date+" to "+n.window.to_date+", blocks "+n.window.from_block+" to "+n.window.to_block+", "+n.launches_scanned+" launches, collected "+n.collected')"
+          # explicit target, no retry: if main moved between checkout and push, the push is rejected and the job fails
+          # loudly with the rejection; the next scheduled run starts from the new main
+          git push origin HEAD:main || { echo "abort: push to main rejected (main moved since checkout, or no permission); nothing retried"; exit 1; }

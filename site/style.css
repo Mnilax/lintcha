@@ -82,6 +82,15 @@ html[lang="en"] [data-not-en] { display:none; }   /* the line that says the prof
 @media (max-width:900px) { .lockup .mark { width:48px; height:48px; } .lockup .wordmark { font-size:34px; } .lockup .tagline { margin-left:62px; } }
 /* header: a row of links (the tool, the method, two announced sections) next to the theme and language controls */
 .toolbar { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+/* the top bar: the toolbar sits in a block of its own above the header and sticks to the top on scroll, on every page,
+   above the content and the margin creatures. ui-controls.js marks it data-stuck past a sentinel and measures its height
+   into --topbar-h, so an anchored target scrolls to below the bar. The hairline fades in; it appears at once under
+   prefers-reduced-motion. */
+html { scroll-padding-top:calc(var(--topbar-h, 56px) + 8px); }
+.topbar { position:sticky; top:0; z-index:30; background:var(--bg); padding:12px 0; box-shadow:0 1px 0 transparent; transition:box-shadow .2s ease; }
+.topbar[data-stuck="1"] { box-shadow:0 1px 0 var(--line); }
+.topbar .toolbar { justify-content:flex-end; }
+@media (prefers-reduced-motion: reduce) { .topbar { transition:none; } }
 .nav { display:flex; align-items:center; gap:16px; margin-right:10px; font-family:'IBM Plex Mono',monospace; font-size:12px; }
 .nav a { color:var(--ink-2); border-bottom:1px solid transparent; padding-bottom:1px; }
 .nav a:hover { color:var(--ink); border-bottom-color:var(--ink-2); }
