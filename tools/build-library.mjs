@@ -79,7 +79,17 @@ if (rejected.length) console.log("preview: " + rejected.length + " role(s) fail 
 
 // ---------------------------------------------------------------- i18n (chrome only; bodies are content and are never keyed)
 const LANGS = ["en"].concat(fs.readdirSync(path.join(SITE, "i18n")).filter(f => /^[a-z][a-z]\.json$/.test(f)).map(f => f.replace(".json", "")).filter(l => l !== "en").sort(byCodePoint));
-const i18n = {}; LANGS.forEach(l => { i18n[l] = JSON.parse(fs.readFileSync(path.join(SITE, "i18n", l + ".json"), "utf8")); });
+// a section plugs in here: keys it drops from the string tables (null: none) and the nav item it renders (empty: none)
+const SECTION = { drop: null, navItem: (lang, up) => "" };
+// --- launch section, LINTCHA_12: lift or delete as one block
+// site/flags.json { "launch": true }: the library pages render the launch nav item; off, the section's keys leave the tables
+{
+  const LAUNCH = JSON.parse(fs.readFileSync(path.join(SITE, "flags.json"), "utf8")).launch === true;
+  if (LAUNCH) SECTION.navItem = (lang, up) => '<a href="' + up + 'launch/">' + esc(t(lang, "nav.launch")) + "</a>";
+  else SECTION.drop = k => k.startsWith("launch.") || k === "nav.launch";
+}
+// --- end launch section
+const i18n = {}; LANGS.forEach(l => { const d = JSON.parse(fs.readFileSync(path.join(SITE, "i18n", l + ".json"), "utf8")); i18n[l] = SECTION.drop ? Object.fromEntries(Object.entries(d).filter(([k]) => !SECTION.drop(k))) : d; });
 function t(lang, key, vars) {
   const s = i18n[lang][key];
   if (typeof s !== "string") abort(`missing i18n key [${lang}] ${key}`);
@@ -107,6 +117,7 @@ function tokens(lang, depth, extra) {
   const tok = {
     lang, root: up, rel_index: up || "./", rel_method: up + "method.html",
     catalog: depth === 0 ? "./" : "../",
+    nav_launch: SECTION.navItem(lang, up),
     i18n_json: JSON.stringify({ lang, strings: i18n[lang], fallback: lang === "en" ? null : i18n.en }).replace(/<\//g, "<\\/"),
     footer_rules: escText(t(lang, "footer.rules", { rules: rulesTotal }))
   };

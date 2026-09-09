@@ -37,6 +37,13 @@ document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
   <div id="deco" data-column="1000" aria-hidden="true"></div>
   <div style="max-width:1000px; margin:0 auto;">
 
+    <div class="topbar" data-topbar>
+      <div class="toolbar">
+        <nav class="nav" data-i18n-attr="aria-label:nav.label"><a href="{{rel_index}}" data-i18n="nav.tool" aria-current="page"></a><a href="{{rel_method}}" data-i18n="nav.method"></a><a href="{{rel_library}}" data-i18n="nav.library"></a>{{nav_launch}}<span class="soon"><span data-i18n="nav.checker"></span> <small data-i18n="nav.soon"></small></span></nav>
+        <button type="button" data-theme-toggle data-i18n-attr="data-label-dark:theme.dark;data-label-light:theme.light" aria-pressed="false" style="font-family:'IBM Plex Mono',monospace; font-size:12px; padding:7px 14px; border-radius:999px; border:1px solid var(--line); cursor:pointer; background:var(--panel); color:var(--ink);"><svg class="icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"></path></svg><svg class="icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z"></path></svg><span data-theme-label>{{t:theme.light}}</span></button>
+        <span data-lang-host data-i18n-attr="data-label:lang.label"></span>
+      </div>
+    </div>
     <header style="display:flex; align-items:flex-start; justify-content:space-between; gap:24px; padding:28px 0 0; flex-wrap:wrap;">
       <div class="lockup">
         <div class="lockup-row">
@@ -44,11 +51,6 @@ document.documentElement.setAttribute("data-theme",t);}catch(e){}})();
           <div data-i18n="app.name" class="wordmark"></div>
         </div>
         <div data-i18n="app.tagline" class="tagline"></div>
-      </div>
-      <div class="toolbar">
-        <nav class="nav" data-i18n-attr="aria-label:nav.label"><a href="{{rel_index}}" data-i18n="nav.tool" aria-current="page"></a><a href="{{rel_method}}" data-i18n="nav.method"></a><a href="{{rel_library}}" data-i18n="nav.library"></a><span class="soon"><span data-i18n="nav.checker"></span> <small data-i18n="nav.soon"></small></span></nav>
-        <button type="button" data-theme-toggle data-i18n-attr="data-label-dark:theme.dark;data-label-light:theme.light" aria-pressed="false" style="font-family:'IBM Plex Mono',monospace; font-size:12px; padding:7px 14px; border-radius:999px; border:1px solid var(--line); cursor:pointer; background:var(--panel); color:var(--ink);"><svg class="icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"></path></svg><svg class="icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z"></path></svg><span data-theme-label>{{t:theme.light}}</span></button>
-        <span data-lang-host data-i18n-attr="data-label:lang.label"></span>
       </div>
     </header>
 
