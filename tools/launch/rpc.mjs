@@ -5,6 +5,7 @@
 // awaited, and a successful reply must be JSON-RPC 2.0 with the exact request id. The request names itself in its user agent: the endpoint's
 // edge refuses anonymous library signatures (Cloudflare 1010).
 const positive = value => Number.isSafeInteger(value) && value > 0;
+const nonnegative = value => Number.isSafeInteger(value) && value >= 0;
 
 const timeoutError = () => {
   const error = new Error("request deadline exceeded");
@@ -112,7 +113,7 @@ const redactEndpoint = (text, url) => {
 
 export class Gate {
   constructor({ url, inFlight = 2, spacingMs = 600, logsSpacingMs = 1500, cooldownMs = 3000, maxCooldownMs = 60000, maxRetries = 10, requestTimeoutMs = 60000, maxResponseBytes = 64 * 1024 * 1024, log = () => {} } = {}) {
-    if (typeof url !== "string" || !url || !positive(inFlight) || !positive(spacingMs) || !positive(logsSpacingMs) || !positive(cooldownMs) || !positive(maxCooldownMs) || !Number.isSafeInteger(maxRetries) || maxRetries < 0 || !positive(requestTimeoutMs) || !positive(maxResponseBytes) || typeof log !== "function") {
+    if (typeof url !== "string" || !url || !positive(inFlight) || !nonnegative(spacingMs) || !nonnegative(logsSpacingMs) || !positive(cooldownMs) || !positive(maxCooldownMs) || !Number.isSafeInteger(maxRetries) || maxRetries < 0 || !positive(requestTimeoutMs) || !positive(maxResponseBytes) || typeof log !== "function") {
       throw new Error("RPC gate configuration is invalid");
     }
     Object.assign(this, { url, inFlight, spacingMs, logsSpacingMs, cooldownMs, maxCooldownMs, maxRetries, requestTimeoutMs, maxResponseBytes, log });
