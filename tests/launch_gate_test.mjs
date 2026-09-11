@@ -30,6 +30,10 @@ gate = new Gate(base);
 replies.push((_request, init) => { redirectPolicy = init.redirect; return { status: 200, text: async () => JSON.stringify({ jsonrpc: "2.0", id: 1, result: "ok" }) }; });
 ok(await gate.call("eth_blockNumber", []) === "ok" && redirectPolicy === "error", "refuses to follow redirects for an endpoint that may carry a path credential");
 
+gate = new Gate({ ...base, spacingMs: 0, logsSpacingMs: 0 });
+replies.push({ result: "zero-spacing" });
+ok(await gate.call("eth_blockNumber", []) === "zero-spacing", "accepts an intentional zero spacing while every request remains concurrency-bound");
+
 for (const [label, body] of [
   ["wrong version", { jsonrpc: "1.0", id: 1, result: 7 }],
   ["wrong id", { jsonrpc: "2.0", id: 2, result: 7 }],
@@ -112,6 +116,9 @@ ok(message.includes("rpc error -32000") && !message.includes("endpoint-secret-se
 let badConfig = false;
 try { new Gate({ ...base, requestTimeoutMs: 0 }); } catch (error) { badConfig = error.message.includes("configuration"); }
 ok(badConfig, "refuses an unbounded request deadline");
+badConfig = false;
+try { new Gate({ ...base, spacingMs: -1 }); } catch (error) { badConfig = error.message.includes("configuration"); }
+ok(badConfig, "refuses a negative request spacing");
 
 console.log(`launch gate test: ${checks} checks, ${failures} failure(s)`);
 process.exit(failures ? 1 : 0);
