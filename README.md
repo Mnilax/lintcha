@@ -3,7 +3,7 @@
 Paste the text you would put in an AI bot's profile. Get back what is already
 there, the questions it has not answered, and the lines that are missing.
 
-Live at **https://lintcha.com** in English, Spanish and Brazilian Portuguese.
+Preserved here as a complete public source snapshot. No public deployment is currently assigned.
 
 ```
 lint ya charter before it runs
@@ -182,7 +182,7 @@ against the frozen findings.
 
 ## The role library
 
-Eight house roles, at https://lintcha.com/library/ - a code reviewer that
+Eight house roles in `site/library/` - a code reviewer that
 refuses to write code, a release captain that never edits application code, a
 browser reader that treats every page it opens as untrusted input, and five
 more.
